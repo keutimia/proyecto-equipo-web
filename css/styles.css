@@ -1,0 +1,13 @@
+body{
+    background-image: url(../img/resorces/win-xp-wallpaper-01.jpg);
+    background-position-x: center;
+}
+.xp_font {
+    font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+    font-size: 100px;
+    width: 450px;
+    margin: 20px;
+    color: black;
+    border-color:10px solid ;
+    box-shadow: inset;
+}
