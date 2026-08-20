@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+      <!-- Soporte para caracteres especiales-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Equipo de Trabajo - Win XP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    
+    <style>
+
+      body.xp_blue_desktop {
+        background-color: #3a6ea5;
+        background-image: none;
+        padding-bottom: 50px;
+      }
+
+      .xp_card_window {
+        background-color: #ece9d8;
+        border: 1px solid #0055ea;
+        border-radius: 5px 5px 0 0;
+        box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+      }
+
+      .xp_card_header {
+        background: linear-gradient(to right, #0058e6 0%, #3a93ff 100%);
+        color: white;
+        padding: 4px 8px;
+        font-weight: bold;
+        font-size: 13px;
+        border-radius: 3px 3px 0 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .xp_close_btn {
+        background-color: #e81123;
+        color: white;
+        border: 1px solid white;
+        border-radius: 3px;
+        font-size: 10px;
+        padding: 0 4px;
+        line-height: 1.2;
+      }
+
+      /* donde irán las fotos después */
+      .xp_empty_photo {
+        width: 120px;
+        height: 120px;
+        background-color: #ffffff;
+        border: 2px inset #999999;
+        margin: 0 auto 15px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #666;
+        font-size: 12px;
+        font-weight: bold;
+      }
+
+      .xp_button {
+        background-color: #f3f3f3;
+        border: 1px solid #003399;
+        border-radius: 3px;
+        padding: 4px 15px;
+        color: black;
+        text-decoration: none;
+        font-size: 13px;
+        box-shadow: inset -1px -1px 2px rgba(0,0,0,0.2), inset 1px 1px 2px rgba(255,255,255,0.8);
+      }
+      .xp_button:hover {
+        background-color: #e0e0e0;
+        color: black;
+      }
+    </style>
+  </head>
+
+  <body class="xp_blue_desktop">
+    <main class="container mt-5">
+      <h2 class="text-white mb-4 text-center fw-bold" style="text-shadow: 1px 1px 2px black;">Integrantes del Equipo</h2>
+
+
+      <div class="row justify-content-center g-4">
+        
+        <!-- Tarjeta 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="xp_card_window h-100 d-flex flex-column">
+            <div class="xp_card_header">
+              <span>Propiedades de Integrante</span>
+              <button class="xp_close_btn">X</button>
+            </div>
+            <div class="p-3 text-center d-flex flex-column flex-grow-1">
+
+              <div class="xp_empty_photo">FOTO 120x120</div>
+              
+              <h5 class="fw-bold mb-1">Vianca Viveros</h5>
+              <p class="mb-2 fw-bold text-primary" style="font-size: 14px;">SCRUM MASTER</p>
+              <p class="small flex-grow-1">Breve descripción personal del integrante.</p>
+              
+              <div class="mt-3">
+                <a href="pages/integrante-1.html" class="xp_button">Ver Perfil Completo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="xp_card_window h-100 d-flex flex-column">
+            <div class="xp_card_header">
+              <span>Propiedades de Integrante</span>
+              <button class="xp_close_btn">X</button>
+            </div>
+            <div class="p-3 text-center d-flex flex-column flex-grow-1">
+              <div class="xp_empty_photo">FOTO 120x120</div>
+              <h5 class="fw-bold mb-1">Nombre Completo 2</h5>
+              <p class="mb-2 fw-bold text-primary" style="font-size: 14px;">Rol en el equipo</p>
+              <p class="small flex-grow-1">Breve descripción personal del integrante.</p>
+              <div class="mt-3">
+                <a href="pages/integrante-2.html" class="xp_button">Ver Perfil Completo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="xp_card_window h-100 d-flex flex-column">
+            <div class="xp_card_header">
+              <span>Propiedades de Integrante</span>
+              <button class="xp_close_btn">X</button>
+            </div>
+            <div class="p-3 text-center d-flex flex-column flex-grow-1">
+              <div class="xp_empty_photo">FOTO 120x120</div>
+              <h5 class="fw-bold mb-1">Nombre Completo 3</h5>
+              <p class="mb-2 fw-bold text-primary" style="font-size: 14px;">Rol en el equipo</p>
+              <p class="small flex-grow-1">Breve descripción personal dl integrante.</p>
+              <div class="mt-3">
+                <a href="pages/integrante-3.html" class="xp_button">Ver Perfil Completo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 4 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="xp_card_window h-100 d-flex flex-column">
+            <div class="xp_card_header">
+              <span>Propiedades de Integrante</span>
+              <button class="xp_close_btn">X</button>
+            </div>
+            <div class="p-3 text-center d-flex flex-column flex-grow-1">
+              <div class="xp_empty_photo">FOTO 120x120</div>
+              <h5 class="fw-bold mb-1">Nombre Completo 4</h5>
+              <p class="mb-2 fw-bold text-primary" style="font-size: 14px;">Rol en el equipo</p>
+              <p class="small flex-grow-1">Breve descripción personal dl integrante.</p>
+              <div class="mt-3">
+                <a href="pages/integrante-4.html" class="xp_button">Ver Perfil Completo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 5 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="xp_card_window h-100 d-flex flex-column">
+            <div class="xp_card_header">
+              <span>Propiedades de Integrante</span>
+              <button class="xp_close_btn">X</button>
+            </div>
+            <div class="p-3 text-center d-flex flex-column flex-grow-1">
+              <div class="xp_empty_photo">FOTO 120x120</div>
+              <h5 class="fw-bold mb-1">Nombre Completo 5</h5>
+              <p class="mb-2 fw-bold text-primary" style="font-size: 14px;">Rol en el equipo</p>
+              <p class="small flex-grow-1">Breve descripción personal del integrante.</p>
+              <div class="mt-3">
+                <a href="pages/integrante-5.html" class="xp_button">Ver Perfil Completo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
