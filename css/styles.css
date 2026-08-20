@@ -1,65 +1,168 @@
-body{
-    background-image: url(../img/resorces/win-xp-wallpaper-01.jpg);
-    background-position-x: center;
+/* --- Fondo de pantalla --- */
+body {
+  background-image: url(../img/resorces/fondo.jpeg);
+  background-position: center;
+  background-repeat: no-repeat; /* Evita el efecto mosaico */
+  background-size: cover; /* Adapta la imagen a cualquier tamaño de pantalla */
+  background-attachment: fixed; /* Mantiene el fondo estatico */
 }
-.title_xp_font {
-    font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
-    font-size: 100px;
-    text-anchor: 10px;
-    width: 450px;
-    margin: 20px;
-    color: whitesmoke;
-    border-color:10px solid ;
-    box-shadow: inset;
-    text-shadow: -5px 5px 1px black ;
-    margin-top: 2%;
-    margin-left: 5%;
-}
-.xp_bar {
-    text-align: center;
-    text-shadow: 10px;
-    height: 50px;
-    width: 90%;
-    align-self: center;
-    border-top-left-radius: 20px;
-    border-top-right-radius:20px;
-    background: linear-gradient(to bottom, #0058e6 0%, #247fe1 12%, #0054e3 100%);
-    font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
-    color: aliceblue;
-    box-shadow: inset 0px -1px 2px rgba(0,0,0,0.5);
-}
-.xp-button {
-    background-color:#ece9d8;
-    border: 1px solid #7f9db9;
-    padding: 6px 15px;
-    font-family: Tahoma, 'Segoe UI', sans-serif;
-    font-size: 15px;
-    color: #000;
-    text-decoration: none; 
-    display: inline-block; 
-    cursor: pointer;
-    margin: 10px;
-    box-shadow: inset -1px -1px 2px rgba(0,0,0,0.2), inset 1px 1px 2px rgba(255,255,255,0.8);
 
+/* --- Escritura y titulo --- */
+.title_xp_font {
+  font-family: Tahoma, "Segoe UI", Geneva, Verdana, sans-serif;
+  font-size: 100px;
+  width: 450px;
+  margin: 20px;
+  color: whitesmoke;
+  text-shadow: -5px 5px 1px black;
+  margin-top: 2%;
+  margin-left: 5%;
 }
-.box_1{ 
-    background-color:#0058e6;
-    height: 50px;
-    width: 100%;
-    top: 869px;
-    left: 0px;
-    position: absolute;
+
+/* --- Barra de arriba azul --- */
+.xp_bar {
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background: linear-gradient(to bottom, #0058e6 0%, #247fe1 12%, #0054e3 100%);
+  font-family: Tahoma, "Segoe UI", Geneva, Verdana, sans-serif;
+  color: aliceblue;
+  box-shadow: inset 0px -1px 2px rgba(0, 0, 0, 0.5);
 }
-.box_2{
-    height: 50px;
-    width: 50%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    text-align: center;
-    background-color: #0058e6;
+
+/* Botones de la barra */
+.xp-button {
+  background-color: #ece9d8;
+  border: 1px solid #7f9db9;
+  padding: 6px 15px;
+  font-family: Tahoma, "Segoe UI", sans-serif;
+  font-size: 15px;
+  color: #000;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  margin: 10px;
+  /* Efecto 3D botones XP */
+  box-shadow:
+    inset -1px -1px 2px rgba(0, 0, 0, 0.2),
+    inset 1px 1px 2px rgba(255, 255, 255, 0.8);
 }
-.box_3{
-    background-color: #0058e6;
-    height: 50px;
-    width: 50px;
+
+/* --- La ventana XP --- */
+.xp_window {
+  background-color: #ece9d8;
+  border: 3px solid #0054e3;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Cabecera azul de la ventana (donde va el titulo) */
+.xp_window_header {
+  background: linear-gradient(to bottom, #0058e6 0%, #247fe1 12%, #0054e3 100%);
+  color: white;
+  font-weight: bold;
+  padding: 3px 8px;
+  font-family: Tahoma, sans-serif;
+  display: flex;
+  justify-content: space-between; /* Separa el titulo de los botones de control */
+  align-items: center;
+}
+
+/* --- Botones tipico del xp --- */
+.xp_controls button {
+  width: 22px;
+  height: 22px;
+  margin-left: 2px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  border: 1px solid white;
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow:
+    inset -1px -1px 2px rgba(0, 0, 0, 0.3),
+    inset 1px 1px 3px rgba(255, 255, 255, 0.7);
+}
+
+/* Color azul para minimizar y maximizar */
+.xp_btn {
+  background: linear-gradient(to bottom, #3b7ced 0%, #265fcc 100%);
+}
+
+/* Color rojo para el botón de cerrar */
+.xp_close {
+  background: linear-gradient(to bottom, #e5796a 0%, #d44937 100%);
+}
+
+/* --- Barra de tareas --- */
+.xp_taskbar {
+  position: fixed; /* La mantiene siempre pegada abajo */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(
+    to bottom,
+    #245edb 0%,
+    #3f8cf3 9%,
+    #245edb 18%,
+    #245edb 92%,
+    #1941a5 100%
+  );
+  border-top: 1px solid #0f2d72;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  z-index: 1000; /* Asegura que no sea tapada por otras cosas */
+}
+
+/* El boton verde de abajo xp */
+.xp_start_btn {
+  background: linear-gradient(to bottom, #429d38 0%, #3ca032 50%, #318228 100%);
+  color: white;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  font-style: italic;
+  border: 1px solid #23651b;
+  border-radius: 0 10px 10px 0;
+  padding: 2px 15px;
+  margin-right: 15px;
+  box-shadow:
+    2px 2px 5px rgba(0, 0, 0, 0.3),
+    inset 1px 1px 2px rgba(255, 255, 255, 0.5);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+/* Botones de los programas abiertos en la barra de tareas */
+.xp_taskbar_item {
+  background: linear-gradient(to bottom, #3a7eed 0%, #265fcc 100%);
+  color: white;
+  border: 1px solid #1c4b9e;
+  border-radius: 3px;
+  padding: 4px 10px;
+  margin-right: 5px;
+  font-family: Tahoma, sans-serif;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.4);
+  white-space: nowrap; /* Evita que el texto salte a otra línea */
+  flex-shrink: 0; /* Evita que los botones se aplasten si hay muchos */
+}
+
+/* Ajuste del tamaño de los iconos en la barra */
+.xp_taskbar_item img {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
 }

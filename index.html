@@ -1,25 +1,177 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Bootstrap: Trae las reglas de diseño para hacer la web adaptable a celulares -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Soporte para caracteres especiales como los acentos y ñ -->
+    <meta charset="UTF-8" />
+
+    <!-- Etiqueta Viewport: Evita que los celulares muestren la pagina en version miniatura :O -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Win Xp</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    
-    <h1 class ="title_xp_font">Win Xp</h1>
-    
-    <div class="box_1"></div>
-    <div class="box_2">
-        <a href="pages/profile1.html" class="xp-button" >PERFIL A</a>
-        <a href="pages/profile1.html" class="xp-button" >PERFIL B</a>
-        <a href="pages/profile1.html" class="xp-button" >PERFIL C</a>
-        <a href="pages/profile1.html" class="xp-button" >PERFIL D</a>
-        <a href="pages/profile1.html" class="xp-button" >PERFIL E</a>
-    </div>
-    <div class="box_3"></div>
-    
-    
-</body>
+
+    <!-- Lee hacia arriba a abajo -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- navbar-expand-lg: Mantiene el menu en horizontal en pantallas grandes, pero lo oculta en un boton en celulares -->
+      <nav class="navbar navbar-expand-lg xp_bar">
+        <div class="container-fluid">
+          <!-- Boton Hamburguesa: Solo aparece en celulares (data-bs-toggle activa el despliegue del menu) -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuPrincipal"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Contenedor de enlaces: "justify-content-center" empuja todos los botones al medio de la pantalla -->
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="menuPrincipal"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link xp-button" href="index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link xp-button" href="integrantes.html">EQUIPO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link xp-button" href="contenidos.html"
+                  >INVESTIGACIONES</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link xp-button" href="reflexion.html"
+                  >REFLEXIÓN</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="title_xp_font">Win Xp</h1>
+
+      <!-- Para que no se desordene en celulares -->
+      <div class="row justify-content-center mb-4">
+        <!-- col-md-8: Le dice a la caja que ocupe 8 de las 12 columnas disponibles en la pantalla -->
+        <div class="col-md-8 xp_window">
+          <!-- Barra azul superior de la ventana (Controles de XP) -->
+          <div class="xp_window_header">
+            <span>Bienvenidos</span>
+            <div class="xp_controls">
+              <button class="xp_btn">_</button>
+              <button class="xp_btn">□</button>
+              <button class="xp_btn xp_close">X</button>
+            </div>
+          </div>
+
+          <!-- Contenido interno de la ventana -->
+          <!-- p-4: Aplica "padding" para que el texto no toque el borde azul -->
+          <div class="p-4 text-dark">
+            <!-- align-items-center: Centra el texto y la foto verticalmente para que queden parejos -->
+            <div class="row align-items-center">
+              <!-- Columna Izquierda (Texto) -->
+              <div class="col-md-6">
+                <!-- mt-2, mt-3, mt-4: Añaden margen superior (margin-top) para separar los parrafos -->
+                <h5 class="mt-2">Descripción</h5>
+                <p>Hola computines</p>
+
+                <h5 class="mt-3">Proposito</h5>
+                <p>Terminar la carrera</p>
+
+                <h5 class="mt-4">Nuestras Fortalezas</h5>
+                <ul>
+                  <li>Comer.</li>
+                  <li>Dormir.</li>
+                  <li>y .....Dormir.</li>
+                </ul>
+              </div>
+
+              <!-- Columna Derecha (Foto) -->
+              <div class="col-md-6 text-center">
+                <!-- img-fluid: Evita que la foto sea mas grande que su contenedor -->
+                <!-- border, rounded, shadow-sm: Clases de Bootstrap que le dan un marco y sombra a la foto -->
+                <img
+                  src="img/resorces/equipo.jpg"
+                  alt="Foto oficial del equipo"
+                  class="img-fluid border border-dark rounded shadow-sm"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="xp_taskbar">
+      <!-- Botón verde de Inicio -->
+      <div class="xp_start_btn">inicio</div>
+
+      <!-- Enlaces a las investigaciones -->
+      <!-- text-decoration-none: Elimina la linea azul de subrayado que tienen los enlaces por defecto -->
+      <a href="contenidos.html" class="xp_taskbar_item text-decoration-none">
+        <img
+          src="img/resorces/Icons/Internet Properties.ico"
+          alt="HTML"
+          width="18"
+          height="18"
+        />
+        HTML
+      </a>
+
+      <a href="contenidos.html" class="xp_taskbar_item text-decoration-none">
+        <img
+          src="img/resorces/Icons/Display.ico"
+          alt="CSS"
+          width="18"
+          height="18"
+        />
+        CSS
+      </a>
+
+      <a href="contenidos.html" class="xp_taskbar_item text-decoration-none">
+        <img
+          src="img/resorces/Icons/Folder Open.ico"
+          alt="Bootstrap"
+          width="18"
+          height="18"
+        />
+        Bootstrap
+      </a>
+
+      <a href="contenidos.html" class="xp_taskbar_item text-decoration-none">
+        <img
+          src="img/resorces/Icons/Manage your Server.ico"
+          alt="Docker"
+          width="18"
+          height="18"
+        />
+        Docker
+      </a>
+
+      <a href="contenidos.html" class="xp_taskbar_item text-decoration-none">
+        <img
+          src="img/resorces/Icons/Earth (fixed).ico"
+          alt="Nginx"
+          width="18"
+          height="18"
+        />
+        Nginx
+      </a>
+    </footer>
+  </body>
 </html>
