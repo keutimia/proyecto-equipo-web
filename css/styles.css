@@ -169,3 +169,250 @@ body {
   margin-right: 8px;
 }
 
+body {
+  background-image: url(../img/resorces/fondo.jpeg);
+  background-position: center;
+  background-repeat: no-repeat; /* Evita el efecto mosaico */
+  background-size: cover; /* Adapta la imagen a cualquier tamaño de pantalla */
+  background-attachment: fixed; /* Mantiene el fondo estático */
+}
+
+/* Variante azul para páginas específicas */
+body.xp_blue_desktop {
+  background: linear-gradient(to top, #0058e6 0%, #3a93ff 100%);
+  padding-bottom: 120px !important;
+  margin: 0 !important;
+}
+
+.xp_main_content {
+  margin-top: 90px !important;
+}
+
+.title_xp_font {
+  font-family: Tahoma, "Segoe UI", Geneva, Verdana, sans-serif;
+  font-size: 80px;
+  width: 450px;
+  position: absolute;
+  left: 10px;
+  color: whitesmoke;
+  text-shadow: -5px 5px 10px black;
+}
+
+.xp_page_title {
+  text-shadow: 1px 1px 2px black;
+}
+
+.xp_header_nav {
+  z-index: 1050;
+}
+
+.xp_bar {
+  position: fixed;
+  z-index: 9999;
+  text-align: center;
+  height: 90px;
+  width: 100%;
+  margin-bottom: 25px;
+  background: linear-gradient(to bottom, #0058e6 0%, #247fe1 12%, #0054e3 100%);
+  font-family: Tahoma, "Segoe UI", Geneva, Verdana, sans-serif;
+  color: aliceblue;
+  box-shadow: inset 0px -1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.xp_taskbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(
+    to bottom,
+    #245edb 0%,
+    #3f8cf3 9%,
+    #245edb 18%,
+    #245edb 92%,
+    #1941a5 100%
+  );
+  border-top: 1px solid #0f2d72;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  z-index: 1000;
+}
+
+.xp_taskbar_item {
+  background: linear-gradient(to bottom, #3a7eed 0%, #265fcc 100%);
+  color: white;
+  border: 1px solid #1c4b9e;
+  border-radius: 3px;
+  padding: 4px 10px;
+  margin-right: 5px;
+  font-family: Tahoma, sans-serif;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.4);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.xp_taskbar_item img {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.xp_window {
+  position: relative;
+  margin-top: 120px;
+  background-color: #ece9d8;
+  border: 3px solid #0054e3;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  padding: 0;
+  overflow: hidden;
+}
+
+.xp_window_header {
+  background: linear-gradient(to bottom, #0058e6 0%, #247fe1 12%, #0054e3 100%);
+  color: white;
+  font-weight: bold;
+  padding: 3px 8px;
+  font-family: Tahoma, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Tarjetas individuales de los integrantes */
+.xp_card_window {
+  background-color: #ece9d8;
+  border: 1px solid #0055ea;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+}
+
+.xp_card_header {
+  background: linear-gradient(to right, #0058e6 0%, #3a93ff 100%);
+  color: white;
+  padding: 4px 8px;
+  font-weight: bold;
+  font-size: 13px;
+  border-radius: 3px 3px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.xp-button {
+  background-color: #ece9d8;
+  border: 1px solid #7f9db9;
+  padding: 6px 15px;
+  font-family: Tahoma, "Segoe UI", sans-serif;
+  font-size: 15px;
+  color: #000;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  margin: 10px;
+  box-shadow:
+    inset -1px -1px 2px rgba(0, 0, 0, 0.2),
+    inset 1px 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.xp_button {
+  background-color: #f3f3f3;
+  border: 1px solid #003399;
+  border-radius: 3px;
+  padding: 4px 15px;
+  color: black;
+  text-decoration: none;
+  font-size: 13px;
+  box-shadow: inset -1px -1px 2px rgba(0,0,0,0.2), inset 1px 1px 2px rgba(255,255,255,0.8);
+}
+
+.xp_button:hover {
+  background-color: #e0e0e0;
+  color: black;
+}
+
+.xp_start_btn {
+  background: linear-gradient(to bottom, #429d38 0%, #3ca032 50%, #318228 100%);
+  color: white;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  font-style: italic;
+  border: 1px solid #23651b;
+  border-radius: 0 10px 10px 0;
+  padding: 2px 15px;
+  margin-right: 15px;
+  box-shadow:
+    2px 2px 5px rgba(0, 0, 0, 0.3),
+    inset 1px 1px 2px rgba(255, 255, 255, 0.5);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+/* Botones de control de ventana (X, Min, Max) */
+.xp_controls button {
+  width: 22px;
+  height: 22px;
+  margin-left: 2px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  border: 1px solid white;
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow:
+    inset -1px -1px 2px rgba(0, 0, 0, 0.3),
+    inset 1px 1px 3px rgba(255, 255, 255, 0.7);
+}
+
+.xp_btn {
+  background: linear-gradient(to bottom, #3b7ced 0%, #265fcc 100%);
+}
+
+.xp_close {
+  background: linear-gradient(to bottom, #e5796a 0%, #d44937 100%);
+}
+
+.xp_close_btn {
+  background-color: #e81123;
+  color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-size: 10px;
+  padding: 0 4px;
+  line-height: 1.2;
+  cursor: default;
+  display: inline-block;
+}
+
+.xp_profile_img {
+  max-height: 120px;
+  width: auto;
+  object-fit: cover;
+  border: 1px solid #7f9db9;
+  margin: 0 auto 10px auto;
+  display: block;
+}
+
+.xp_empty_photo {
+  width: 120px;
+  height: 120px;
+  background-color: #ffffff;
+  border: 2px inset #999999;
+  margin: 0 auto 15px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-size: 12px;
+  font-weight: bold;
+}
