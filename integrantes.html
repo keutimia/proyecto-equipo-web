@@ -11,6 +11,7 @@
       body.xp_blue_desktop {
         background: linear-gradient(to top, #0058e6 0%, #3a93ff 100%);
         padding-bottom: 100px;
+        margin: 0;
       }
 
       .xp_card_window {
@@ -42,7 +43,7 @@
         line-height: 1.2;
         cursor: default; 
         display: inline-block;
-    }
+      }
 
       /* donde irán las fotos después */
       .xp_empty_photo {
@@ -76,10 +77,47 @@
     </style>
   </head>
 
-  <body class="xp_blue_desktop">
-    <main class="container mt-5">
-      <h2 class="text-white mb-4 text-center fw-bold" style="text-shadow: 1px 1px 2px black;">Integrantes del Equipo</h2>
+  <body class="xp_blue_desktop" style="margin: 0 !important; padding: 0 !important; padding-bottom: 120px !important;">
+    <!-- Barra superior fija al borde superior -->
+    <header class="fixed-top m-0 p-0" style="z-index: 1050;">
+      <nav class="navbar navbar-expand-lg xp_bar m-0 p-0">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuPrincipal"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="menuPrincipal"
+          >
+            <h1 class="title_xp_font m-0 my-auto">Windows XP</h1>
+            <ul class="navbar-nav ms-3">
+              <li class="nav-item">
+                <a class="xp_taskbar_item text-decoration-none" href="index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="xp_taskbar_item text-decoration-none active fw-bold" href="integrantes.html">EQUIPO</a>
+              </li>
+              <li class="nav-item">
+                <a class="xp_taskbar_item text-decoration-none" href="contenidos.html">INVESTIGACIONES</a>
+              </li>
+              <li class="nav-item">
+                <a class="xp_taskbar_item text-decoration-none" href="reflexion.html">REFLEXIÓN</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Espaciado superior para que el menú no tape el título ni las tarjetas -->
+    <main class="container mb-4" style="margin-top: 90px !important;">
+      <h2 class="text-white mb-4 text-center fw-bold" style="text-shadow: 1px 1px 2px black;">Integrantes del Equipo</h2>
 
       <div class="row justify-content-center g-4">
         
@@ -91,7 +129,6 @@
               <span class="xp_close_btn">X</span>
             </div>
             <div class="p-3 text-center d-flex flex-column flex-grow-1">
-
               <div><img src="img/resorces/VV.jpg" alt="Foto" class="img-fluid" style="max-height: 120px; object-fit: cover;"></div>
               
               <h5 class="fw-bold mb-1">Vianca Viveros</h5>
@@ -184,9 +221,8 @@
       </div>
     </main>
 
-      <!-- Barra de tareas estilo xp -->
+    <!-- Barra de tareas estilo xp -->
     <footer class="xp_taskbar fixed-bottom d-flex align-items-center">
-      
       <!-- Botón verde de inicio -->
       <a href="index.html" class="text-decoration-none">
         <div class="xp_start_btn">Inicio</div>
@@ -203,7 +239,6 @@
       <a href="reflexion.html" class="xp_taskbar_item text-decoration-none mx-1">
         Reflexión
       </a>
-      
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
