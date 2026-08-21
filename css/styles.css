@@ -21,6 +21,7 @@ body {
 /* --- Barra de arriba azul --- */
 .xp_bar {
   position: fixed;
+  z-index: 9999; /* <- Agrega esta línea para que no se deje tapar */
   text-align: center;
   height: 90px;
   width: 100%;
@@ -167,3 +168,4 @@ body {
   height: 16px;
   margin-right: 8px;
 }
+
