@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Investigación: Docker - XP App</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body style="margin: 0 !important; padding: 0 !important; padding-bottom: 120px !important;">
+    <!-- Barra superior fija al borde -->
+    <header class="fixed-top m-0 p-0" style="z-index: 1050;">
+      <nav class="navbar navbar-expand-lg xp_bar m-0 p-0">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuPrincipal"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="menuPrincipal"
+          >
+            <h1 class="title_xp_font m-0 my-auto">Windows XP</h1>
+            <ul class="navbar-nav ms-3">
+              <li class="nav-item">
+                <a class="xp_taskbar_item text-decoration-none" href="index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="xp_taskbar_item text-decoration-none" href="integrantes.html">EQUIPO</a>
+              </li>
+              <li class="nav-item">
+                <a class="xp_taskbar_item text-decoration-none" href="contenidos.html">INVESTIGACIONES</a>
+              </li>
+              <li class="nav-item">
+                <a class="xp_taskbar_item text-decoration-none" href="reflexion.html">REFLEXIÓN</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Se añade pt-5 para compensar la barra superior fija -->
+    <main class="container my-4 pt-5">
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-10 xp_window">
+          <!-- Barra superior de la ventana estilo XP -->
+          <div class="xp_window_header">
+            <span>Investigación y Guía: Docker Desktop & Comandos</span>
+            <div class="xp_controls">
+              <button class="xp_btn">_</button>
+              <button class="xp_btn">□</button>
+              <button class="xp_btn xp_close">X</button>
+            </div>
+          </div>
+
+          <!-- Contenido interno de la ventana -->
+          <div class="p-4 text-dark">
+            <h4 class="mb-2 fw-bold text-primary">¿Qué es Docker Desktop?</h4>
+            <p>
+              <strong>Docker</strong> es una plataforma abierta que permite empaquetar, desplegar y ejecutar aplicaciones dentro de entornos ligeros y aislados llamados <em>contenedores</em>. <strong>Docker Desktop</strong> es la aplicación para entornos Windows/macOS que proporciona el motor de Docker (Docker Engine), una interfaz gráfica de gestión y la integración nativa con WSL 2 (Windows Subsystem for Linux).
+            </p>
+
+            <hr />
+
+            <h5 class="mt-3 fw-bold">1. Proceso de Instalación en Windows</h5>
+            <ul>
+              <li><strong>Requisitos:</strong> Windows 10/11 de 64 bits con soporte de virtualización habilitado en BIOS y backend WSL 2 activado.</li>
+              <li><strong>Descarga:</strong> Obtener el instalador oficial desde el sitio oficial de Docker (<code>docker.com/get-started</code>).</li>
+              <li><strong>Instalación:</strong> Ejecutar <code>Docker Desktop Installer.exe</code> asegurando marcar la casilla de WSL 2 y reiniciar el equipo al finalizar.</li>
+            </ul>
+
+            <!-- Sección de Evidencias / Capturas del Lab -->
+            <div class="row text-center mt-3 mb-4">
+              <div class="col-md-6 mb-3">
+                <div class="p-2 border border-secondary bg-light h-100">
+                  <h6 class="fw-bold text-dark">Evidencia 1: Docker Desktop Funcionando</h6>
+                  <p class="small text-muted mb-2">Estado 'Engine running' en la aplicación gráfica.</p>
+                  <div class="border bg-white p-2 d-flex align-items-center justify-content-center" style="min-height: 140px;">
+                    <img 
+                      src="img/resorces/Evidencia1-Docker-Running.png" 
+                      alt="Captura Docker Desktop Funcionando" 
+                      class="img-fluid border shadow-sm" 
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="p-2 border border-secondary bg-light h-100">
+                  <h6 class="fw-bold text-dark">Evidencia 2: Terminal 'hello-world'</h6>
+                  <p class="small text-muted mb-2">Ejecución del contenedor de prueba exitosa.</p>
+                  <div class="border bg-white p-2 d-flex align-items-center justify-content-center" style="min-height: 140px;">
+                    <img 
+                      src="img/resorces/Evidencia2-Hello-World-Docker.png" 
+                      alt="Captura Terminal hello-world" 
+                      class="img-fluid border shadow-sm" 
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <hr />
+
+            <h5 class="mt-4 fw-bold">2. Comandos Principales de Docker (Requeridos por la Pauta)</h5>
+            <p class="small text-muted">A continuación se detallan los 13 comandos obligatorios del laboratorio con su sintaxis, descripción y resultado esperado:</p>
+
+            <div class="table-responsive">
+              <table class="table table-bordered table-sm align-middle bg-white" style="font-size: 0.9rem;">
+                <thead class="table-primary">
+                  <tr>
+                    <th>Comando</th>
+                    <th>Sintaxis General</th>
+                    <th>Descripción</th>
+                    <th>Ejemplo de Uso</th>
+                    <th>Resultado Esperado</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>docker --version</code></td>
+                    <td><code>docker --version</code></td>
+                    <td>Consulta la versión instalada del cliente de Docker.</td>
+                    <td><code>docker --version</code></td>
+                    <td>Imprime la versión y compilación de Docker en la terminal.</td>
+                  </tr>
+                  <tr>
+                    <td><code>docker run hello-world</code></td>
+                    <td><code>docker run [imagen]</code></td>
+                    <td>Descarga y ejecuta la imagen oficial de prueba.</td>
+                    <td><code>docker run hello-world</code></td>
+                    <td>Descarga la imagen y muestra el mensaje explicativo de éxito.</td>
+                  </tr>
+                  <tr>
+                    <td><code>docker images</code></td>
+                    <td><code>docker images [opciones]</code></td>
+                    <td>Lista todas las imágenes descargadas o construidas localmente.</td>
+                    <td><code>docker images</code></td>
+                    <td>Tabla con REPOSITORY, TAG, IMAGE ID, CREATED y SIZE.</td>
+                  </tr>
+                  <tr>
+                    <td><code>docker ps</code></td>
+                    <td><code>docker ps</code></td>
+                    <td>Muestra exclusivamente los contenedores que están en ejecución.</td>
+                    <td><code>docker ps</code></td>
+                    <td>Lista de contenedores activos con sus puertos e IDs.</td>
+                  </tr>
+                  <tr>
+                    <td><code>docker ps -a</code></td>
+                    <td><code>docker ps -a</code></td>
+                    <td>Muestra todos los contenedores (activos y detenidos).</td>
+                    <td><code>docker ps -a</code></td>
+                    <td>Historial completo de contenedores creados en el host.</td>
+                  </tr>
+                  <tr>
+                    <td><code>docker build</code></td>
+                    <td><code>docker build -t [nombre:tag] [contexto]</code></td>
+                    <td>Construye una imagen personalizada a partir de un Dockerfile.</td>
+                    <td><code>docker build -t mi-web-html .</code></td>
+                    <td>Genera una nueva imagen lista para ser ejecutada.</td>
+                  </tr>
+                  <tr>
+                    <td><code>docker run</code></td>
+                    <td><code>docker run [opciones] [imagen]</code></td>
+                    <td>Crea y arranca un contenedor nuevo basado en una imagen.</td>
+                    <td><code>docker run -d -p 8080:80 --name web mi-web-html</code></td>
+                    <td>Inicia el contenedor en segundo plano mapeando el puerto 8080.</td>
+                  </tr>
+                  <tr>
+                    <td><code>docker stop</code></td>
+                    <td><code>docker stop [ID/nombre]</code></td>
+                    <td>Detiene de forma segura uno o varios contenedores en ejecución.</td>
+                    <td><code>docker stop mi-web-container</code></td>
+                    <td>Finaliza los procesos del contenedor sin borrar sus datos.</td>
+                  </tr>
+                  <tr>
+                    <td><code>docker start</code></td>
+                    <td><code>docker start [ID/nombre]</code></td>
+                    <td>Inicia un contenedor previamente detenido.</td>
+                    <td><code>docker start mi-web-container</code></td>
+                    <td>Vuelve a levantar el contenedor conservando su configuración.</td>
+                  </tr>
+                  <tr>
+                    <td><code>docker rm</code></td>
+                    <td><code>docker rm [ID/nombre]</code></td>
+                    <td>Elimina uno o más contenedores detenidos del sistema.</td>
+                    <td><code>docker rm mi-web-container</code></td>
+                    <td>Libera el nombre y espacio del contenedor en el host.</td>
+                  </tr>
+                  <tr>
+                    <td><code>docker rmi</code></td>
+                    <td><code>docker rmi [ID/nombre-imagen]</code></td>
+                    <td>Elimina una o más imágenes almacenadas localmente.</td>
+                    <td><code>docker rmi hello-world</code></td>
+                    <td>Borra los layers de la imagen liberando espacio en disco.</td>
+                  </tr>
+                  <tr>
+                    <td><code>docker logs</code></td>
+                    <td><code>docker logs [ID/nombre]</code></td>
+                    <td>Muestra los registros (logs) de salida generados por un contenedor.</td>
+                    <td><code>docker logs mi-web-container</code></td>
+                    <td>Imprime las peticiones HTTP y eventos del servidor.</td>
+                  </tr>
+                  <tr>
+                    <td><code>docker exec</code></td>
+                    <td><code>docker exec [opciones] [ID/nombre] [comando]</code></td>
+                    <td>Ejecuta un comando dentro de un contenedor en ejecución.</td>
+                    <td><code>docker exec -it mi-web-container sh</code></td>
+                    <td>Abre una terminal interactiva dentro del contenedor activo.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="xp_taskbar">
+      <div class="xp_start_btn">Inicio</div>
+
+      <a href="html-semantico.html" class="xp_taskbar_item text-decoration-none">
+        <img
+          src="img/resorces/Icons/Internet Properties.ico"
+          alt="HTML"
+          width="18"
+          height="18"
+        />
+        HTML
+      </a>
+
+      <a href="css.html" class="xp_taskbar_item text-decoration-none">
+        <img
+          src="img/resorces/Icons/Display.ico"
+          alt="CSS"
+          width="18"
+          height="18"
+        />
+        CSS
+      </a>
+
+      <a href="bootstrap.html" class="xp_taskbar_item text-decoration-none">
+        <img
+          src="img/resorces/Icons/Folder Open.ico"
+          alt="Bootstrap"
+          width="18"
+          height="18"
+        />
+        Bootstrap
+      </a>
+
+      <a href="docker.html" class="xp_taskbar_item text-decoration-none">
+        <img
+          src="img/resorces/Icons/Manage your Server.ico"
+          alt="Docker"
+          width="18"
+          height="18"
+        />
+        Docker
+      </a>
+
+      <a href="nginx.html" class="xp_taskbar_item text-decoration-none">
+        <img
+          src="img/resorces/Icons/Earth (fixed).ico"
+          alt="Nginx"
+          width="18"
+          height="18"
+        />
+        Nginx
+      </a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

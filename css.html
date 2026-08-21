@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Investigación: CSS - XP App</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body style="margin: 0 !important; padding: 0 !important; padding-bottom: 120px !important;">
+    <!-- Header pegado al borde superior con fixed-top -->
+    <header class="fixed-top m-0 p-0" style="z-index: 1050;">
+      <nav class="navbar navbar-expand-lg xp_bar m-0 p-0">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuPrincipal"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="menuPrincipal"
+          >
+            <h1 class="title_xp_font m-0 my-auto">Windows XP</h1>
+            <ul class="navbar-nav ms-3">
+              <li class="nav-item">
+                <a class="xp_taskbar_item text-decoration-none" href="index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="xp_taskbar_item text-decoration-none" href="integrantes.html">EQUIPO</a>
+              </li>
+              <li class="nav-item">
+                <a class="xp_taskbar_item text-decoration-none" href="contenidos.html">INVESTIGACIONES</a>
+              </li>
+              <li class="nav-item">
+                <a class="xp_taskbar_item text-decoration-none" href="reflexion.html">REFLEXIÓN</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Se añade pt-5 para compensar la barra superior fija -->
+    <main class="container my-4 pt-5">
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-10 xp_window">
+          <!-- Barra superior de la ventana estilo XP -->
+          <div class="xp_window_header">
+            <span>Investigación: CSS (Cascading Style Sheets)</span>
+            <div class="xp_controls">
+              <button class="xp_btn">_</button>
+              <button class="xp_btn">□</button>
+              <button class="xp_btn xp_close">X</button>
+            </div>
+          </div>
+
+          <!-- Contenido interno de la ventana -->
+          <div class="p-4 text-dark">
+            <h4 class="mb-2 fw-bold text-primary">¿Qué es CSS y cuál es su importancia?</h4>
+            <p>
+              <strong>CSS (Cascading Style Sheets)</strong> es el lenguaje utilizado para describir la presentación, el formato visual y el diseño de documentos estructurados en HTML. Su importancia radica en separar claramente la estructura del contenido de su capa visual, permitiendo mantener una identidad gráfica consistente y adaptable a múltiples dispositivos.
+            </p>
+
+            <div class="alert alert-info py-2 px-3 border border-primary">
+              <strong>Estructura vs. Presentación:</strong> Mientras que HTML organiza el contenido y define la jerarquía lógica (títulos, párrafos, tablas), CSS determina cómo se visualiza dicho contenido (colores, fuentes, márgenes, bordes y alineaciones).
+            </div>
+
+            <hr />
+
+            <h5 class="mt-3 fw-bold">1. Formas de Aplicar CSS</h5>
+            <div class="table-responsive">
+              <table class="table table-bordered table-sm align-middle bg-white">
+                <thead class="table-primary">
+                  <tr>
+                    <th>Método</th>
+                    <th>Descripción</th>
+                    <th>Ejemplo de Código</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>En línea (Inline)</strong></td>
+                    <td>Se aplica directamente en la etiqueta mediante el atributo <code>style</code>.</td>
+                    <td><code>&lt;p style="color: blue;"&gt;Texto&lt;/p&gt;</code></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Interno (Internal)</strong></td>
+                    <td>Se define dentro de la etiqueta <code>&lt;style&gt;</code> en el encabezado <code>&lt;head&gt;</code>.</td>
+                    <td><code>&lt;style&gt; p { color: blue; } &lt;/style&gt;</code></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Externo (External)</strong></td>
+                    <td>Se enlaza un archivo <code>.css</code> independiente mediante la etiqueta <code>&lt;link&gt;</code>. Es el método más recomendado.</td>
+                    <td><code>&lt;link rel="stylesheet" href="css/styles.css"&gt;</code></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <hr />
+
+            <h5 class="mt-4 fw-bold">2. Selectores, Clases e Identificadores</h5>
+            <ul>
+              <li><strong>Selector de tipo / etiqueta:</strong> Aplica estilos a todos los elementos del mismo tipo (ej. <code>p { ... }</code>, <code>h1 { ... }</code>).</li>
+              <li><strong>Clases (<code>.nombre-clase</code>):</strong> Se pueden reutilizar en múltiples elementos para darles el mismo formato (ej. <code>.xp_window</code>, <code>.xp_btn</code>).</li>
+              <li><strong>Identificadores (<code>#nombre-id</code>):</strong> Son únicos por página y se usan para elementos específicos (ej. <code>#menuPrincipal</code>).</li>
+            </ul>
+
+            <hr />
+
+            <h5 class="mt-4 fw-bold">3. El Modelo de Caja (Box Model)</h5>
+            <p>Todo elemento en CSS es considerado una caja rectangular compuesta por cuatro capas:</p>
+            <div class="row text-center mb-3">
+              <div class="col-md-3 mb-2">
+                <div class="p-2 border border-secondary bg-light"><strong>Contenido (Content):</strong> El texto, imagen o elemento interno.</div>
+              </div>
+              <div class="col-md-3 mb-2">
+                <div class="p-2 border border-secondary bg-light"><strong>Relleno (Padding):</strong> Espacio interno entre el contenido y el borde.</div>
+              </div>
+              <div class="col-md-3 mb-2">
+                <div class="p-2 border border-secondary bg-light"><strong>Borde (Border):</strong> Línea que delimita el padding del margen.</div>
+              </div>
+              <div class="col-md-3 mb-2">
+                <div class="p-2 border border-secondary bg-light"><strong>Margen (Margin):</strong> Espacio exterior que separa la caja de otros elementos.</div>
+              </div>
+            </div>
+
+            <hr />
+
+            <h5 class="mt-4 fw-bold">4. Estilos Personalizados Aplicados en Nuestro Sitio</h5>
+            <p>En nuestro archivo central <code>css/styles.css</code> implementamos reglas para lograr la estética retro de Windows XP:</p>
+            <ul class="mb-0">
+              <li><code>.xp_bar</code> y <code>.xp_taskbar</code>: Degradados azules y posicionamiento fijo para la barra superior e inferior de tareas.</li>
+              <li><code>.xp_window</code>: Bordes biselados, sombras suaves y fondos personalizados para emular ventanas del sistema operativo.</li>
+              <li><code>.xp_btn</code>: Estilos de botones tridimensionales con efectos visuales para las acciones de minimizar, maximizar y cerrar.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="xp_taskbar">
+      <div class="xp_start_btn">Inicio</div>
+
+      <a href="html-semantico.html" class="xp_taskbar_item text-decoration-none">
+        <img
+          src="img/resorces/Icons/Internet Properties.ico"
+          alt="HTML"
+          width="18"
+          height="18"
+        />
+        HTML
+      </a>
+
+      <a href="css.html" class="xp_taskbar_item text-decoration-none">
+        <img
+          src="img/resorces/Icons/Display.ico"
+          alt="CSS"
+          width="18"
+          height="18"
+        />
+        CSS
+      </a>
+
+      <a href="bootstrap.html" class="xp_taskbar_item text-decoration-none">
+        <img
+          src="img/resorces/Icons/Folder Open.ico"
+          alt="Bootstrap"
+          width="18"
+          height="18"
+        />
+        Bootstrap
+      </a>
+
+      <a href="docker.html" class="xp_taskbar_item text-decoration-none">
+        <img
+          src="img/resorces/Icons/Manage your Server.ico"
+          alt="Docker"
+          width="18"
+          height="18"
+        />
+        Docker
+      </a>
+
+      <a href="nginx.html" class="xp_taskbar_item text-decoration-none">
+        <img
+          src="img/resorces/Icons/Earth (fixed).ico"
+          alt="Nginx"
+          width="18"
+          height="18"
+        />
+        Nginx
+      </a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

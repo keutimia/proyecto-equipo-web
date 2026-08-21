@@ -8,10 +8,47 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   
- 
-  <body class="xp_blue_desktop" style="background-color: #3A6EA5; min-height: 100vh; display: flex; flex-direction: column;">
+  <body class="xp_blue_desktop" style="margin: 0 !important; padding: 0 !important; background-color: #3A6EA5; min-height: 100vh; display: flex; flex-direction: column;">
     
-    <main class="container my-5 flex-grow-1">
+    <!-- Barra superior fija al borde -->
+    <header class="fixed-top m-0 p-0" style="z-index: 1050;">
+      <nav class="navbar navbar-expand-lg xp_bar m-0 p-0">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuPrincipal"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="menuPrincipal"
+          >
+            <h1 class="title_xp_font m-0 my-auto">Windows XP</h1>
+            <ul class="navbar-nav ms-3">
+              <li class="nav-item">
+                <a class="xp_taskbar_item text-decoration-none" href="index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="xp_taskbar_item text-decoration-none" href="integrantes.html">EQUIPO</a>
+              </li>
+              <li class="nav-item">
+                <a class="xp_taskbar_item text-decoration-none" href="contenidos.html">INVESTIGACIONES</a>
+              </li>
+              <li class="nav-item">
+                <a class="xp_taskbar_item text-decoration-none active fw-bold" href="reflexion.html">REFLEXIÓN</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Se añade margen superior para no quedar tapado por el menú -->
+    <main class="container mb-5 flex-grow-1" style="margin-top: 85px !important;">
       <div class="row justify-content-center">
         <div class="col-md-10">
           
@@ -61,13 +98,13 @@
               </div>
               <div class="mb-3">
                 <strong>Integrante 3:</strong> b
-                </div>
+              </div>
               <div class="mb-3">
                 <strong>Integrante 4:</strong> c
-                </div>
+              </div>
               <div class="mb-3">
-                <strong>Integrante 5:</strong> d
-
+                <strong>Javier Martínez:</strong> El realizar este proyecto me permitió el comprender de mejor forma el funcionamiento de la web y el desarrollo de aplicaciones web, así como también el trabajo en equipo y la colaboración entre los integrantes del grupo. Además, me permitió mejorar mis habilidades técnicas y aprender nuevas herramientas y tecnologías que serán útiles en mi futuro profesional.
+              </div>
               
             </div>
           </div>
