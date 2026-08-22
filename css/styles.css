@@ -419,3 +419,157 @@ body.xp_blue_desktop {
   font-size: 12px;
   font-weight: bold;
 }
+
+/* Botón clásico con relieve 3D estilo Windows XP */
+.xp-classic-btn {
+  display: inline-block;
+  background: linear-gradient(180deg, #ffffff 0%, #ece9d8 10%, #dcd7c4 100%);
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #706f64;
+  border-bottom: 2px solid #706f64;
+  border-radius: 3px;
+  box-shadow: inset 1px 1px 0px #f5f4eb, 1px 1px 2px rgba(0, 0, 0, 0.2);
+  color: #000000 !important;
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 14px;
+  text-decoration: none !important;
+  text-align: center;
+  cursor: pointer;
+  transition: none;
+}
+
+.xp-classic-btn:hover {
+  background: linear-gradient(180deg, #ffffff 0%, #f7f5ed 10%, #eae6d9 100%);
+  border-top-color: #316ac5;
+  border-left-color: #316ac5;
+  border-right-color: #316ac5;
+  border-bottom-color: #316ac5;
+  color: #000000;
+}
+
+.xp-classic-btn:active {
+  background: #ded9c8;
+  border-top: 2px solid #706f64;
+  border-left: 2px solid #706f64;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.3);
+  padding: 6px 13px 4px 15px; /* Efecto de hundimiento */
+}
+
+.xp_classic_start_menu {
+  display: none;
+  position: absolute;
+  bottom: 40px; 
+  left: 0;
+  width: 320px; 
+  background-color: #ffffff;
+  border: 2px solid #0046cd; 
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  overflow: hidden; 
+}
+
+/* El checkbox invisible muestra el menú */
+#toggle_start_menu:checked ~ .xp_classic_start_menu {
+  display: block;
+}
+
+/* --- CABECERA AZUL Y LÍNEA NARANJA --- */
+.xp_menu_header {
+  /* Degradado exacto del menú Luna (oscuro, brilla un poco y vuelve a oscurecer) */
+  background: linear-gradient(to bottom, #1756c6 0%, #377ee8 10%, #2063d5 50%, #0f44a3 100%);
+  padding: 10px;
+  border-bottom: 2px solid #e78200; /* La clásica línea naranja */
+}
+
+/* Estilo de la foto de perfil */
+.xp_user_pic {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #ffffff;
+  border-radius: 3px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  background-color: #ffffff; 
+  object-fit: cover;
+}
+
+/* Texto del usuario en la cabecera */
+.xp_user_name {
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* --- LISTA BLANCA DE PROGRAMAS --- */
+.xp_menu_list {
+  padding: 4px 2px;
+  background-color: #ffffff;
+  min-height: 250px;
+}
+
+.xp_menu_list a {
+  display: flex;
+  align-items: center;
+  padding: 6px 12px;
+  color: #000000;
+  text-decoration: none;
+  font-size: 12px; /* Letra pequeña típica de la época */
+}
+
+/* Al pasar el mouse por los enlaces */
+.xp_menu_list a:hover {
+  background-color: #2f71cd; /* Fondo azul brillante */
+  color: #ffffff; /* Letra blanca */
+}
+
+/* --- PIE DE PÁGINA AZUL (Donde va "Cerrar menú") --- */
+.xp_menu_footer {
+  /* Degradado azul de abajo, un poco más claro que la cabecera */
+  background: linear-gradient(to bottom, #4186f2 0%, #2a61cb 15%, #15469f 100%);
+  height: 42px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2); /* Sombrita sutil arriba */
+}
+
+/* Botón de cerrar menú */
+.xp_exit_btn {
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  font-size: 12px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  padding: 4px 8px;
+  transition: all 0.1s;
+}
+
+/* Efecto al pasar el mouse por el botón "Cerrar" */
+.xp_exit_btn:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* --- BOTÓN VERDE DE INICIO --- */
+.xp_start_btn {
+  background: radial-gradient(circle at 10% 20%, #51b848 0%, #318c24 100%);
+  color: white;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 16px;
+  border: 1px solid #1a5113; /* Borde verde oscuro */
+  border-radius: 0 10px 10px 0; /* Forma curva a la derecha */
+  padding: 0 15px;
+  margin-right: 15px;
+  box-shadow: inset 1px 1px 3px rgba(255,255,255,0.6), 2px 2px 3px rgba(0,0,0,0.3);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* Cuando haces clic en el botón verde se hunde */
+.xp_start_btn:active {
+  background: radial-gradient(circle at 10% 20%, #318c24 0%, #206815 100%);
+  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5);
+}
