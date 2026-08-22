@@ -483,10 +483,10 @@ body.xp_blue_desktop {
 
 /* --- CABECERA AZUL Y LÍNEA NARANJA --- */
 .xp_menu_header {
-  /* Degradado exacto del menú Luna (oscuro, brilla un poco y vuelve a oscurecer) */
   background: linear-gradient(to bottom, #1756c6 0%, #377ee8 10%, #2063d5 50%, #0f44a3 100%);
   padding: 10px;
-  border-bottom: 2px solid #e78200; /* La clásica línea naranja */
+  border-bottom: 2px solid #e78200;
+  box-shadow: inset 0px 2px 2px rgba(255, 255, 255, 0.5); 
 }
 
 /* Estilo de la foto de perfil */
