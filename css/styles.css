@@ -467,7 +467,7 @@ body.xp_blue_desktop {
   left: 0;
   width: 320px; 
   background-color: #ffffff;
-  border: 2px solid #0046cd; 
+  border: 2px none; 
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
@@ -485,7 +485,7 @@ body.xp_blue_desktop {
 .xp_menu_header {
   background: linear-gradient(to bottom, #1756c6 0%, #377ee8 10%, #2063d5 50%, #0f44a3 100%);
   padding: 10px;
-  border-bottom: 2px solid #e78200;
+  border-bottom: 2px solid #434242;
   box-shadow: inset 0px 2px 2px rgba(255, 255, 255, 0.5); 
 }
 
