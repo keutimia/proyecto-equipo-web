@@ -487,6 +487,11 @@ body.xp_blue_desktop {
   padding: 10px;
   border-bottom: 2px solid #434242;
   box-shadow: inset 0px 2px 2px rgba(255, 255, 255, 0.5); 
+
+  box-shadow: 
+    inset 0px 2px 2px rgba(255, 255, 255, 0.5), /* Brillo superior */
+    inset -3px 0px 4px rgba(0, 0, 0, 0.4),      /* Sombra oscura derecha */
+    inset 2px 0px 2px rgba(255, 255, 255, 0.2);  /* Reflejo sutil izquierdo */
 }
 
 /* Estilo de la foto de perfil */
@@ -511,6 +516,11 @@ body.xp_blue_desktop {
   padding: 4px 2px;
   background-color: #ffffff;
   min-height: 250px;
+
+  box-shadow: 
+    inset 0px 2px 2px rgba(255, 255, 255, 0.5), /* Brillo superior */
+    inset -3px 0px 4px rgba(0, 0, 0, 0.4),      /* Sombra oscura derecha */
+    inset 2px 0px 2px rgba(255, 255, 255, 0.2);  /* Reflejo sutil izquierdo */
 }
 
 .xp_menu_list a {
@@ -534,6 +544,11 @@ body.xp_blue_desktop {
   background: linear-gradient(to bottom, #4186f2 0%, #2a61cb 15%, #15469f 100%);
   height: 42px;
   border-top: 1px solid rgba(0, 0, 0, 0.2); /* Sombrita sutil arriba */
+
+  box-shadow: 
+    inset 0px 2px 2px rgba(255, 255, 255, 0.5), /* Brillo superior */
+    inset -3px 0px 4px rgba(0, 0, 0, 0.4),      /* Sombra oscura derecha */
+    inset 2px 0px 2px rgba(255, 255, 255, 0.2);  /* Reflejo sutil izquierdo */
 }
 
 /* Botón de cerrar menú */
