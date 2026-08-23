@@ -633,21 +633,33 @@ body.xp_blue_desktop {
   left: 0;
   top: 0;
   height: 100%;
-  background-color: rgb(4, 47, 99); 
+  
+  background-color: transparent; 
+  
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 25px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 0 15px; 
   
-  /* Aquí agregamos "5px 0px 10px rgba(0, 0, 0, 0.5)" al final para la sombra exterior */
-  box-shadow: 
-    inset 3px 3px 6px rgba(0, 0, 0, 0.6), 
-    inset -1px -1px 3px rgba(0, 0, 0, 0.3),
-    5px 0px 10px rgba(0, 0, 0, 0.5); 
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  
+  box-shadow: none; 
   z-index: 1050; 
+}
+
+/* --- Ajuste del tamaño y efecto del logo --- */
+.xp_logo_box img {
+  max-height: 70px;
+  width: auto;
+  margin-left: 10px;
+}
+
+/* --- Simplificamos el efecto del logo --- */
+.xp_logo_3d {
+  filter: 
+    drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.6));
 }
 
 /* Ajuste del tamaño del logo dentro de la caja */
