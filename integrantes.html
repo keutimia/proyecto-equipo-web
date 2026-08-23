@@ -12,7 +12,6 @@
   </head>
 
   <body class="xp_blue_desktop">
-    <!-- Barra superior fija al borde superior -->
     <header class="fixed-top m-0 p-0 xp_header_nav">
       <nav class="navbar navbar-expand-lg xp_bar m-0 p-0">
         <div class="container-fluid">
@@ -20,17 +19,23 @@
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#menuPrincipal"
+            data-bs-target=".menuPrincipal"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
 
           <div
-            class="collapse navbar-collapse justify-content-center"
-            id="menuPrincipal"
+            class="collapse navbar-collapse justify-content-center menuPrincipal"
           >
             <h1 class="title_xp_font m-0 my-auto">Windows XP</h1>
             <ul class="navbar-nav ms-3">
+              <li class="nav-item">
+                <a
+                  class="xp_taskbar_item text-decoration-none"
+                  href="index.html"
+                  >INICIO</a
+                >
+              </li>
               <li class="nav-item">
                 <a
                   class="xp_taskbar_item text-decoration-none active fw-bold"
@@ -58,7 +63,6 @@
       </nav>
     </header>
 
-    <!-- Espaciado superior para que el menú no tape el título ni las tarjetas -->
     <main class="container mb-4 xp_main_content">
       <div class="text-center mb-4 mt-2">
         <img
@@ -76,8 +80,10 @@
       <div class="row justify-content-center g-4">
         <!-- Tarjeta 1 -->
         <div class="col-12 col-md-6 col-lg-4">
-          <div class="xp_card_window h-100 d-flex flex-column">
-            <div class="xp_card_header">
+          <div class="xp_window shadow-lg p-0 m-0 h-100 d-flex flex-column">
+            <div
+              class="xp_window_header d-flex justify-content-between align-items-center px-2 py-1 border-bottom border-dark"
+            >
               <span class="d-flex align-items-center">
                 <img
                   src="img/resorces/Icons/My Profile Folder.ico"
@@ -86,11 +92,20 @@
                   height="16"
                   class="me-2"
                 />
-                Propiedades de Integrante
+                <span class="fw-bold" style="font-size: 0.9rem"
+                  >Propiedades de Integrante</span
+                >
               </span>
-              <span class="xp_close_btn">X</span>
+              <span
+                class="btn btn-danger btn-sm p-0 fw-bold border border-white d-inline-flex justify-content-center align-items-center"
+                style="width: 20px; height: 20px"
+                >X</span
+              >
             </div>
-            <div class="p-3 text-center d-flex flex-column flex-grow-1">
+            <div
+              class="p-3 text-center d-flex flex-column flex-grow-1"
+              style="background-color: rgb(234, 232, 213)"
+            >
               <div>
                 <img
                   src="img/resorces/VV.jpg"
@@ -118,8 +133,10 @@
 
         <!-- Tarjeta 2 -->
         <div class="col-12 col-md-6 col-lg-4">
-          <div class="xp_card_window h-100 d-flex flex-column">
-            <div class="xp_card_header">
+          <div class="xp_window shadow-lg p-0 m-0 h-100 d-flex flex-column">
+            <div
+              class="xp_window_header d-flex justify-content-between align-items-center px-2 py-1 border-bottom border-dark"
+            >
               <span class="d-flex align-items-center">
                 <img
                   src="img/resorces/Icons/My Profile Folder.ico"
@@ -128,11 +145,20 @@
                   height="16"
                   class="me-2"
                 />
-                Propiedades de Integrante
+                <span class="fw-bold" style="font-size: 0.9rem"
+                  >Propiedades de Integrante</span
+                >
               </span>
-              <span class="xp_close_btn">X</span>
+              <span
+                class="btn btn-danger btn-sm p-0 fw-bold border border-white d-inline-flex justify-content-center align-items-center"
+                style="width: 20px; height: 20px"
+                >X</span
+              >
             </div>
-            <div class="p-3 text-center d-flex flex-column flex-grow-1">
+            <div
+              class="p-3 text-center d-flex flex-column flex-grow-1"
+              style="background-color: rgb(234, 232, 213)"
+            >
               <div class="xp_empty_photo">FOTO 120x120</div>
               <h5 class="fw-bold mb-1">Nombre y apellido 2</h5>
               <p class="mb-2 fw-bold text-primary" style="font-size: 14px">
@@ -152,8 +178,10 @@
 
         <!-- Tarjeta 3 -->
         <div class="col-12 col-md-6 col-lg-4">
-          <div class="xp_card_window h-100 d-flex flex-column">
-            <div class="xp_card_header">
+          <div class="xp_window shadow-lg p-0 m-0 h-100 d-flex flex-column">
+            <div
+              class="xp_window_header d-flex justify-content-between align-items-center px-2 py-1 border-bottom border-dark"
+            >
               <span class="d-flex align-items-center">
                 <img
                   src="img/resorces/Icons/My Profile Folder.ico"
@@ -162,11 +190,20 @@
                   height="16"
                   class="me-2"
                 />
-                Propiedades de Integrante
+                <span class="fw-bold" style="font-size: 0.9rem"
+                  >Propiedades de Integrante</span
+                >
               </span>
-              <span class="xp_close_btn">X</span>
+              <span
+                class="btn btn-danger btn-sm p-0 fw-bold border border-white d-inline-flex justify-content-center align-items-center"
+                style="width: 20px; height: 20px"
+                >X</span
+              >
             </div>
-            <div class="p-3 text-center d-flex flex-column flex-grow-1">
+            <div
+              class="p-3 text-center d-flex flex-column flex-grow-1"
+              style="background-color: rgb(234, 232, 213)"
+            >
               <div>
                 <img
                   src="img/resorces/Mii_Andres.png"
@@ -192,8 +229,10 @@
 
         <!-- Tarjeta 4 -->
         <div class="col-12 col-md-6 col-lg-4">
-          <div class="xp_card_window h-100 d-flex flex-column">
-            <div class="xp_card_header">
+          <div class="xp_window shadow-lg p-0 m-0 h-100 d-flex flex-column">
+            <div
+              class="xp_window_header d-flex justify-content-between align-items-center px-2 py-1 border-bottom border-dark"
+            >
               <span class="d-flex align-items-center">
                 <img
                   src="img/resorces/Icons/My Profile Folder.ico"
@@ -202,11 +241,20 @@
                   height="16"
                   class="me-2"
                 />
-                Propiedades de Integrante
+                <span class="fw-bold" style="font-size: 0.9rem"
+                  >Propiedades de Integrante</span
+                >
               </span>
-              <span class="xp_close_btn">X</span>
+              <span
+                class="btn btn-danger btn-sm p-0 fw-bold border border-white d-inline-flex justify-content-center align-items-center"
+                style="width: 20px; height: 20px"
+                >X</span
+              >
             </div>
-            <div class="p-3 text-center d-flex flex-column flex-grow-1">
+            <div
+              class="p-3 text-center d-flex flex-column flex-grow-1"
+              style="background-color: rgb(234, 232, 213)"
+            >
               <img
                 src="img/resorces/ruben.png"
                 alt="Foto de Ruben"
@@ -230,8 +278,10 @@
 
         <!-- Tarjeta 5 -->
         <div class="col-12 col-md-6 col-lg-4">
-          <div class="xp_card_window h-100 d-flex flex-column">
-            <div class="xp_card_header">
+          <div class="xp_window shadow-lg p-0 m-0 h-100 d-flex flex-column">
+            <div
+              class="xp_window_header d-flex justify-content-between align-items-center px-2 py-1 border-bottom border-dark"
+            >
               <span class="d-flex align-items-center">
                 <img
                   src="img/resorces/Icons/My Profile Folder.ico"
@@ -240,11 +290,20 @@
                   height="16"
                   class="me-2"
                 />
-                Propiedades de Integrante
+                <span class="fw-bold" style="font-size: 0.9rem"
+                  >Propiedades de Integrante</span
+                >
               </span>
-              <span class="xp_close_btn">X</span>
+              <span
+                class="btn btn-danger btn-sm p-0 fw-bold border border-white d-inline-flex justify-content-center align-items-center"
+                style="width: 20px; height: 20px"
+                >X</span
+              >
             </div>
-            <div class="p-3 text-center d-flex flex-column flex-grow-1">
+            <div
+              class="p-3 text-center d-flex flex-column flex-grow-1"
+              style="background-color: rgb(234, 232, 213)"
+            >
               <img
                 src="img/resorces/javier.jpeg"
                 alt="Foto de Javier"
@@ -268,64 +327,97 @@
       </div>
     </main>
 
-    <footer class="xp_taskbar">
-      <!-- Botón verde de Inicio -->
-      <a href="index.html" class="xp_start_btn text-decoration-none">Inicio</a>
-
-      <!-- Enlaces a las investigaciones -->
-      <!-- text-decoration-none: Elimina la linea azul de subrayado que tienen los enlaces por defecto -->
-      <a
-        href="html-semantico.html"
-        class="xp_taskbar_item text-decoration-none"
+    <footer class="xp_taskbar fixed-bottom">
+      <div
+        class="xp_start_menu_wrapper position-relative h-100 d-flex align-items-center"
       >
-        <img
-          src="img/resorces/Icons/Internet Properties.ico"
-          alt="HTML"
-          width="18"
-          height="18"
-        />
-        HTML
-      </a>
+        <input type="checkbox" id="toggle_start_menu" class="d-none" />
 
-      <a href="css.html" class="xp_taskbar_item text-decoration-none">
-        <img
-          src="img/resorces/Icons/Display.ico"
-          alt="CSS"
-          width="18"
-          height="18"
-        />
-        CSS
-      </a>
+        <label
+          for="toggle_start_menu"
+          class="xp_start_btn text-decoration-none m-0 d-flex align-items-center justify-content-center"
+          style="cursor: pointer; height: 30px"
+        >
+          Menú
+        </label>
 
-      <a href="bootstrap.html" class="xp_taskbar_item text-decoration-none">
-        <img
-          src="img/resorces/Icons/Folder Open.ico"
-          alt="Bootstrap"
-          width="18"
-          height="18"
-        />
-        Bootstrap
-      </a>
+        <div class="xp_classic_start_menu shadow-lg">
+          <div class="xp_menu_header d-flex align-items-center">
+            <img
+              src="img/resorces/drooling_cat_lain.jpg"
+              alt="Usuario"
+              class="xp_user_pic"
+            />
+            <span class="text-white fw-bold ms-2 xp_user_name">Usuario</span>
+          </div>
 
-      <a href="docker.html" class="xp_taskbar_item text-decoration-none">
-        <img
-          src="img/resorces/Icons/Manage your Server.ico"
-          alt="Docker"
-          width="18"
-          height="18"
-        />
-        Docker
-      </a>
+          <div class="xp_menu_list">
+            <a href="html-semantico.html">
+              <img
+                src="img/resorces/Icons/Internet Properties.ico"
+                width="24"
+                height="24"
+                class="me-2"
+              />
+              HTML
+            </a>
+            <a href="css.html">
+              <img
+                src="img/resorces/Icons/Display.ico"
+                width="24"
+                height="24"
+                class="me-2"
+              />
+              CSS
+            </a>
+            <a href="bootstrap.html">
+              <img
+                src="img/resorces/Icons/Folder Open.ico"
+                width="24"
+                height="24"
+                class="me-2"
+              />
+              Bootstrap
+            </a>
+            <a href="docker.html">
+              <img
+                src="img/resorces/Icons/Manage your Server.ico"
+                width="24"
+                height="24"
+                class="me-2"
+              />
+              Docker
+            </a>
+            <a href="nginx.html">
+              <img
+                src="img/resorces/Icons/Earth (fixed).ico"
+                width="24"
+                height="24"
+                class="me-2"
+              />
+              Nginx
+            </a>
+          </div>
 
-      <a href="nginx.html" class="xp_taskbar_item text-decoration-none">
-        <img
-          src="img/resorces/Icons/Earth (fixed).ico"
-          alt="Nginx"
-          width="18"
-          height="18"
-        />
-        Nginx
-      </a>
+          <div
+            class="xp_menu_footer d-flex justify-content-end align-items-center"
+          >
+            <label
+              for="toggle_start_menu"
+              class="xp_exit_btn text-white text-decoration-none d-flex align-items-center p-1 me-2 mb-0"
+              style="cursor: pointer"
+            >
+              <img
+                src="img/resorces/Icons/log_off.jpg"
+                width="20"
+                height="20"
+                class="me-2 rounded-1"
+              />
+              <span>Cerrar menú</span>
+            </label>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
