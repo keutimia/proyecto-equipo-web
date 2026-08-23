@@ -17,7 +17,7 @@
     </style>
   </head>
   
-  <body style="min-height: 100vh; display: flex; flex-direction: column; background-image: url('../img/resorces/fondo.jpeg'); background-size: cover; background-position: center; background-attachment: fixed; padding-top: 30px;">
+  <body style="min-height: 100vh; display: flex; flex-direction: column; background-image: url('../img/resorces/fondo.jpeg'); background-size: cover; background-position: center; background-attachment: fixed; padding-top: 10px;">
     
     <!-- Barra superior fija al borde superior -->
     <header class="fixed-top m-0 p-0 xp_header_nav">
@@ -32,12 +32,12 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div
-            class="collapse navbar-collapse justify-content-center"
-            id="menuPrincipal"
-          >
+          <div class="collapse navbar-collapse justify-content-center menuPrincipal">
             <h1 class="title_xp_font m-0 my-auto">Windows XP</h1>
             <ul class="navbar-nav ms-3">
+              <li class="nav-item">
+                <a class="xp_taskbar_item text-decoration-none" href="../index.html">INICIO</a>
+              </li>
               <li class="nav-item">
                 <a class="xp_taskbar_item text-decoration-none active fw-bold" href="../integrantes.html">EQUIPO</a>
               </li>
@@ -226,7 +226,7 @@
         <input type="checkbox" id="toggle_start_menu" class="d-none">
         
         <label for="toggle_start_menu" class="xp_start_btn text-decoration-none m-0 d-flex align-items-center justify-content-center" style="cursor: pointer; height: 30px;">
-          Inicio
+          Menú
         </label>
 
         <div class="xp_classic_start_menu shadow-lg">
