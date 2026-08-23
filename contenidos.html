@@ -201,59 +201,57 @@
       </div>
     </main>
 
-    <!-- Barra de tareas inferior Windows XP -->
-    <footer class="xp_taskbar">
-      <a href="index.html" class="xp_start_btn text-decoration-none">Inicio</a>
+    <footer class="xp_taskbar fixed-bottom">
+      <div class="xp_start_menu_wrapper position-relative h-100 d-flex align-items-center">
+        
+        <!-- El checkbox invisible -->
+        <input type="checkbox" id="toggle_start_menu" class="d-none">
+        
+        <!-- Botón de Inicio -->
+        <label for="toggle_start_menu" class="xp_start_btn text-decoration-none m-0 d-flex align-items-center justify-content-center" style="cursor: pointer; height: 30px;">
+          Menú
+        </label>
 
-      <a href="html-semantico.html" class="xp_taskbar_item text-decoration-none">
-        <img
-          src="img/resorces/Icons/Internet Properties.ico"
-          alt="HTML"
-          width="18"
-          height="18"
-        />
-        HTML
-      </a>
+        <!-- Ventana del Menú de Inicio -->
+        <div class="xp_classic_start_menu shadow-lg">
+          
+          <!-- Cabecera con foto y usuario -->
+          <div class="xp_menu_header d-flex align-items-center">
+            <img src="img/resorces/drooling_cat_lain.jpg" alt="Usuario" class="xp_user_pic">
+            <span class="text-white fw-bold ms-2 xp_user_name">Usuario</span>
+          </div>
 
-      <a href="css.html" class="xp_taskbar_item text-decoration-none">
-        <img
-          src="img/resorces/Icons/Display.ico"
-          alt="CSS"
-          width="18"
-          height="18"
-        />
-        CSS
-      </a>
+          <!-- La lista de programas -->
+          <div class="xp_menu_list">
+            <a href="html-semantico.html">
+              <img src="img/resorces/Icons/Internet Properties.ico" width="24" height="24" class="me-2"> HTML
+            </a>
+            <a href="css.html">
+              <img src="img/resorces/Icons/Display.ico" width="24" height="24" class="me-2"> CSS
+            </a>
+            <a href="bootstrap.html">
+              <img src="img/resorces/Icons/Folder Open.ico" width="24" height="24" class="me-2"> Bootstrap
+            </a>
+            <a href="docker.html">
+              <img src="img/resorces/Icons/Manage your Server.ico" width="24" height="24" class="me-2"> Docker
+            </a>
+            <a href="nginx.html">
+              <img src="img/resorces/Icons/Earth (fixed).ico" width="24" height="24" class="me-2"> Nginx
+            </a>
+          </div>
 
-      <a href="bootstrap.html" class="xp_taskbar_item text-decoration-none">
-        <img
-          src="img/resorces/Icons/Folder Open.ico"
-          alt="Bootstrap"
-          width="18"
-          height="18"
-        />
-        Bootstrap
-      </a>
-
-      <a href="docker.html" class="xp_taskbar_item text-decoration-none">
-        <img
-          src="img/resorces/Icons/Manage your Server.ico"
-          alt="Docker"
-          width="18"
-          height="18"
-        />
-        Docker
-      </a>
-
-      <a href="nginx.html" class="xp_taskbar_item text-decoration-none">
-        <img
-          src="img/resorces/Icons/Earth (fixed).ico"
-          alt="Nginx"
-          width="18"
-          height="18"
-        />
-        Nginx
-      </a>
+          <!-- Barra azul inferior -->
+          <div class="xp_menu_footer d-flex justify-content-end align-items-center">
+            
+            <!-- Al usar 'for="toggle_start_menu"', este botón actúa como un interruptor que apaga el menú -->
+            <label for="toggle_start_menu" class="xp_exit_btn text-white text-decoration-none d-flex align-items-center p-1 me-2 mb-0" style="cursor: pointer;">
+              <img src="img/resorces/Icons/log_off.jpg" width="20" height="20" class="me-2 rounded-1">
+              <span>Cerrar menú</span>
+            </label>
+            
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
