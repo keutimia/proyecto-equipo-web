@@ -618,3 +618,12 @@ body.xp_blue_desktop {
 .xp_clock_text {
   margin-left: 4px;
 }
+
+.xp_logo_3d {
+  filter: 
+    /* Relieve oscuro sutil para no perder la forma */
+    drop-shadow(1px 1px 0px rgba(0, 0, 0, 0.8)) 
+    /* Resplandor azul hielo (rgb modificado para no tener nada de verde) */
+    drop-shadow(0px 0px 8px rgba(0, 153, 255, 1))
+    drop-shadow(0px 0px 15px rgba(0, 153, 255, 0.7));
+}
