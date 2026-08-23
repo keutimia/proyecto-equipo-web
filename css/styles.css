@@ -470,11 +470,11 @@ body.xp_blue_desktop {
   bottom: 40px; 
   left: 0;
   width: 320px; 
-  background-color: #ffffff;
-  border: 2px none; 
-  border-top-left-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 51, 153); 
+  border-top-left-radius: 5px; 
   border-top-right-radius: 5px;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
   z-index: 2000;
   font-family: 'Tahoma', 'Segoe UI', sans-serif;
   overflow: hidden; 
@@ -487,17 +487,17 @@ body.xp_blue_desktop {
 
 /* --- CABECERA AZUL Y LÍNEA NARANJA --- */
 .xp_menu_header {
-  background: linear-gradient(to bottom, #1756c6 0%, #377ee8 10%, #2063d5 50%, #0f44a3 100%);
+  /* Transición extendida y suave para eliminar la franja dura */
+  background: linear-gradient(to bottom, rgb(20, 70, 160) 0%, rgb(45, 110, 230) 40%, rgb(50, 125, 245) 100%);
   padding: 10px;
-  border-bottom: 2px solid #434242;
-  box-shadow: inset 0px 2px 2px rgba(255, 255, 255, 0.5); 
-
-  box-shadow: 
-    inset 0px 2px 2px rgba(255, 255, 255, 0.5), /* Brillo superior */
-    inset -3px 0px 4px rgba(0, 0, 0, 0.4),      /* Sombra oscura derecha */
-    inset 2px 0px 2px rgba(255, 255, 255, 0.2);  /* Reflejo sutil izquierdo */
+  
+  /* Línea naranja con degradado que se difumina en los bordes */
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(to right, rgba(255, 102, 0, 0) 0%, rgb(255, 102, 0) 15%, rgb(255, 102, 0) 85%, rgba(255, 102, 0, 0) 100%) 1;
+  
+  /* Brillo limpio superior de 1px */
+  box-shadow: inset 0px 2px 2px rgba(255, 255, 255, 0.7);
 }
-
 /* Estilo de la foto de perfil */
 .xp_user_pic {
   width: 48px;
@@ -544,15 +544,10 @@ body.xp_blue_desktop {
 
 /* --- PIE DE PÁGINA AZUL (Donde va "Cerrar menú") --- */
 .xp_menu_footer {
-  /* Degradado azul de abajo, un poco más claro que la cabecera */
-  background: linear-gradient(to bottom, #4186f2 0%, #2a61cb 15%, #15469f 100%);
+  background: linear-gradient(to bottom, rgb(65, 134, 242) 0%, rgb(42, 97, 203) 15%, rgb(21, 70, 159) 100%);
   height: 42px;
-  border-top: 1px solid rgba(0, 0, 0, 0.2); /* Sombrita sutil arriba */
-
-  box-shadow: 
-    inset 0px 2px 2px rgba(255, 255, 255, 0.5), /* Brillo superior */
-    inset -3px 0px 4px rgba(0, 0, 0, 0.4),      /* Sombra oscura derecha */
-    inset 2px 0px 2px rgba(255, 255, 255, 0.2);  /* Reflejo sutil izquierdo */
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 2px 2px rgba(255, 255, 255, 0.5);
 }
 
 /* Botón de cerrar menú */
