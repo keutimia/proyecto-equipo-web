@@ -590,3 +590,31 @@ body.xp_blue_desktop {
   background: radial-gradient(circle at 10% 20%, #318c24 0%, #206815 100%);
   box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5);
 }
+
+/* --- Área de notificaciones (System Tray) --- */
+.xp_system_tray {
+  margin-left: auto; /* Esto empuja el cuadro totalmente a la derecha */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  /* El degradado celeste brillante de Windows XP */
+  background: linear-gradient(to bottom, rgb(20, 165, 240) 0%, rgb(8, 145, 220) 10%, rgb(0, 120, 200) 90%, rgb(0, 95, 175) 100%);
+  border-left: 1px solid rgb(25, 60, 130);
+  box-shadow: inset 1px 0px 1px rgba(255, 255, 255, 0.4), inset -1px 0px 2px rgba(0, 0, 0, 0.2);
+  color: rgb(255, 255, 255);
+  font-family: Tahoma, "Segoe UI", sans-serif;
+  font-size: 11px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  cursor: default;
+}
+
+.xp_tray_icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+}
+
+.xp_clock_text {
+  margin-left: 4px;
+}

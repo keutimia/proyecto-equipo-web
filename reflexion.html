@@ -174,103 +174,54 @@
       </div>
     </main>
 
-    <footer class="xp_taskbar fixed-bottom">
-      <div
-        class="xp_start_menu_wrapper position-relative h-100 d-flex align-items-center"
-      >
-        <!-- El checkbox invisible -->
-        <input type="checkbox" id="toggle_start_menu" class="d-none" />
-
-        <!-- Botón de Inicio -->
-        <label
-          for="toggle_start_menu"
-          class="xp_start_btn text-decoration-none m-0 d-flex align-items-center justify-content-center"
-          style="cursor: pointer; height: 30px"
-        >
+<footer class="xp_taskbar fixed-bottom">
+      <!-- Lado izquierdo: Botón y Menú de Inicio -->
+      <div class="xp_start_menu_wrapper position-relative h-100 d-flex align-items-center">
+        
+        <input type="checkbox" id="toggle_start_menu" class="d-none">
+        
+        <label for="toggle_start_menu" class="xp_start_btn text-decoration-none m-0 d-flex align-items-center justify-content-center" style="cursor: pointer; height: 30px;">
           Menú
         </label>
 
-        <!-- Ventana del Menú de Inicio -->
         <div class="xp_classic_start_menu shadow-lg">
-          <!-- Cabecera con foto y usuario -->
           <div class="xp_menu_header d-flex align-items-center">
-            <img
-              src="img/resorces/drooling_cat_lain.jpg"
-              alt="Usuario"
-              class="xp_user_pic"
-            />
+            <img src="img/resorces/drooling_cat_lain.jpg" alt="Usuario" class="xp_user_pic">
             <span class="text-white fw-bold ms-2 xp_user_name">Usuario</span>
           </div>
 
-          <!-- La lista de programas -->
           <div class="xp_menu_list">
             <a href="html-semantico.html">
-              <img
-                src="img/resorces/Icons/Internet Properties.ico"
-                width="24"
-                height="24"
-                class="me-2"
-              />
-              HTML
+              <img src="img/resorces/Icons/Internet Properties.ico" width="24" height="24" class="me-2"> HTML
             </a>
             <a href="css.html">
-              <img
-                src="img/resorces/Icons/Display.ico"
-                width="24"
-                height="24"
-                class="me-2"
-              />
-              CSS
+              <img src="img/resorces/Icons/Display.ico" width="24" height="24" class="me-2"> CSS
             </a>
             <a href="bootstrap.html">
-              <img
-                src="img/resorces/Icons/Folder Open.ico"
-                width="24"
-                height="24"
-                class="me-2"
-              />
-              Bootstrap
+              <img src="img/resorces/Icons/Folder Open.ico" width="24" height="24" class="me-2"> Bootstrap
             </a>
             <a href="docker.html">
-              <img
-                src="img/resorces/Icons/Manage your Server.ico"
-                width="24"
-                height="24"
-                class="me-2"
-              />
-              Docker
+              <img src="img/resorces/Icons/Manage your Server.ico" width="24" height="24" class="me-2"> Docker
             </a>
             <a href="nginx.html">
-              <img
-                src="img/resorces/Icons/Earth (fixed).ico"
-                width="24"
-                height="24"
-                class="me-2"
-              />
-              Nginx
+              <img src="img/resorces/Icons/Earth (fixed).ico" width="24" height="24" class="me-2"> Nginx
             </a>
           </div>
 
-          <!-- Barra azul inferior -->
-          <div
-            class="xp_menu_footer d-flex justify-content-end align-items-center"
-          >
-            <!-- Al usar 'for="toggle_start_menu"', este botón actúa como un interruptor que apaga el menú -->
-            <label
-              for="toggle_start_menu"
-              class="xp_exit_btn text-white text-decoration-none d-flex align-items-center p-1 me-2 mb-0"
-              style="cursor: pointer"
-            >
-              <img
-                src="img/resorces/Icons/log_off.jpg"
-                width="20"
-                height="20"
-                class="me-2 rounded-1"
-              />
+          <div class="xp_menu_footer d-flex justify-content-end align-items-center">
+            <label for="toggle_start_menu" class="xp_exit_btn text-white text-decoration-none d-flex align-items-center p-1 me-2 mb-0" style="cursor: pointer;">
+              <img src="img/resorces/Icons/log_off.jpg" width="20" height="20" class="me-2 rounded-1">
               <span>Cerrar menú</span>
             </label>
           </div>
         </div>
+      </div>
+
+      <!-- Lado derecho: Área de notificaciones (System Tray) -->
+      <div class="xp_system_tray">
+        <img src="img/resorces/Icons/318.ico" alt="Red" class="xp_tray_icon">
+        <img src="img/resorces/Icons/657.ico" alt="Sonido" class="xp_tray_icon">
+        <span class="xp_clock_text">10:35 AM</span>
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
