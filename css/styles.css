@@ -24,7 +24,7 @@ body {
 /* --- Barra de arriba azul --- */
 .xp_bar {
   position: fixed;
-  z-index: 9999; /* <- Agrega esta línea para que no se deje tapar */
+  z-index: 9999; 
   text-align: center;
   height: 90px;
   width: 100%;
@@ -623,7 +623,35 @@ body.xp_blue_desktop {
   filter: 
     /* Relieve oscuro sutil para no perder la forma */
     drop-shadow(1px 1px 0px rgba(0, 0, 0, 0.8)) 
-    /* Resplandor azul hielo (rgb modificado para no tener nada de verde) */
-    drop-shadow(0px 0px 8px rgba(0, 153, 255, 1))
-    drop-shadow(0px 0px 15px rgba(0, 153, 255, 0.7));
+    /* Resplandor azul hielo muy sutil */
+    drop-shadow(0px 0px 0px rgba(0, 153, 255, 1))
+}
+
+/* --- Caja oscura para el logo --- */
+.xp_logo_box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: rgb(4, 47, 99); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 25px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  
+  /* Aquí agregamos "5px 0px 10px rgba(0, 0, 0, 0.5)" al final para la sombra exterior */
+  box-shadow: 
+    inset 3px 3px 6px rgba(0, 0, 0, 0.6), 
+    inset -1px -1px 3px rgba(0, 0, 0, 0.3),
+    5px 0px 10px rgba(0, 0, 0, 0.5); 
+  z-index: 1050; 
+}
+
+/* Ajuste del tamaño del logo dentro de la caja */
+.xp_logo_box img {
+  max-height: 70px;
+  width: auto;
 }
