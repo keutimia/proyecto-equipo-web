@@ -627,7 +627,7 @@ body.xp_blue_desktop {
     drop-shadow(0px 0px 0px rgba(0, 153, 255, 1))
 }
 
-/* --- Caja oscura para el logo --- */
+/* --- Logo --- */
 .xp_logo_box {
   position: absolute;
   left: 0;
@@ -645,7 +645,7 @@ body.xp_blue_desktop {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   
-  box-shadow: none; 
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.6)); 
   z-index: 1050; 
 }
 
@@ -660,10 +660,4 @@ body.xp_blue_desktop {
 .xp_logo_3d {
   filter: 
     drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.6));
-}
-
-/* Ajuste del tamaño del logo dentro de la caja */
-.xp_logo_box img {
-  max-height: 70px;
-  width: auto;
 }
