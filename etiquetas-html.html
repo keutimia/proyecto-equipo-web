@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Investigación: Etiquetas HTML - XP App</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body
+    style="
+      margin: 0 !important;
+      padding: 0 !important;
+      padding-bottom: 120px !important;
+    "
+  >
+    <header class="fixed-top m-0 p-0" style="z-index: 1050">
+      <nav class="navbar navbar-expand-lg xp_bar m-0 p-0">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuPrincipal"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="menuPrincipal"
+          >
+            <h1 class="title_xp_font m-0 my-auto">Windows XP</h1>
+            <ul class="navbar-nav ms-3">
+              <li class="nav-item">
+                <a
+                  class="xp_taskbar_item text-decoration-none"
+                  href="index.html"
+                  >INICIO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="xp_taskbar_item text-decoration-none"
+                  href="integrantes.html"
+                  >EQUIPO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="xp_taskbar_item text-decoration-none"
+                  href="contenidos.html"
+                  >INVESTIGACIONES</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="xp_taskbar_item text-decoration-none"
+                  href="reflexion.html"
+                  >REFLEXIÓN</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container my-4 pt-5">
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-11 xp_window">
+          <div class="xp_window_header">
+            <span>Guía de Referencia: Etiquetas HTML de Uso Común</span>
+            <div class="xp_controls">
+              <button class="xp_btn">_</button>
+              <button class="xp_btn">□</button>
+              <button class="xp_btn xp_close">X</button>
+            </div>
+          </div>
+
+          <div class="p-4 text-dark">
+            <h4 class="mb-2 fw-bold text-primary">
+              Diccionario de Etiquetas Implementadas
+            </h4>
+            <p class="text-muted small">
+              A continuación, se documentan las etiquetas HTML más utilizadas en
+              la construcción de interfaces web, indicando su propósito y un
+              ejemplo real de cómo fueron aplicadas en la maquetación de nuestro
+              sistema estilo Windows XP.
+            </p>
+            <hr />
+
+            <div class="table-responsive">
+              <table
+                class="table table-bordered table-sm align-middle bg-white small"
+              >
+                <thead class="table-primary">
+                  <tr>
+                    <th style="width: 15%">Etiqueta</th>
+                    <th style="width: 45%">Cuándo es apropiado usarla</th>
+                    <th style="width: 40%">
+                      Ejemplo de aplicación en nuestro sitio
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>&lt;h1&gt; a &lt;h6&gt;</code></td>
+                    <td>
+                      Para definir la jerarquía de los encabezados.
+                      <code>&lt;h1&gt;</code> es el título principal,
+                      descendiendo en importancia hasta <code>&lt;h6&gt;</code>.
+                    </td>
+                    <td>
+                      El <code>&lt;h1&gt;</code> se usó en el texto "Windows XP"
+                      de la barra superior. Los <code>&lt;h5&gt;</code> y
+                      <code>&lt;h6&gt;</code> estructuran los nombres y detalles
+                      técnicos en los perfiles.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><code>&lt;p&gt;</code></td>
+                    <td>
+                      Para delimitar bloques de texto o párrafos estándar.
+                    </td>
+                    <td>
+                      Se utilizó para escribir las descripciones de roles, las
+                      reflexiones finales y las introducciones de cada
+                      investigación.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><code>&lt;a&gt;</code></td>
+                    <td>
+                      Para crear enlaces hacia otras páginas o recursos
+                      externos.
+                    </td>
+                    <td>
+                      Aplicado en toda la barra de navegación y en los botones
+                      "Ver investigación..." que conectan los archivos del
+                      proyecto.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><code>&lt;img&gt;</code></td>
+                    <td>
+                      Para incrustar imágenes gráficas en el documento web.
+                    </td>
+                    <td>
+                      Usado para mostrar las evidencias de Docker, las fotos de
+                      los integrantes y los íconos clásicos del Menú de Inicio.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><code>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</code></td>
+                    <td>
+                      Para crear listas desordenadas (viñetas), ordenadas
+                      (números) y definir cada elemento individual de la lista.
+                    </td>
+                    <td>
+                      Se aplicaron <code>&lt;ul&gt;</code> y
+                      <code>&lt;li&gt;</code> para listar de forma limpia los
+                      lenguajes, herramientas e intereses en las tarjetas de
+                      perfil.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><code>&lt;div&gt;</code></td>
+                    <td>
+                      Como contenedor genérico de bloque para agrupar elementos
+                      y aplicarles estilos CSS (layout).
+                    </td>
+                    <td>
+                      Fundamental en el proyecto: se usó masivamente con las
+                      clases de Bootstrap (<code>row</code>,
+                      <code>col-md-6</code>) y para formar las ventanas
+                      (<code>xp_window</code>).
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><code>&lt;span&gt;</code></td>
+                    <td>
+                      Como contenedor genérico en línea, ideal para aplicar
+                      estilos a fragmentos de texto sin romper el párrafo.
+                    </td>
+                    <td>
+                      Se usó para estilizar el nombre de usuario
+                      (<code>xp_user_name</code>) en el menú y los títulos de
+                      las ventanas sin generar saltos de línea.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><code>&lt;table&gt;</code></td>
+                    <td>
+                      Para presentar datos de forma tabular (filas y columnas).
+                    </td>
+                    <td>
+                      Implementada en la investigación de Docker para organizar
+                      los 13 comandos de forma legible.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><code>&lt;form&gt; y &lt;input&gt;</code></td>
+                    <td>
+                      Para capturar datos del usuario mediante controles
+                      interactivos (cajas de texto, checkboxes).
+                    </td>
+                    <td>
+                      Se utilizó un
+                      <code>&lt;input type="checkbox"&gt;</code> oculto como
+                      mecanismo lógico para hacer funcionar el despliegue del
+                      Menú de Inicio sin usar JavaScript.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><code>&lt;label&gt;</code></td>
+                    <td>
+                      Para vincular un texto descriptivo a un control de
+                      formulario específico, mejorando la accesibilidad.
+                    </td>
+                    <td>
+                      Aplicada al botón "Inicio" verde; al hacer clic en el
+                      label, se activa el checkbox oculto que despliega el menú.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><code>&lt;button&gt;</code></td>
+                    <td>
+                      Para elementos interactivos en los que el usuario hace
+                      clic para desencadenar una acción.
+                    </td>
+                    <td>
+                      Se usó para maquetar los controles de cerrar, minimizar y
+                      maximizar en la esquina superior derecha de cada ventana
+                      XP.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="xp_taskbar fixed-bottom">
+      <!-- Lado izquierdo: Botón y Menú de Inicio -->
+      <div
+        class="xp_start_menu_wrapper position-relative h-100 d-flex align-items-center"
+      >
+        <input type="checkbox" id="toggle_start_menu" class="d-none" />
+
+        <label
+          for="toggle_start_menu"
+          class="xp_start_btn text-decoration-none m-0 d-flex align-items-center justify-content-center"
+          style="cursor: pointer; height: 30px"
+        >
+          Menú
+        </label>
+
+        <div class="xp_classic_start_menu shadow-lg">
+          <div class="xp_menu_header d-flex align-items-center">
+            <img
+              src="img/resorces/drooling_cat_lain.jpg"
+              alt="Usuario"
+              class="xp_user_pic"
+            />
+            <span class="text-white fw-bold ms-2 xp_user_name">Usuario</span>
+          </div>
+
+          <div class="xp_menu_list">
+            <a href="html-semantico.html">
+              <img
+                src="img/resorces/Icons/Internet Properties.ico"
+                width="24"
+                height="24"
+                class="me-2"
+              />
+              HTML
+            </a>
+            <a href="css.html">
+              <img
+                src="img/resorces/Icons/Display.ico"
+                width="24"
+                height="24"
+                class="me-2"
+              />
+              CSS
+            </a>
+            <a href="bootstrap.html">
+              <img
+                src="img/resorces/Icons/Folder Open.ico"
+                width="24"
+                height="24"
+                class="me-2"
+              />
+              Bootstrap
+            </a>
+            <a href="docker.html">
+              <img
+                src="img/resorces/Icons/Manage your Server.ico"
+                width="24"
+                height="24"
+                class="me-2"
+              />
+              Docker
+            </a>
+            <a href="nginx.html">
+              <img
+                src="img/resorces/Icons/Earth (fixed).ico"
+                width="24"
+                height="24"
+                class="me-2"
+              />
+              Nginx
+            </a>
+            <a href="etiquetas-html.html">
+              <img
+                src="img/resorces/Icons/List File.ico"
+                width="24"
+                height="24"
+                class="me-2"
+              />
+              Etiquetas HTML
+            </a>
+          </div>
+          <div
+            class="xp_menu_footer d-flex justify-content-end align-items-center"
+          >
+            <label
+              for="toggle_start_menu"
+              class="xp_exit_btn text-white text-decoration-none d-flex align-items-center p-1 me-2 mb-0"
+              style="cursor: pointer"
+            >
+              <img
+                src="img/resorces/Icons/log_off.jpg"
+                width="20"
+                height="20"
+                class="me-2 rounded-1"
+              />
+              <span>Cerrar menú</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lado derecho: Área de notificaciones (System Tray) -->
+      <div class="xp_system_tray">
+        <img src="img/resorces/Icons/318.ico" alt="Red" class="xp_tray_icon" />
+        <img
+          src="img/resorces/Icons/657.ico"
+          alt="Sonido"
+          class="xp_tray_icon"
+        />
+        <span class="xp_clock_text">10:35 AM</span>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

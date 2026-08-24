@@ -11,9 +11,15 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
-  <body style="margin: 0 !important; padding: 0 !important; padding-bottom: 120px !important;">
+  <body
+    style="
+      margin: 0 !important;
+      padding: 0 !important;
+      padding-bottom: 120px !important;
+    "
+  >
     <!-- Barra superior fija al borde -->
-    <header class="fixed-top m-0 p-0" style="z-index: 1050;">
+    <header class="fixed-top m-0 p-0" style="z-index: 1050">
       <nav class="navbar navbar-expand-lg xp_bar m-0 p-0">
         <div class="container-fluid">
           <button
@@ -32,16 +38,32 @@
             <h1 class="title_xp_font m-0 my-auto">Windows XP</h1>
             <ul class="navbar-nav ms-3">
               <li class="nav-item">
-                <a class="xp_taskbar_item text-decoration-none" href="index.html">INICIO</a>
+                <a
+                  class="xp_taskbar_item text-decoration-none"
+                  href="index.html"
+                  >INICIO</a
+                >
               </li>
               <li class="nav-item">
-                <a class="xp_taskbar_item text-decoration-none" href="integrantes.html">EQUIPO</a>
+                <a
+                  class="xp_taskbar_item text-decoration-none"
+                  href="integrantes.html"
+                  >EQUIPO</a
+                >
               </li>
               <li class="nav-item">
-                <a class="xp_taskbar_item text-decoration-none" href="contenidos.html">INVESTIGACIONES</a>
+                <a
+                  class="xp_taskbar_item text-decoration-none"
+                  href="contenidos.html"
+                  >INVESTIGACIONES</a
+                >
               </li>
               <li class="nav-item">
-                <a class="xp_taskbar_item text-decoration-none" href="reflexion.html">REFLEXIÓN</a>
+                <a
+                  class="xp_taskbar_item text-decoration-none"
+                  href="reflexion.html"
+                  >REFLEXIÓN</a
+                >
               </li>
             </ul>
           </div>
@@ -65,27 +87,51 @@
 
           <!-- Contenido interno de la ventana -->
           <div class="p-4 text-dark">
-            <h4 class="mb-2 fw-bold text-primary">¿Qué es Nginx y cuál es su propósito?</h4>
+            <h4 class="mb-2 fw-bold text-primary">
+              ¿Qué es Nginx y cuál es su propósito?
+            </h4>
             <p>
-              <strong>Nginx</strong> es un servidor web HTTP de alto rendimiento, proxy inverso y balanceador de carga de código abierto. En nuestro proyecto, actúa como el servidor ligero encargado de recibir las peticiones de los navegadores y servir de forma rápida y eficiente todos los archivos estáticos (documentos HTML, hojas de estilo CSS e imágenes) dentro de un contenedor Docker aislado.
+              <strong>Nginx</strong> es un servidor web HTTP de alto
+              rendimiento, proxy inverso y balanceador de carga de código
+              abierto. En nuestro proyecto, actúa como el servidor ligero
+              encargado de recibir las peticiones de los navegadores y servir de
+              forma rápida y eficiente todos los archivos estáticos (documentos
+              HTML, hojas de estilo CSS e imágenes) dentro de un contenedor
+              Docker aislado.
             </p>
 
             <hr />
 
-            <h5 class="mt-3 fw-bold">1. Contenido y Explicación del <code>Dockerfile</code></h5>
+            <h5 class="mt-3 fw-bold">
+              1. Contenido y Explicación del <code>Dockerfile</code>
+            </h5>
             <p>
-              El archivo <code>Dockerfile</code> contiene las instrucciones paso a paso para construir la imagen de nuestro sitio web sobre la distribución ultra ligera <strong>Alpine Linux</strong>:
+              El archivo <code>Dockerfile</code> contiene las instrucciones paso
+              a paso para construir la imagen de nuestro sitio web sobre la
+              distribución ultra ligera <strong>Alpine Linux</strong>:
             </p>
 
-            <div class="bg-dark text-light p-3 rounded mb-3 font-monospace small">
-              <span class="text-success"># Usar la imagen oficial ligera de Nginx basada en Alpine Linux</span><br />
-              <span class="text-primary fw-bold">FROM</span> nginx:alpine<br /><br />
-              <span class="text-success"># Copiar todo el contenido de nuestro proyecto al directorio raíz de Nginx</span><br />
-              <span class="text-primary fw-bold">COPY</span> . /usr/share/nginx/html
+            <div
+              class="bg-dark text-light p-3 rounded mb-3 font-monospace small"
+            >
+              <span class="text-success"
+                ># Usar la imagen oficial ligera de Nginx basada en Alpine
+                Linux</span
+              ><br />
+              <span class="text-primary fw-bold">FROM</span>
+              nginx:alpine<br /><br />
+              <span class="text-success"
+                ># Copiar todo el contenido de nuestro proyecto al directorio
+                raíz de Nginx</span
+              ><br />
+              <span class="text-primary fw-bold">COPY</span> .
+              /usr/share/nginx/html
             </div>
 
             <div class="table-responsive">
-              <table class="table table-bordered table-sm align-middle bg-white">
+              <table
+                class="table table-bordered table-sm align-middle bg-white"
+              >
                 <thead class="table-primary">
                   <tr>
                     <th>Instrucción</th>
@@ -95,11 +141,20 @@
                 <tbody>
                   <tr>
                     <td><code>FROM nginx:alpine</code></td>
-                    <td>Establece la imagen base oficial de Nginx montada sobre Alpine Linux, lo que garantiza un consumo mínimo de recursos y un peso sumamente reducido (menor a 25MB).</td>
+                    <td>
+                      Establece la imagen base oficial de Nginx montada sobre
+                      Alpine Linux, lo que garantiza un consumo mínimo de
+                      recursos y un peso sumamente reducido (menor a 25MB).
+                    </td>
                   </tr>
                   <tr>
                     <td><code>COPY . /usr/share/nginx/html</code></td>
-                    <td>Copia todos los archivos locales del repositorio (HTML, carpetas <code>css/</code> e <code>img/</code>) dentro del directorio público predeterminado desde el cual Nginx despacha el sitio.</td>
+                    <td>
+                      Copia todos los archivos locales del repositorio (HTML,
+                      carpetas <code>css/</code> e <code>img/</code>) dentro del
+                      directorio público predeterminado desde el cual Nginx
+                      despacha el sitio.
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -107,20 +162,39 @@
 
             <hr />
 
-            <h5 class="mt-4 fw-bold">2. Comandos de Construcción y Despliegue</h5>
+            <h5 class="mt-4 fw-bold">
+              2. Comandos de Construcción y Despliegue
+            </h5>
             <ul>
               <li>
                 <strong>Construcción de la imagen:</strong>
-                <pre class="bg-light p-2 border rounded font-monospace mt-1 mb-2">docker build -t mi-web-html .</pre>
-                <small class="text-muted">Descarga la imagen base de Nginx y empaqueta nuestro código dentro de una nueva imagen local llamada <code>mi-web-html</code>.</small>
+                <pre
+                  class="bg-light p-2 border rounded font-monospace mt-1 mb-2"
+                >
+docker build -t mi-web-html .</pre
+                >
+                <small class="text-muted"
+                  >Descarga la imagen base de Nginx y empaqueta nuestro código
+                  dentro de una nueva imagen local llamada
+                  <code>mi-web-html</code>.</small
+                >
               </li>
               <li class="mt-2">
                 <strong>Ejecución y Mapeo de Puertos:</strong>
-                <pre class="bg-light p-2 border rounded font-monospace mt-1 mb-2">docker run -d -p 8080:80 --name mi-web-container mi-web-html</pre>
+                <pre
+                  class="bg-light p-2 border rounded font-monospace mt-1 mb-2"
+                >
+docker run -d -p 8080:80 --name mi-web-container mi-web-html</pre
+                >
                 <small class="text-muted">
-                  <strong>-d:</strong> Ejecuta el contenedor en segundo plano (detached).<br />
-                  <strong>-p 8080:80:</strong> Redirecciona el puerto <code>8080</code> de la máquina anfitriona (tu PC) hacia el puerto <code>80</code> interno del servidor Nginx en el contenedor.<br />
-                  <strong>--name mi-web-container:</strong> Asigna un identificador amigable al contenedor activo.
+                  <strong>-d:</strong> Ejecuta el contenedor en segundo plano
+                  (detached).<br />
+                  <strong>-p 8080:80:</strong> Redirecciona el puerto
+                  <code>8080</code> de la máquina anfitriona (tu PC) hacia el
+                  puerto <code>80</code> interno del servidor Nginx en el
+                  contenedor.<br />
+                  <strong>--name mi-web-container:</strong> Asigna un
+                  identificador amigable al contenedor activo.
                 </small>
               </li>
             </ul>
@@ -128,72 +202,167 @@
             <hr />
 
             <!-- Sección de Evidencias Requeridas por la Rúbrica -->
-            <h5 class="mt-4 fw-bold">3. Evidencias de Funcionamiento (localhost:8080)</h5>
-            <p class="small text-muted">Capturas que certifican el levantamiento del contenedor y el acceso correcto desde el navegador web:</p>
+            <h5 class="mt-4 fw-bold">
+              3. Evidencias de Funcionamiento (localhost:8080)
+            </h5>
+            <p class="small text-muted">
+              Capturas que certifican el levantamiento del contenedor y el
+              acceso correcto desde el navegador web:
+            </p>
 
             <div class="row text-center mt-3">
               <div class="col-md-6 mb-3">
                 <div class="p-2 border border-secondary bg-light h-100">
-                  <h6 class="fw-bold text-dark">Evidencia 1: Terminal en Ejecución</h6>
-                  <p class="small text-muted mb-2">Salida de <code>docker run</code> o <code>docker ps</code> confirmando el contenedor activo.</p>
-                  <div class="border bg-white d-flex align-items-center justify-content-center" style="min-height: 150px;">
-                    <img src="img/resorces/captura-terminal-nginx.png" alt="Captura Terminal Nginx" class="img-fluid" onerror="this.parentElement.innerHTML='<span class=\'text-muted small\'>[Inserta aquí la captura de tu terminal ejecutando docker ps / docker run]</span>'" />
+                  <h6 class="fw-bold text-dark">
+                    Evidencia 1: Terminal en Ejecución
+                  </h6>
+                  <p class="small text-muted mb-2">
+                    Salida de <code>docker run</code> o
+                    <code>docker ps</code> confirmando el contenedor activo.
+                  </p>
+                  <div
+                    class="border bg-white d-flex align-items-center justify-content-center"
+                    style="min-height: 150px"
+                  >
+                    <img
+                      src="img/resorces/captura-terminal-nginx.png"
+                      alt="Captura Terminal Nginx"
+                      class="img-fluid"
+                      onerror="
+                        this.parentElement.innerHTML =
+                          '<span class=\'text-muted small\'>[Inserta aquí la captura de tu terminal ejecutando docker ps / docker run]</span>'
+                      "
+                    />
                   </div>
                 </div>
               </div>
               <div class="col-md-6 mb-3">
                 <div class="p-2 border border-secondary bg-light h-100">
-                  <h6 class="fw-bold text-dark">Evidencia 2: Navegador en localhost:8080</h6>
-                  <p class="small text-muted mb-2">Sitio web navegable servido directamente por el contenedor Nginx.</p>
-                  <div class="border bg-white d-flex align-items-center justify-content-center" style="min-height: 150px;">
-                    <img src="img/resorces/captura-navegador-localhost.png" alt="Captura Navegador localhost:8080" class="img-fluid" onerror="this.parentElement.innerHTML='<span class=\'text-muted small\'>[Inserta aquí la captura de tu navegador en http://localhost:8080]</span>'" />
+                  <h6 class="fw-bold text-dark">
+                    Evidencia 2: Navegador en localhost:8080
+                  </h6>
+                  <p class="small text-muted mb-2">
+                    Sitio web navegable servido directamente por el contenedor
+                    Nginx.
+                  </p>
+                  <div
+                    class="border bg-white d-flex align-items-center justify-content-center"
+                    style="min-height: 150px"
+                  >
+                    <img
+                      src="img/resorces/captura-navegador-localhost.png"
+                      alt="Captura Navegador localhost:8080"
+                      class="img-fluid"
+                      onerror="
+                        this.parentElement.innerHTML =
+                          '<span class=\'text-muted small\'>[Inserta aquí la captura de tu navegador en http://localhost:8080]</span>'
+                      "
+                    />
                   </div>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
     </main>
 
-<footer class="xp_taskbar fixed-bottom">
+    <footer class="xp_taskbar fixed-bottom">
       <!-- Lado izquierdo: Botón y Menú de Inicio -->
-      <div class="xp_start_menu_wrapper position-relative h-100 d-flex align-items-center">
-        
-        <input type="checkbox" id="toggle_start_menu" class="d-none">
-        
-        <label for="toggle_start_menu" class="xp_start_btn text-decoration-none m-0 d-flex align-items-center justify-content-center" style="cursor: pointer; height: 30px;">
+      <div
+        class="xp_start_menu_wrapper position-relative h-100 d-flex align-items-center"
+      >
+        <input type="checkbox" id="toggle_start_menu" class="d-none" />
+
+        <label
+          for="toggle_start_menu"
+          class="xp_start_btn text-decoration-none m-0 d-flex align-items-center justify-content-center"
+          style="cursor: pointer; height: 30px"
+        >
           Menú
         </label>
 
         <div class="xp_classic_start_menu shadow-lg">
           <div class="xp_menu_header d-flex align-items-center">
-            <img src="img/resorces/drooling_cat_lain.jpg" alt="Usuario" class="xp_user_pic">
+            <img
+              src="img/resorces/drooling_cat_lain.jpg"
+              alt="Usuario"
+              class="xp_user_pic"
+            />
             <span class="text-white fw-bold ms-2 xp_user_name">Usuario</span>
           </div>
 
           <div class="xp_menu_list">
             <a href="html-semantico.html">
-              <img src="img/resorces/Icons/Internet Properties.ico" width="24" height="24" class="me-2"> HTML
+              <img
+                src="img/resorces/Icons/Internet Properties.ico"
+                width="24"
+                height="24"
+                class="me-2"
+              />
+              HTML
             </a>
             <a href="css.html">
-              <img src="img/resorces/Icons/Display.ico" width="24" height="24" class="me-2"> CSS
+              <img
+                src="img/resorces/Icons/Display.ico"
+                width="24"
+                height="24"
+                class="me-2"
+              />
+              CSS
             </a>
             <a href="bootstrap.html">
-              <img src="img/resorces/Icons/Folder Open.ico" width="24" height="24" class="me-2"> Bootstrap
+              <img
+                src="img/resorces/Icons/Folder Open.ico"
+                width="24"
+                height="24"
+                class="me-2"
+              />
+              Bootstrap
             </a>
             <a href="docker.html">
-              <img src="img/resorces/Icons/Manage your Server.ico" width="24" height="24" class="me-2"> Docker
+              <img
+                src="img/resorces/Icons/Manage your Server.ico"
+                width="24"
+                height="24"
+                class="me-2"
+              />
+              Docker
             </a>
             <a href="nginx.html">
-              <img src="img/resorces/Icons/Earth (fixed).ico" width="24" height="24" class="me-2"> Nginx
+              <img
+                src="img/resorces/Icons/Earth (fixed).ico"
+                width="24"
+                height="24"
+                class="me-2"
+              />
+              Nginx
+            </a>
+            <a href="etiquetas-html.html">
+              <img
+                src="img/resorces/Icons/List File.ico"
+                width="24"
+                height="24"
+                class="me-2"
+              />
+              Etiquetas HTML
             </a>
           </div>
 
-          <div class="xp_menu_footer d-flex justify-content-end align-items-center">
-            <label for="toggle_start_menu" class="xp_exit_btn text-white text-decoration-none d-flex align-items-center p-1 me-2 mb-0" style="cursor: pointer;">
-              <img src="img/resorces/Icons/log_off.jpg" width="20" height="20" class="me-2 rounded-1">
+          <div
+            class="xp_menu_footer d-flex justify-content-end align-items-center"
+          >
+            <label
+              for="toggle_start_menu"
+              class="xp_exit_btn text-white text-decoration-none d-flex align-items-center p-1 me-2 mb-0"
+              style="cursor: pointer"
+            >
+              <img
+                src="img/resorces/Icons/log_off.jpg"
+                width="20"
+                height="20"
+                class="me-2 rounded-1"
+              />
               <span>Cerrar menú</span>
             </label>
           </div>
@@ -202,8 +371,12 @@
 
       <!-- Lado derecho: Área de notificaciones (System Tray) -->
       <div class="xp_system_tray">
-        <img src="img/resorces/Icons/318.ico" alt="Red" class="xp_tray_icon">
-        <img src="img/resorces/Icons/657.ico" alt="Sonido" class="xp_tray_icon">
+        <img src="img/resorces/Icons/318.ico" alt="Red" class="xp_tray_icon" />
+        <img
+          src="img/resorces/Icons/657.ico"
+          alt="Sonido"
+          class="xp_tray_icon"
+        />
         <span class="xp_clock_text">10:35 AM</span>
       </div>
     </footer>

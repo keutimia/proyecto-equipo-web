@@ -11,9 +11,15 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
-  <body style="margin: 0 !important; padding: 0 !important; padding-bottom: 120px !important;">
+  <body
+    style="
+      margin: 0 !important;
+      padding: 0 !important;
+      padding-bottom: 120px !important;
+    "
+  >
     <!-- Barra de navegación superior fija al borde -->
-    <header class="fixed-top m-0 p-0" style="z-index: 1050;">
+    <header class="fixed-top m-0 p-0" style="z-index: 1050">
       <nav class="navbar navbar-expand-lg xp_bar m-0 p-0">
         <div class="container-fluid">
           <button
@@ -32,16 +38,32 @@
             <h1 class="title_xp_font m-0 my-auto">Windows XP</h1>
             <ul class="navbar-nav ms-3">
               <li class="nav-item">
-                <a class="xp_taskbar_item text-decoration-none" href="index.html">INICIO</a>
+                <a
+                  class="xp_taskbar_item text-decoration-none"
+                  href="index.html"
+                  >INICIO</a
+                >
               </li>
               <li class="nav-item">
-                <a class="xp_taskbar_item text-decoration-none" href="integrantes.html">EQUIPO</a>
+                <a
+                  class="xp_taskbar_item text-decoration-none"
+                  href="integrantes.html"
+                  >EQUIPO</a
+                >
               </li>
               <li class="nav-item">
-                <a class="xp_taskbar_item text-decoration-none" href="contenidos.html">INVESTIGACIONES</a>
+                <a
+                  class="xp_taskbar_item text-decoration-none"
+                  href="contenidos.html"
+                  >INVESTIGACIONES</a
+                >
               </li>
               <li class="nav-item">
-                <a class="xp_taskbar_item text-decoration-none" href="reflexion.html">REFLEXIÓN</a>
+                <a
+                  class="xp_taskbar_item text-decoration-none"
+                  href="reflexion.html"
+                  >REFLEXIÓN</a
+                >
               </li>
             </ul>
           </div>
@@ -67,47 +89,76 @@
           <div class="p-4 text-dark">
             <h4 class="mb-2 fw-bold text-primary">¿Qué es Bootstrap?</h4>
             <p>
-              <strong>Bootstrap</strong> es el framework de código abierto de HTML, CSS y JavaScript más popular del mundo para el desarrollo de interfaces web responsivas y orientadas a dispositivos móviles (<em>Mobile-First</em>). Permite diseñar sitios modernos, estructurados y adaptables de manera rápida mediante clases utilitarias y componentes preconstruidos.
+              <strong>Bootstrap</strong> es el framework de código abierto de
+              HTML, CSS y JavaScript más popular del mundo para el desarrollo de
+              interfaces web responsivas y orientadas a dispositivos móviles
+              (<em>Mobile-First</em>). Permite diseñar sitios modernos,
+              estructurados y adaptables de manera rápida mediante clases
+              utilitarias y componentes preconstruidos.
             </p>
 
             <div class="alert alert-info py-2 px-3 border border-primary">
-              <strong>Ventajas de usar un Framework CSS:</strong> Estandarización de componentes, rapidez en el prototipado, soporte cross-browser garantizado y un sistema de grillas robusto que evita escribir cientos de líneas de media queries manualmente.
+              <strong>Ventajas de usar un Framework CSS:</strong>
+              Estandarización de componentes, rapidez en el prototipado, soporte
+              cross-browser garantizado y un sistema de grillas robusto que
+              evita escribir cientos de líneas de media queries manualmente.
             </div>
 
             <hr />
 
             <h5 class="mt-3 fw-bold">1. Concepto de Diseño Responsivo</h5>
             <p>
-              El diseño responsivo asegura que el contenido y la disposición visual de una página web se adapten automáticamente al tamaño de pantalla y orientación del dispositivo del usuario (smartphones, tablets, laptops y monitores de escritorio) usando breakpoints estándar (<code>xs</code>, <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code>, <code>xxl</code>).
+              El diseño responsivo asegura que el contenido y la disposición
+              visual de una página web se adapten automáticamente al tamaño de
+              pantalla y orientación del dispositivo del usuario (smartphones,
+              tablets, laptops y monitores de escritorio) usando breakpoints
+              estándar (<code>xs</code>, <code>sm</code>, <code>md</code>,
+              <code>lg</code>, <code>xl</code>, <code>xxl</code>).
             </p>
 
             <hr />
 
             <h5 class="mt-4 fw-bold">2. Sistema de Grillas (Grid System)</h5>
-            <p>El sistema de diseño de Bootstrap se basa en una estructura flexible dividida en <strong>12 columnas</strong>:</p>
+            <p>
+              El sistema de diseño de Bootstrap se basa en una estructura
+              flexible dividida en <strong>12 columnas</strong>:
+            </p>
             <div class="table-responsive">
-              <table class="table table-bordered table-sm align-middle bg-white">
+              <table
+                class="table table-bordered table-sm align-middle bg-white"
+              >
                 <thead class="table-primary">
                   <tr>
-                    <th style="width: 25%;">Elemento</th>
-                    <th style="width: 45%;">Función</th>
-                    <th style="width: 30%;">Ejemplo</th>
+                    <th style="width: 25%">Elemento</th>
+                    <th style="width: 45%">Función</th>
+                    <th style="width: 30%">Ejemplo</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td><code>.container</code> / <code>.container-fluid</code></td>
-                    <td>Contenedor base que envuelve, alinea y da márgenes laterales al contenido.</td>
+                    <td>
+                      <code>.container</code> / <code>.container-fluid</code>
+                    </td>
+                    <td>
+                      Contenedor base que envuelve, alinea y da márgenes
+                      laterales al contenido.
+                    </td>
                     <td><code>&lt;div class="container"&gt;</code></td>
                   </tr>
                   <tr>
                     <td><code>.row</code></td>
-                    <td>Fila horizontal que agrupa y organiza un conjunto de columnas mediante Flexbox.</td>
+                    <td>
+                      Fila horizontal que agrupa y organiza un conjunto de
+                      columnas mediante Flexbox.
+                    </td>
                     <td><code>&lt;div class="row"&gt;</code></td>
                   </tr>
                   <tr>
                     <td><code>.col-*</code> (ej: <code>col-md-6</code>)</td>
-                    <td>Define cuántas de las 12 columnas ocupa un bloque según el tamaño de la pantalla.</td>
+                    <td>
+                      Define cuántas de las 12 columnas ocupa un bloque según el
+                      tamaño de la pantalla.
+                    </td>
                     <td><code>&lt;div class="col-md-6"&gt;</code></td>
                   </tr>
                 </tbody>
@@ -123,18 +174,31 @@
                   <h6 class="fw-bold text-primary">Bootstrap 5</h6>
                   <ul class="small mb-0">
                     <li>Estructura responsiva inmediata (Grid & Flexbox).</li>
-                    <li>Utilidades rápidas de espaciado (<code>m-*</code>, <code>p-*</code>), colores y tipografías.</li>
+                    <li>
+                      Utilidades rápidas de espaciado (<code>m-*</code>,
+                      <code>p-*</code>), colores y tipografías.
+                    </li>
                     <li>Componentes accesibles y probados.</li>
                   </ul>
                 </div>
               </div>
               <div class="col-md-6 mb-2">
                 <div class="p-3 border border-secondary bg-light h-100">
-                  <h6 class="fw-bold text-primary">CSS Personalizado (`styles.css`)</h6>
+                  <h6 class="fw-bold text-primary">
+                    CSS Personalizado (`styles.css`)
+                  </h6>
                   <ul class="small mb-0">
-                    <li>Identidad gráfica única del proyecto (temática Windows XP).</li>
-                    <li>Bordes biselados, degradados específicos y sombras retro.</li>
-                    <li>Reglas personalizadas no disponibles por defecto en Bootstrap.</li>
+                    <li>
+                      Identidad gráfica única del proyecto (temática Windows
+                      XP).
+                    </li>
+                    <li>
+                      Bordes biselados, degradados específicos y sombras retro.
+                    </li>
+                    <li>
+                      Reglas personalizadas no disponibles por defecto en
+                      Bootstrap.
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -142,55 +206,139 @@
 
             <hr />
 
-            <h5 class="mt-4 fw-bold">4. Componentes de Bootstrap Aplicados en el Proyecto</h5>
+            <h5 class="mt-4 fw-bold">
+              4. Componentes de Bootstrap Aplicados en el Proyecto
+            </h5>
             <ul>
-              <li><strong>Barra de navegación (<code>navbar</code>):</strong> Menú superior colapsable y adaptable a móviles.</li>
-              <li><strong>Sistema de grillas (<code>row</code>, <code>col-md-*</code>):</strong> Distribución uniforme de perfiles, tablas informativas y portafolios.</li>
-              <li><strong>Tablas responsivas (<code>table</code>, <code>table-responsive</code>):</strong> Visualización ordenada y desplazable de contenidos técnicos.</li>
-              <li><strong>Botones y Badges (<code>btn</code>, <code>badge</code>):</strong> Botones interactivos y etiquetas de estado en las fichas de proyectos.</li>
+              <li>
+                <strong>Barra de navegación (<code>navbar</code>):</strong> Menú
+                superior colapsable y adaptable a móviles.
+              </li>
+              <li>
+                <strong
+                  >Sistema de grillas (<code>row</code>,
+                  <code>col-md-*</code>):</strong
+                >
+                Distribución uniforme de perfiles, tablas informativas y
+                portafolios.
+              </li>
+              <li>
+                <strong
+                  >Tablas responsivas (<code>table</code>,
+                  <code>table-responsive</code>):</strong
+                >
+                Visualización ordenada y desplazable de contenidos técnicos.
+              </li>
+              <li>
+                <strong
+                  >Botones y Badges (<code>btn</code>,
+                  <code>badge</code>):</strong
+                >
+                Botones interactivos y etiquetas de estado en las fichas de
+                proyectos.
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </main>
 
-<footer class="xp_taskbar fixed-bottom">
+    <footer class="xp_taskbar fixed-bottom">
       <!-- Lado izquierdo: Botón y Menú de Inicio -->
-      <div class="xp_start_menu_wrapper position-relative h-100 d-flex align-items-center">
-        
-        <input type="checkbox" id="toggle_start_menu" class="d-none">
-        
-        <label for="toggle_start_menu" class="xp_start_btn text-decoration-none m-0 d-flex align-items-center justify-content-center" style="cursor: pointer; height: 30px;">
+      <div
+        class="xp_start_menu_wrapper position-relative h-100 d-flex align-items-center"
+      >
+        <input type="checkbox" id="toggle_start_menu" class="d-none" />
+
+        <label
+          for="toggle_start_menu"
+          class="xp_start_btn text-decoration-none m-0 d-flex align-items-center justify-content-center"
+          style="cursor: pointer; height: 30px"
+        >
           Menú
         </label>
 
         <div class="xp_classic_start_menu shadow-lg">
           <div class="xp_menu_header d-flex align-items-center">
-            <img src="img/resorces/drooling_cat_lain.jpg" alt="Usuario" class="xp_user_pic">
+            <img
+              src="img/resorces/drooling_cat_lain.jpg"
+              alt="Usuario"
+              class="xp_user_pic"
+            />
             <span class="text-white fw-bold ms-2 xp_user_name">Usuario</span>
           </div>
 
           <div class="xp_menu_list">
             <a href="html-semantico.html">
-              <img src="img/resorces/Icons/Internet Properties.ico" width="24" height="24" class="me-2"> HTML
+              <img
+                src="img/resorces/Icons/Internet Properties.ico"
+                width="24"
+                height="24"
+                class="me-2"
+              />
+              HTML
             </a>
             <a href="css.html">
-              <img src="img/resorces/Icons/Display.ico" width="24" height="24" class="me-2"> CSS
+              <img
+                src="img/resorces/Icons/Display.ico"
+                width="24"
+                height="24"
+                class="me-2"
+              />
+              CSS
             </a>
             <a href="bootstrap.html">
-              <img src="img/resorces/Icons/Folder Open.ico" width="24" height="24" class="me-2"> Bootstrap
+              <img
+                src="img/resorces/Icons/Folder Open.ico"
+                width="24"
+                height="24"
+                class="me-2"
+              />
+              Bootstrap
             </a>
             <a href="docker.html">
-              <img src="img/resorces/Icons/Manage your Server.ico" width="24" height="24" class="me-2"> Docker
+              <img
+                src="img/resorces/Icons/Manage your Server.ico"
+                width="24"
+                height="24"
+                class="me-2"
+              />
+              Docker
             </a>
             <a href="nginx.html">
-              <img src="img/resorces/Icons/Earth (fixed).ico" width="24" height="24" class="me-2"> Nginx
+              <img
+                src="img/resorces/Icons/Earth (fixed).ico"
+                width="24"
+                height="24"
+                class="me-2"
+              />
+              Nginx
+            </a>
+            <a href="etiquetas-html.html">
+              <img
+                src="img/resorces/Icons/List File.ico"
+                width="24"
+                height="24"
+                class="me-2"
+              />
+              Etiquetas HTML
             </a>
           </div>
 
-          <div class="xp_menu_footer d-flex justify-content-end align-items-center">
-            <label for="toggle_start_menu" class="xp_exit_btn text-white text-decoration-none d-flex align-items-center p-1 me-2 mb-0" style="cursor: pointer;">
-              <img src="img/resorces/Icons/log_off.jpg" width="20" height="20" class="me-2 rounded-1">
+          <div
+            class="xp_menu_footer d-flex justify-content-end align-items-center"
+          >
+            <label
+              for="toggle_start_menu"
+              class="xp_exit_btn text-white text-decoration-none d-flex align-items-center p-1 me-2 mb-0"
+              style="cursor: pointer"
+            >
+              <img
+                src="img/resorces/Icons/log_off.jpg"
+                width="20"
+                height="20"
+                class="me-2 rounded-1"
+              />
               <span>Cerrar menú</span>
             </label>
           </div>
@@ -199,8 +347,12 @@
 
       <!-- Lado derecho: Área de notificaciones (System Tray) -->
       <div class="xp_system_tray">
-        <img src="img/resorces/Icons/318.ico" alt="Red" class="xp_tray_icon">
-        <img src="img/resorces/Icons/657.ico" alt="Sonido" class="xp_tray_icon">
+        <img src="img/resorces/Icons/318.ico" alt="Red" class="xp_tray_icon" />
+        <img
+          src="img/resorces/Icons/657.ico"
+          alt="Sonido"
+          class="xp_tray_icon"
+        />
         <span class="xp_clock_text">10:35 AM</span>
       </div>
     </footer>

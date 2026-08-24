@@ -11,9 +11,15 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
-  <body style="margin: 0 !important; padding: 0 !important; padding-bottom: 120px !important;">
+  <body
+    style="
+      margin: 0 !important;
+      padding: 0 !important;
+      padding-bottom: 120px !important;
+    "
+  >
     <!-- Header pegado al borde superior con fixed-top -->
-    <header class="fixed-top m-0 p-0" style="z-index: 1050;">
+    <header class="fixed-top m-0 p-0" style="z-index: 1050">
       <nav class="navbar navbar-expand-lg xp_bar m-0 p-0">
         <div class="container-fluid">
           <button
@@ -32,16 +38,32 @@
             <h1 class="title_xp_font m-0 my-auto">Windows XP</h1>
             <ul class="navbar-nav ms-3">
               <li class="nav-item">
-                <a class="xp_taskbar_item text-decoration-none" href="index.html">INICIO</a>
+                <a
+                  class="xp_taskbar_item text-decoration-none"
+                  href="index.html"
+                  >INICIO</a
+                >
               </li>
               <li class="nav-item">
-                <a class="xp_taskbar_item text-decoration-none" href="integrantes.html">EQUIPO</a>
+                <a
+                  class="xp_taskbar_item text-decoration-none"
+                  href="integrantes.html"
+                  >EQUIPO</a
+                >
               </li>
               <li class="nav-item">
-                <a class="xp_taskbar_item text-decoration-none" href="contenidos.html">INVESTIGACIONES</a>
+                <a
+                  class="xp_taskbar_item text-decoration-none"
+                  href="contenidos.html"
+                  >INVESTIGACIONES</a
+                >
               </li>
               <li class="nav-item">
-                <a class="xp_taskbar_item text-decoration-none" href="reflexion.html">REFLEXIÓN</a>
+                <a
+                  class="xp_taskbar_item text-decoration-none"
+                  href="reflexion.html"
+                  >REFLEXIÓN</a
+                >
               </li>
             </ul>
           </div>
@@ -65,20 +87,32 @@
 
           <!-- Contenido interno de la ventana -->
           <div class="p-4 text-dark">
-            <h4 class="mb-2 fw-bold text-primary">¿Qué es CSS y cuál es su importancia?</h4>
+            <h4 class="mb-2 fw-bold text-primary">
+              ¿Qué es CSS y cuál es su importancia?
+            </h4>
             <p>
-              <strong>CSS (Cascading Style Sheets)</strong> es el lenguaje utilizado para describir la presentación, el formato visual y el diseño de documentos estructurados en HTML. Su importancia radica en separar claramente la estructura del contenido de su capa visual, permitiendo mantener una identidad gráfica consistente y adaptable a múltiples dispositivos.
+              <strong>CSS (Cascading Style Sheets)</strong> es el lenguaje
+              utilizado para describir la presentación, el formato visual y el
+              diseño de documentos estructurados en HTML. Su importancia radica
+              en separar claramente la estructura del contenido de su capa
+              visual, permitiendo mantener una identidad gráfica consistente y
+              adaptable a múltiples dispositivos.
             </p>
 
             <div class="alert alert-info py-2 px-3 border border-primary">
-              <strong>Estructura vs. Presentación:</strong> Mientras que HTML organiza el contenido y define la jerarquía lógica (títulos, párrafos, tablas), CSS determina cómo se visualiza dicho contenido (colores, fuentes, márgenes, bordes y alineaciones).
+              <strong>Estructura vs. Presentación:</strong> Mientras que HTML
+              organiza el contenido y define la jerarquía lógica (títulos,
+              párrafos, tablas), CSS determina cómo se visualiza dicho contenido
+              (colores, fuentes, márgenes, bordes y alineaciones).
             </div>
 
             <hr />
 
             <h5 class="mt-3 fw-bold">1. Formas de Aplicar CSS</h5>
             <div class="table-responsive">
-              <table class="table table-bordered table-sm align-middle bg-white">
+              <table
+                class="table table-bordered table-sm align-middle bg-white"
+              >
                 <thead class="table-primary">
                   <tr>
                     <th>Método</th>
@@ -89,18 +123,40 @@
                 <tbody>
                   <tr>
                     <td><strong>En línea (Inline)</strong></td>
-                    <td>Se aplica directamente en la etiqueta mediante el atributo <code>style</code>.</td>
-                    <td><code>&lt;p style="color: blue;"&gt;Texto&lt;/p&gt;</code></td>
+                    <td>
+                      Se aplica directamente en la etiqueta mediante el atributo
+                      <code>style</code>.
+                    </td>
+                    <td>
+                      <code>&lt;p style="color: blue;"&gt;Texto&lt;/p&gt;</code>
+                    </td>
                   </tr>
                   <tr>
                     <td><strong>Interno (Internal)</strong></td>
-                    <td>Se define dentro de la etiqueta <code>&lt;style&gt;</code> en el encabezado <code>&lt;head&gt;</code>.</td>
-                    <td><code>&lt;style&gt; p { color: blue; } &lt;/style&gt;</code></td>
+                    <td>
+                      Se define dentro de la etiqueta
+                      <code>&lt;style&gt;</code> en el encabezado
+                      <code>&lt;head&gt;</code>.
+                    </td>
+                    <td>
+                      <code
+                        >&lt;style&gt; p { color: blue; } &lt;/style&gt;</code
+                      >
+                    </td>
                   </tr>
                   <tr>
                     <td><strong>Externo (External)</strong></td>
-                    <td>Se enlaza un archivo <code>.css</code> independiente mediante la etiqueta <code>&lt;link&gt;</code>. Es el método más recomendado.</td>
-                    <td><code>&lt;link rel="stylesheet" href="css/styles.css"&gt;</code></td>
+                    <td>
+                      Se enlaza un archivo <code>.css</code> independiente
+                      mediante la etiqueta <code>&lt;link&gt;</code>. Es el
+                      método más recomendado.
+                    </td>
+                    <td>
+                      <code
+                        >&lt;link rel="stylesheet"
+                        href="css/styles.css"&gt;</code
+                      >
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -108,83 +164,188 @@
 
             <hr />
 
-            <h5 class="mt-4 fw-bold">2. Selectores, Clases e Identificadores</h5>
+            <h5 class="mt-4 fw-bold">
+              2. Selectores, Clases e Identificadores
+            </h5>
             <ul>
-              <li><strong>Selector de tipo / etiqueta:</strong> Aplica estilos a todos los elementos del mismo tipo (ej. <code>p { ... }</code>, <code>h1 { ... }</code>).</li>
-              <li><strong>Clases (<code>.nombre-clase</code>):</strong> Se pueden reutilizar en múltiples elementos para darles el mismo formato (ej. <code>.xp_window</code>, <code>.xp_btn</code>).</li>
-              <li><strong>Identificadores (<code>#nombre-id</code>):</strong> Son únicos por página y se usan para elementos específicos (ej. <code>#menuPrincipal</code>).</li>
+              <li>
+                <strong>Selector de tipo / etiqueta:</strong> Aplica estilos a
+                todos los elementos del mismo tipo (ej. <code>p { ... }</code>,
+                <code>h1 { ... }</code>).
+              </li>
+              <li>
+                <strong>Clases (<code>.nombre-clase</code>):</strong> Se pueden
+                reutilizar en múltiples elementos para darles el mismo formato
+                (ej. <code>.xp_window</code>, <code>.xp_btn</code>).
+              </li>
+              <li>
+                <strong>Identificadores (<code>#nombre-id</code>):</strong> Son
+                únicos por página y se usan para elementos específicos (ej.
+                <code>#menuPrincipal</code>).
+              </li>
             </ul>
 
             <hr />
 
             <h5 class="mt-4 fw-bold">3. El Modelo de Caja (Box Model)</h5>
-            <p>Todo elemento en CSS es considerado una caja rectangular compuesta por cuatro capas:</p>
+            <p>
+              Todo elemento en CSS es considerado una caja rectangular compuesta
+              por cuatro capas:
+            </p>
             <div class="row text-center mb-3">
               <div class="col-md-3 mb-2">
-                <div class="p-2 border border-secondary bg-light"><strong>Contenido (Content):</strong> El texto, imagen o elemento interno.</div>
+                <div class="p-2 border border-secondary bg-light">
+                  <strong>Contenido (Content):</strong> El texto, imagen o
+                  elemento interno.
+                </div>
               </div>
               <div class="col-md-3 mb-2">
-                <div class="p-2 border border-secondary bg-light"><strong>Relleno (Padding):</strong> Espacio interno entre el contenido y el borde.</div>
+                <div class="p-2 border border-secondary bg-light">
+                  <strong>Relleno (Padding):</strong> Espacio interno entre el
+                  contenido y el borde.
+                </div>
               </div>
               <div class="col-md-3 mb-2">
-                <div class="p-2 border border-secondary bg-light"><strong>Borde (Border):</strong> Línea que delimita el padding del margen.</div>
+                <div class="p-2 border border-secondary bg-light">
+                  <strong>Borde (Border):</strong> Línea que delimita el padding
+                  del margen.
+                </div>
               </div>
               <div class="col-md-3 mb-2">
-                <div class="p-2 border border-secondary bg-light"><strong>Margen (Margin):</strong> Espacio exterior que separa la caja de otros elementos.</div>
+                <div class="p-2 border border-secondary bg-light">
+                  <strong>Margen (Margin):</strong> Espacio exterior que separa
+                  la caja de otros elementos.
+                </div>
               </div>
             </div>
 
             <hr />
 
-            <h5 class="mt-4 fw-bold">4. Estilos Personalizados Aplicados en Nuestro Sitio</h5>
-            <p>En nuestro archivo central <code>css/styles.css</code> implementamos reglas para lograr la estética retro de Windows XP:</p>
+            <h5 class="mt-4 fw-bold">
+              4. Estilos Personalizados Aplicados en Nuestro Sitio
+            </h5>
+            <p>
+              En nuestro archivo central
+              <code>css/styles.css</code> implementamos reglas para lograr la
+              estética retro de Windows XP:
+            </p>
             <ul class="mb-0">
-              <li><code>.xp_bar</code> y <code>.xp_taskbar</code>: Degradados azules y posicionamiento fijo para la barra superior e inferior de tareas.</li>
-              <li><code>.xp_window</code>: Bordes biselados, sombras suaves y fondos personalizados para emular ventanas del sistema operativo.</li>
-              <li><code>.xp_btn</code>: Estilos de botones tridimensionales con efectos visuales para las acciones de minimizar, maximizar y cerrar.</li>
+              <li>
+                <code>.xp_bar</code> y <code>.xp_taskbar</code>: Degradados
+                azules y posicionamiento fijo para la barra superior e inferior
+                de tareas.
+              </li>
+              <li>
+                <code>.xp_window</code>: Bordes biselados, sombras suaves y
+                fondos personalizados para emular ventanas del sistema
+                operativo.
+              </li>
+              <li>
+                <code>.xp_btn</code>: Estilos de botones tridimensionales con
+                efectos visuales para las acciones de minimizar, maximizar y
+                cerrar.
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </main>
 
-<footer class="xp_taskbar fixed-bottom">
+    <footer class="xp_taskbar fixed-bottom">
       <!-- Lado izquierdo: Botón y Menú de Inicio -->
-      <div class="xp_start_menu_wrapper position-relative h-100 d-flex align-items-center">
-        
-        <input type="checkbox" id="toggle_start_menu" class="d-none">
-        
-        <label for="toggle_start_menu" class="xp_start_btn text-decoration-none m-0 d-flex align-items-center justify-content-center" style="cursor: pointer; height: 30px;">
+      <div
+        class="xp_start_menu_wrapper position-relative h-100 d-flex align-items-center"
+      >
+        <input type="checkbox" id="toggle_start_menu" class="d-none" />
+
+        <label
+          for="toggle_start_menu"
+          class="xp_start_btn text-decoration-none m-0 d-flex align-items-center justify-content-center"
+          style="cursor: pointer; height: 30px"
+        >
           Menú
         </label>
 
         <div class="xp_classic_start_menu shadow-lg">
           <div class="xp_menu_header d-flex align-items-center">
-            <img src="img/resorces/drooling_cat_lain.jpg" alt="Usuario" class="xp_user_pic">
+            <img
+              src="img/resorces/drooling_cat_lain.jpg"
+              alt="Usuario"
+              class="xp_user_pic"
+            />
             <span class="text-white fw-bold ms-2 xp_user_name">Usuario</span>
           </div>
 
           <div class="xp_menu_list">
             <a href="html-semantico.html">
-              <img src="img/resorces/Icons/Internet Properties.ico" width="24" height="24" class="me-2"> HTML
+              <img
+                src="img/resorces/Icons/Internet Properties.ico"
+                width="24"
+                height="24"
+                class="me-2"
+              />
+              HTML
             </a>
             <a href="css.html">
-              <img src="img/resorces/Icons/Display.ico" width="24" height="24" class="me-2"> CSS
+              <img
+                src="img/resorces/Icons/Display.ico"
+                width="24"
+                height="24"
+                class="me-2"
+              />
+              CSS
             </a>
             <a href="bootstrap.html">
-              <img src="img/resorces/Icons/Folder Open.ico" width="24" height="24" class="me-2"> Bootstrap
+              <img
+                src="img/resorces/Icons/Folder Open.ico"
+                width="24"
+                height="24"
+                class="me-2"
+              />
+              Bootstrap
             </a>
             <a href="docker.html">
-              <img src="img/resorces/Icons/Manage your Server.ico" width="24" height="24" class="me-2"> Docker
+              <img
+                src="img/resorces/Icons/Manage your Server.ico"
+                width="24"
+                height="24"
+                class="me-2"
+              />
+              Docker
             </a>
             <a href="nginx.html">
-              <img src="img/resorces/Icons/Earth (fixed).ico" width="24" height="24" class="me-2"> Nginx
+              <img
+                src="img/resorces/Icons/Earth (fixed).ico"
+                width="24"
+                height="24"
+                class="me-2"
+              />
+              Nginx
+            </a>
+            <a href="etiquetas-html.html">
+              <img
+                src="img/resorces/Icons/List File.ico"
+                width="24"
+                height="24"
+                class="me-2"
+              />
+              Etiquetas HTML
             </a>
           </div>
-
-          <div class="xp_menu_footer d-flex justify-content-end align-items-center">
-            <label for="toggle_start_menu" class="xp_exit_btn text-white text-decoration-none d-flex align-items-center p-1 me-2 mb-0" style="cursor: pointer;">
-              <img src="img/resorces/Icons/log_off.jpg" width="20" height="20" class="me-2 rounded-1">
+          <div
+            class="xp_menu_footer d-flex justify-content-end align-items-center"
+          >
+            <label
+              for="toggle_start_menu"
+              class="xp_exit_btn text-white text-decoration-none d-flex align-items-center p-1 me-2 mb-0"
+              style="cursor: pointer"
+            >
+              <img
+                src="img/resorces/Icons/log_off.jpg"
+                width="20"
+                height="20"
+                class="me-2 rounded-1"
+              />
               <span>Cerrar menú</span>
             </label>
           </div>
@@ -193,8 +354,12 @@
 
       <!-- Lado derecho: Área de notificaciones (System Tray) -->
       <div class="xp_system_tray">
-        <img src="img/resorces/Icons/318.ico" alt="Red" class="xp_tray_icon">
-        <img src="img/resorces/Icons/657.ico" alt="Sonido" class="xp_tray_icon">
+        <img src="img/resorces/Icons/318.ico" alt="Red" class="xp_tray_icon" />
+        <img
+          src="img/resorces/Icons/657.ico"
+          alt="Sonido"
+          class="xp_tray_icon"
+        />
         <span class="xp_clock_text">10:35 AM</span>
       </div>
     </footer>

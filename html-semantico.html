@@ -11,9 +11,15 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
-  <body style="margin: 0 !important; padding: 0 !important; padding-bottom: 120px !important;">
+  <body
+    style="
+      margin: 0 !important;
+      padding: 0 !important;
+      padding-bottom: 120px !important;
+    "
+  >
     <!-- Header pegado al borde superior -->
-    <header class="fixed-top m-0 p-0" style="z-index: 1050;">
+    <header class="fixed-top m-0 p-0" style="z-index: 1050">
       <nav class="navbar navbar-expand-lg xp_bar m-0 p-0">
         <div class="container-fluid">
           <button
@@ -32,16 +38,32 @@
             <h1 class="title_xp_font m-0 my-auto">Windows XP</h1>
             <ul class="navbar-nav ms-3">
               <li class="nav-item">
-                <a class="xp_taskbar_item text-decoration-none" href="index.html">INICIO</a>
+                <a
+                  class="xp_taskbar_item text-decoration-none"
+                  href="index.html"
+                  >INICIO</a
+                >
               </li>
               <li class="nav-item">
-                <a class="xp_taskbar_item text-decoration-none" href="integrantes.html">EQUIPO</a>
+                <a
+                  class="xp_taskbar_item text-decoration-none"
+                  href="integrantes.html"
+                  >EQUIPO</a
+                >
               </li>
               <li class="nav-item">
-                <a class="xp_taskbar_item text-decoration-none" href="contenidos.html">INVESTIGACIONES</a>
+                <a
+                  class="xp_taskbar_item text-decoration-none"
+                  href="contenidos.html"
+                  >INVESTIGACIONES</a
+                >
               </li>
               <li class="nav-item">
-                <a class="xp_taskbar_item text-decoration-none" href="reflexion.html">REFLEXIÓN</a>
+                <a
+                  class="xp_taskbar_item text-decoration-none"
+                  href="reflexion.html"
+                  >REFLEXIÓN</a
+                >
               </li>
             </ul>
           </div>
@@ -63,47 +85,66 @@
           </div>
 
           <div class="p-4 text-dark">
-            <h4 class="mb-2 fw-bold text-primary">¿Qué es el HTML Semántico?</h4>
+            <h4 class="mb-2 fw-bold text-primary">
+              ¿Qué es el HTML Semántico?
+            </h4>
             <p>
-              El HTML semántico consiste en utilizar las etiquetas HTML para su propósito previsto, aportando significado a la estructura de la página tanto para los desarrolladores como para los navegadores, buscadores y lectores de pantalla.
+              El HTML semántico consiste en utilizar las etiquetas HTML para su
+              propósito previsto, aportando significado a la estructura de la
+              página tanto para los desarrolladores como para los navegadores,
+              buscadores y lectores de pantalla.
             </p>
 
             <hr />
 
             <h5 class="mt-3 fw-bold">Etiquetas Semánticas Principales</h5>
             <div class="table-responsive mt-2">
-              <table class="table table-bordered table-sm align-middle bg-white">
+              <table
+                class="table table-bordered table-sm align-middle bg-white"
+              >
                 <thead class="table-primary">
                   <tr>
-                    <th style="width: 20%;">Etiqueta</th>
-                    <th style="width: 45%;">Descripción</th>
-                    <th style="width: 35%;">Uso en nuestro proyecto</th>
+                    <th style="width: 20%">Etiqueta</th>
+                    <th style="width: 45%">Descripción</th>
+                    <th style="width: 35%">Uso en nuestro proyecto</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td><code>&lt;header&gt;</code></td>
-                    <td>Contenedor de navegación inicial, títulos o introducción.</td>
+                    <td>
+                      Contenedor de navegación inicial, títulos o introducción.
+                    </td>
                     <td>Barra superior de navegación XP.</td>
                   </tr>
                   <tr>
                     <td><code>&lt;nav&gt;</code></td>
-                    <td>Sección que agrupa los enlaces principales de navegación.</td>
+                    <td>
+                      Sección que agrupa los enlaces principales de navegación.
+                    </td>
                     <td>Menú con botones INICIO, EQUIPO, etc.</td>
                   </tr>
                   <tr>
                     <td><code>&lt;main&gt;</code></td>
-                    <td>Contenedor exclusivo para el contenido central del documento.</td>
+                    <td>
+                      Contenedor exclusivo para el contenido central del
+                      documento.
+                    </td>
                     <td>Envuelve las ventanas activas de cada página.</td>
                   </tr>
                   <tr>
                     <td><code>&lt;section&gt;</code></td>
-                    <td>Bloque temático o sección independiente del contenido.</td>
+                    <td>
+                      Bloque temático o sección independiente del contenido.
+                    </td>
                     <td>Módulos de información y fichas de perfil.</td>
                   </tr>
                   <tr>
                     <td><code>&lt;article&gt;</code></td>
-                    <td>Contenido independiente y reutilizable (ej: proyectos, posts).</td>
+                    <td>
+                      Contenido independiente y reutilizable (ej: proyectos,
+                      posts).
+                    </td>
                     <td>Tarjetas de proyectos de cada integrante.</td>
                   </tr>
                   <tr>
@@ -113,7 +154,9 @@
                   </tr>
                   <tr>
                     <td><code>&lt;footer&gt;</code></td>
-                    <td>Pie de página con información complementaria o de autoría.</td>
+                    <td>
+                      Pie de página con información complementaria o de autoría.
+                    </td>
                     <td>Barra de tareas inferior estilo Windows XP.</td>
                   </tr>
                 </tbody>
@@ -122,52 +165,121 @@
 
             <h5 class="mt-4 fw-bold">Beneficios Clave</h5>
             <ul class="mb-0">
-              <li><strong>Accesibilidad:</strong> Permite que los lectores de pantalla para personas con discapacidad visual naveguen rápidamente por los bloques clave.</li>
-              <li><strong>Posicionamiento SEO:</strong> Los motores de búsqueda indexan y comprenden la jerarquía del sitio con mayor precisión.</li>
-              <li><strong>Código Limpio y Mantenible:</strong> Evita el exceso de etiquetas <code>&lt;div&gt;</code> sin significado ("divitis").</li>
+              <li>
+                <strong>Accesibilidad:</strong> Permite que los lectores de
+                pantalla para personas con discapacidad visual naveguen
+                rápidamente por los bloques clave.
+              </li>
+              <li>
+                <strong>Posicionamiento SEO:</strong> Los motores de búsqueda
+                indexan y comprenden la jerarquía del sitio con mayor precisión.
+              </li>
+              <li>
+                <strong>Código Limpio y Mantenible:</strong> Evita el exceso de
+                etiquetas <code>&lt;div&gt;</code> sin significado ("divitis").
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </main>
 
-<footer class="xp_taskbar fixed-bottom">
+    <footer class="xp_taskbar fixed-bottom">
       <!-- Lado izquierdo: Botón y Menú de Inicio -->
-      <div class="xp_start_menu_wrapper position-relative h-100 d-flex align-items-center">
-        
-        <input type="checkbox" id="toggle_start_menu" class="d-none">
-        
-        <label for="toggle_start_menu" class="xp_start_btn text-decoration-none m-0 d-flex align-items-center justify-content-center" style="cursor: pointer; height: 30px;">
+      <div
+        class="xp_start_menu_wrapper position-relative h-100 d-flex align-items-center"
+      >
+        <input type="checkbox" id="toggle_start_menu" class="d-none" />
+
+        <label
+          for="toggle_start_menu"
+          class="xp_start_btn text-decoration-none m-0 d-flex align-items-center justify-content-center"
+          style="cursor: pointer; height: 30px"
+        >
           Menú
         </label>
 
         <div class="xp_classic_start_menu shadow-lg">
           <div class="xp_menu_header d-flex align-items-center">
-            <img src="img/resorces/drooling_cat_lain.jpg" alt="Usuario" class="xp_user_pic">
+            <img
+              src="img/resorces/drooling_cat_lain.jpg"
+              alt="Usuario"
+              class="xp_user_pic"
+            />
             <span class="text-white fw-bold ms-2 xp_user_name">Usuario</span>
           </div>
 
           <div class="xp_menu_list">
             <a href="html-semantico.html">
-              <img src="img/resorces/Icons/Internet Properties.ico" width="24" height="24" class="me-2"> HTML
+              <img
+                src="img/resorces/Icons/Internet Properties.ico"
+                width="24"
+                height="24"
+                class="me-2"
+              />
+              HTML
             </a>
             <a href="css.html">
-              <img src="img/resorces/Icons/Display.ico" width="24" height="24" class="me-2"> CSS
+              <img
+                src="img/resorces/Icons/Display.ico"
+                width="24"
+                height="24"
+                class="me-2"
+              />
+              CSS
             </a>
             <a href="bootstrap.html">
-              <img src="img/resorces/Icons/Folder Open.ico" width="24" height="24" class="me-2"> Bootstrap
+              <img
+                src="img/resorces/Icons/Folder Open.ico"
+                width="24"
+                height="24"
+                class="me-2"
+              />
+              Bootstrap
             </a>
             <a href="docker.html">
-              <img src="img/resorces/Icons/Manage your Server.ico" width="24" height="24" class="me-2"> Docker
+              <img
+                src="img/resorces/Icons/Manage your Server.ico"
+                width="24"
+                height="24"
+                class="me-2"
+              />
+              Docker
             </a>
             <a href="nginx.html">
-              <img src="img/resorces/Icons/Earth (fixed).ico" width="24" height="24" class="me-2"> Nginx
+              <img
+                src="img/resorces/Icons/Earth (fixed).ico"
+                width="24"
+                height="24"
+                class="me-2"
+              />
+              Nginx
+            </a>
+            <a href="etiquetas-html.html">
+              <img
+                src="img/resorces/Icons/List File.ico"
+                width="24"
+                height="24"
+                class="me-2"
+              />
+              Etiquetas HTML
             </a>
           </div>
 
-          <div class="xp_menu_footer d-flex justify-content-end align-items-center">
-            <label for="toggle_start_menu" class="xp_exit_btn text-white text-decoration-none d-flex align-items-center p-1 me-2 mb-0" style="cursor: pointer;">
-              <img src="img/resorces/Icons/log_off.jpg" width="20" height="20" class="me-2 rounded-1">
+          <div
+            class="xp_menu_footer d-flex justify-content-end align-items-center"
+          >
+            <label
+              for="toggle_start_menu"
+              class="xp_exit_btn text-white text-decoration-none d-flex align-items-center p-1 me-2 mb-0"
+              style="cursor: pointer"
+            >
+              <img
+                src="img/resorces/Icons/log_off.jpg"
+                width="20"
+                height="20"
+                class="me-2 rounded-1"
+              />
               <span>Cerrar menú</span>
             </label>
           </div>
@@ -176,8 +288,12 @@
 
       <!-- Lado derecho: Área de notificaciones (System Tray) -->
       <div class="xp_system_tray">
-        <img src="img/resorces/Icons/318.ico" alt="Red" class="xp_tray_icon">
-        <img src="img/resorces/Icons/657.ico" alt="Sonido" class="xp_tray_icon">
+        <img src="img/resorces/Icons/318.ico" alt="Red" class="xp_tray_icon" />
+        <img
+          src="img/resorces/Icons/657.ico"
+          alt="Sonido"
+          class="xp_tray_icon"
+        />
         <span class="xp_clock_text">10:35 AM</span>
       </div>
     </footer>
