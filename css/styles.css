@@ -661,3 +661,8 @@ body.xp_blue_desktop {
   filter: 
     drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.6));
 }
+
+.xp_profile_img {
+  border: none !important; /* El !important asegura que sobreescriba cualquier otro estilo */
+  /* Aquí mantienes tus otros estilos de ancho, alto, etc. */
+}
