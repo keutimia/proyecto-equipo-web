@@ -12,14 +12,29 @@
   <body class="bg-light" style="min-height: 100vh; display: flex; flex-direction: column;">
     
 <main class="container my-5 flex-grow-1">
-      <header class="fixed-top m-0 p-0 xp_header_nav">
+      <!-- ========================================================= -->
+    <!-- ENCABEZADO DE LA PÁGINA (NAVEGACIÓN PRINCIPAL)            -->
+    <!-- ========================================================= -->
+    <header class="fixed-top m-0 p-0 xp_header_nav">
       <nav class="navbar navbar-expand-lg xp_bar m-0 p-0">
         <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuPrincipal"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <!-- Caja oscura con el logo y nombre del equipo -->
+          <div
+            class="collapse navbar-collapse justify-content-center menuPrincipal"
+          >
+            <div
+            class="collapse navbar-collapse justify-content-center"
+            id="menuPrincipal"
+          >
+            <!-- Caja oscura con el logo y nombre del equipo -->
             <div class="xp_logo_box d-flex align-items-center me-3">
               <img
                 src="../img/resorces/Logos/Figura_13.png"
@@ -28,24 +43,42 @@
               />
               <span class="text-white fw-bold fs-4" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.8);">Bliss XP</span>
             </div>
+            
             <ul class="navbar-nav ms-3">
               <li class="nav-item">
-                <a class="xp_taskbar_item text-decoration-none" href="../index.html">INICIO</a>
+                <a
+                  class="xp_taskbar_item text-decoration-none"
+                  href="../index.html"
+                  >INICIO</a
+                >
               </li>
               <li class="nav-item">
-                <a class="xp_taskbar_item text-decoration-none active fw-bold" href="../integrantes.html">EQUIPO</a>
+                <a
+                  class="xp_taskbar_item text-decoration-none active fw-bold"
+                  href="../integrantes.html"
+                  >EQUIPO</a
+                >
               </li>
               <li class="nav-item">
-                <a class="xp_taskbar_item text-decoration-none" href="../contenidos.html">INVESTIGACIONES</a>
+                <a
+                  class="xp_taskbar_item text-decoration-none"
+                  href="../contenidos.html"
+                  >INVESTIGACIONES</a
+                >
               </li>
               <li class="nav-item">
-                <a class="xp_taskbar_item text-decoration-none" href="../reflexion.html">REFLEXIÓN</a>
+                <a
+                  class="xp_taskbar_item text-decoration-none"
+                  href="../reflexion.html"
+                  >REFLEXIÓN</a
+                >
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
+    <!-- ================= FIN DEL ENCABEZADO ==================== -->
 
       <div class="row">
         <!-- Columna Izquierda: Información Personal Básica -->
