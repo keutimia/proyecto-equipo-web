@@ -1,83 +1,42 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Investigaciones y Contenidos - XP App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
-  <body
-    class="xp_blue_desktop"
-    style="
-      margin: 0 !important;
-      padding: 0 !important;
-      padding-bottom: 120px !important;
-    "
-  >
+  <body class="xp_blue_desktop" style="margin: 0 !important; padding: 0 !important; padding-bottom: 120px !important;">
+    
     <!-- Barra superior fija al borde con fixed-top -->
     <header class="fixed-top m-0 p-0" style="z-index: 1050">
       <nav class="navbar navbar-expand-lg xp_bar m-0 p-0">
         <div class="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#menuPrincipal"
-          >
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="&num;menuPrincipal">
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div
-            class="collapse navbar-collapse justify-content-center"
-            id="menuPrincipal"
-          >
+          <div class="collapse navbar-collapse justify-content-center" id="menuPrincipal">
             <!-- Caja oscura con el logo y nombre del equipo -->
             <div class="xp_logo_box d-flex align-items-center me-3">
-              <img
-                src="img/resorces/Logos/Figura_13.png"
-                alt="Logo Bliss XP"
-                class="xp_logo_3d me-2"
-              />
-              <span
-                class="text-white fw-bold fs-4"
-                style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8)"
-                >Bliss XP</span
-              >
+              <img src="img/resorces/Logos/Figura_13.png" alt="Logo Bliss XP" class="xp_logo_3d me-2" />
+              <span class="text-white fw-bold fs-4" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8)">Bliss XP</span>
             </div>
 
             <ul class="navbar-nav ms-3">
               <li class="nav-item">
-                <a
-                  class="xp_taskbar_item text-decoration-none"
-                  href="index.html"
-                  >INICIO</a
-                >
+                <a class="xp_taskbar_item text-decoration-none" href="index.html">INICIO</a>
               </li>
               <li class="nav-item">
-                <a
-                  class="xp_taskbar_item text-decoration-none"
-                  href="integrantes.html"
-                  >EQUIPO</a
-                >
+                <a class="xp_taskbar_item text-decoration-none" href="integrantes.html">EQUIPO</a>
               </li>
               <li class="nav-item">
-                <a
-                  class="xp_taskbar_item text-decoration-none active fw-bold"
-                  href="contenidos.html"
-                  >INVESTIGACIONES</a
-                >
+                <a class="xp_taskbar_item text-decoration-none active fw-bold" href="contenidos.html">INVESTIGACIONES</a>
               </li>
               <li class="nav-item">
-                <a
-                  class="xp_taskbar_item text-decoration-none"
-                  href="reflexion.html"
-                  >REFLEXIÓN</a
-                >
+                <a class="xp_taskbar_item text-decoration-none" href="reflexion.html">REFLEXIÓN</a>
               </li>
             </ul>
           </div>
@@ -89,11 +48,13 @@
     <main class="container my-4 pt-5">
       <div class="row justify-content-center mb-5">
         <div class="col-md-10 xp_window">
+          
           <!-- Barra de título de la ventana estilo XP -->
           <div class="xp_window_header">
-            <span
-              >Índice Temático: Investigaciones Técnicas del Laboratorio</span
-            >
+            <div class="d-flex align-items-center">
+              <img src="img/resorces/Icons/List File.ico" alt="Icono de ventana" style="width: 16px; height: 16px; margin-right: 6px;" />
+              <span>Índice Temático: Investigaciones Técnicas del Laboratorio</span>
+            </div>
             <div class="xp_controls">
               <button class="xp_btn">_</button>
               <button class="xp_btn">□</button>
@@ -103,14 +64,9 @@
 
           <!-- Contenido interno de la ventana -->
           <div class="p-4 text-dark">
-            <h4 class="mb-2 fw-bold text-primary">
-              Centro de Investigaciones y Documentación
-            </h4>
+            <h4 class="mb-2 fw-bold text-primary">Centro de Investigaciones y Documentación</h4>
             <p class="text-muted">
-              Esta sección recopila el marco teórico, guías prácticas y
-              evidencias técnicas desarrolladas para el Laboratorio 01.
-              Selecciona cualquiera de los módulos para consultar su
-              investigación detallada.
+              Esta sección recopila el marco teórico, guías prácticas y evidencias técnicas desarrolladas para el Laboratorio 01. Selecciona cualquiera de los módulos para consultar su investigación detallada.
             </p>
 
             <hr />
@@ -119,27 +75,17 @@
             <div class="row g-4">
               <!-- 1. HTML Semántico -->
               <div class="col-md-6">
-                <div
-                  class="card h-100 border border-secondary shadow-sm bg-light"
-                >
+                <div class="card h-100 border border-secondary shadow-sm bg-light">
                   <div class="card-body d-flex flex-column">
-                    <h5 class="card-title text-primary fw-bold">
-                      1. HTML Semántico
-                    </h5>
+                    <h5 class="card-title text-primary fw-bold">HTML Semántico</h5>
                     <p class="card-text small">
-                      Estructuración de documentos web con significado accesible
-                      y optimizado para SEO usando etiquetas estructurales.
+                      Estructuración de documentos web con significado accesible y optimizado para SEO usando etiquetas estructurales.
                     </p>
                     <div class="bg-white p-2 rounded border small mb-3">
-                      <code
-                        >&lt;header&gt; &lt;nav&gt; &lt;main&gt;
-                        &lt;footer&gt;</code
-                      >
+                      <code>&lt;header&gt; &lt;nav&gt; &lt;main&gt; &lt;footer&gt;</code>
                     </div>
                     <div class="mt-auto text-end">
-                      <a href="html-semantico.html" class="xp-classic-btn">
-                        Ver investigación de HTML &rarr;
-                      </a>
+                      <a href="html-semantico.html" class="xp-classic-btn">Ver investigación de HTML &rarr;</a>
                     </div>
                   </div>
                 </div>
@@ -147,24 +93,17 @@
 
               <!-- 2. CSS & Hoja de Estilos -->
               <div class="col-md-6">
-                <div
-                  class="card h-100 border border-secondary shadow-sm bg-light"
-                >
+                <div class="card h-100 border border-secondary shadow-sm bg-light">
                   <div class="card-body d-flex flex-column">
-                    <h5 class="card-title text-primary fw-bold">
-                      2. CSS y Modelo de Caja
-                    </h5>
+                    <h5 class="card-title text-primary fw-bold">CSS y Modelo de Caja</h5>
                     <p class="card-text small">
-                      Fundamentos de estilo, selectores, clases, IDs y capas del
-                      Box Model (contenido, relleno, borde y margen).
+                      Fundamentos de estilo, selectores, clases, IDs y capas del Box Model (contenido, relleno, borde y margen).
                     </p>
                     <div class="bg-white p-2 rounded border small mb-3">
                       <code>.xp_window { padding: 10px; margin: auto; }</code>
                     </div>
                     <div class="mt-auto text-end">
-                      <a href="css.html" class="xp-classic-btn">
-                        Ver investigación de CSS &rarr;
-                      </a>
+                      <a href="css.html" class="xp-classic-btn">Ver investigación de CSS &rarr;</a>
                     </div>
                   </div>
                 </div>
@@ -172,28 +111,17 @@
 
               <!-- 3. Bootstrap 5 -->
               <div class="col-md-6">
-                <div
-                  class="card h-100 border border-secondary shadow-sm bg-light"
-                >
+                <div class="card h-100 border border-secondary shadow-sm bg-light">
                   <div class="card-body d-flex flex-column">
-                    <h5 class="card-title text-primary fw-bold">
-                      3. Framework Bootstrap 5
-                    </h5>
+                    <h5 class="card-title text-primary fw-bold">Framework Bootstrap 5</h5>
                     <p class="card-text small">
-                      Diseño responsivo móvil, sistema de grillas de 12 columnas
-                      (<code>container</code>, <code>row</code>,
-                      <code>col</code>) y componentes utilitarios.
+                      Diseño responsivo móvil, sistema de grillas de 12 columnas (<code>container</code>, <code>row</code>, <code>col</code>) y componentes utilitarios.
                     </p>
                     <div class="bg-white p-2 rounded border small mb-3">
-                      <code
-                        >&lt;div class="row"&gt;&lt;div
-                        class="col-md-6"&gt;</code
-                      >
+                      <code>&lt;div class="row"&gt;&lt;div class="col-md-6"&gt;</code>
                     </div>
                     <div class="mt-auto text-end">
-                      <a href="bootstrap.html" class="xp-classic-btn">
-                        Ver investigación de Bootstrap &rarr;
-                      </a>
+                      <a href="bootstrap.html" class="xp-classic-btn">Ver investigación de Bootstrap &rarr;</a>
                     </div>
                   </div>
                 </div>
@@ -201,25 +129,17 @@
 
               <!-- 4. Docker Desktop -->
               <div class="col-md-6">
-                <div
-                  class="card h-100 border border-secondary shadow-sm bg-light"
-                >
+                <div class="card h-100 border border-secondary shadow-sm bg-light">
                   <div class="card-body d-flex flex-column">
-                    <h5 class="card-title text-primary fw-bold">
-                      4. Instalación de Docker
-                    </h5>
+                    <h5 class="card-title text-primary fw-bold">Instalación de Docker</h5>
                     <p class="card-text small">
-                      Guía paso a paso de instalación de Docker Desktop en
-                      Windows con backend WSL 2 y evidencias de ejecución de
-                      prueba.
+                      Guía paso a paso de instalación de Docker Desktop en Windows con backend WSL 2 y evidencias de ejecución de prueba.
                     </p>
                     <div class="bg-white p-2 rounded border small mb-3">
                       <code>docker run hello-world</code>
                     </div>
                     <div class="mt-auto text-end">
-                      <a href="docker.html" class="xp-classic-btn">
-                        Ver instalación y evidencias &rarr;
-                      </a>
+                      <a href="docker.html" class="xp-classic-btn">Ver instalación y evidencias &rarr;</a>
                     </div>
                   </div>
                 </div>
@@ -227,24 +147,17 @@
 
               <!-- 5. Comandos Principales de Docker -->
               <div class="col-md-6">
-                <div
-                  class="card h-100 border border-secondary shadow-sm bg-light"
-                >
+                <div class="card h-100 border border-secondary shadow-sm bg-light">
                   <div class="card-body d-flex flex-column">
-                    <h5 class="card-title text-primary fw-bold">
-                      5. Comandos Docker
-                    </h5>
+                    <h5 class="card-title text-primary fw-bold">Comandos Docker</h5>
                     <p class="card-text small">
-                      Tabla de referencia con los 13 comandos esenciales de
-                      consola, sintaxis, descripción y resultados esperados.
+                      Tabla de referencia con los 13 comandos esenciales de consola, sintaxis, descripción y resultados esperados.
                     </p>
                     <div class="bg-white p-2 rounded border small mb-3">
                       <code>docker ps -a | docker build | docker exec</code>
                     </div>
                     <div class="mt-auto text-end">
-                      <a href="docker.html" class="xp-classic-btn">
-                        Ver tabla de comandos &rarr;
-                      </a>
+                      <a href="docker.html" class="xp-classic-btn">Ver tabla de comandos &rarr;</a>
                     </div>
                   </div>
                 </div>
@@ -252,54 +165,35 @@
 
               <!-- 6. Nginx y Dockerfile -->
               <div class="col-md-6">
-                <div
-                  class="card h-100 border border-secondary shadow-sm bg-light"
-                >
+                <div class="card h-100 border border-secondary shadow-sm bg-light">
                   <div class="card-body d-flex flex-column">
-                    <h5 class="card-title text-primary fw-bold">
-                      6. Despliegue con Nginx
-                    </h5>
+                    <h5 class="card-title text-primary fw-bold">Despliegue con Nginx</h5>
                     <p class="card-text small">
-                      Construcción de la imagen basada en Alpine Linux,
-                      empaquetado del sitio web y publicación en el puerto
-                      <code>8080</code>.
+                      Construcción de la imagen basada en Alpine Linux, empaquetado del sitio web y publicación en el puerto <code>8080</code>.
                     </p>
                     <div class="bg-white p-2 rounded border small mb-3">
                       <code>docker run -d -p 8080:80 --name mi-web</code>
                     </div>
                     <div class="mt-auto text-end">
-                      <a href="nginx.html" class="xp-classic-btn">
-                        Ver publicación con Nginx &rarr;
-                      </a>
+                      <a href="nginx.html" class="xp-classic-btn">Ver publicación con Nginx &rarr;</a>
                     </div>
                   </div>
                 </div>
               </div>
-              <!-- ¡ESTE ES EL DIV QUE FALTABA! -->
 
               <!-- 7. Etiquetas HTML de Uso Común -->
-              <div class="col-md-6">
-                <div
-                  class="card h-100 border border-secondary shadow-sm bg-light"
-                >
+              <div class="col-md-6 mx-auto">
+                <div class="card h-100 border border-secondary shadow-sm bg-light">
                   <div class="card-body d-flex flex-column">
-                    <h5 class="card-title text-primary fw-bold">
-                      7. Etiquetas HTML Comunes
-                    </h5>
+                    <h5 class="card-title text-primary fw-bold">Etiquetas HTML Comunes</h5>
                     <p class="card-text small">
-                      Explicación y casos de uso de las etiquetas estructurales,
-                      de texto, listas y tablas utilizados en el proyecto.
+                      Explicación y casos de uso de las etiquetas estructurales, de texto, listas y tablas utilizados en el proyecto.
                     </p>
                     <div class="bg-white p-2 rounded border small mb-3">
-                      <code
-                        >&lt;div&gt; &lt;span&gt; &lt;table&gt;
-                        &lt;input&gt;</code
-                      >
+                      <code>&lt;div&gt; &lt;span&gt; &lt;table&gt; &lt;input&gt;</code>
                     </div>
                     <div class="mt-auto text-end">
-                      <a href="etiquetas-html.html" class="xp-classic-btn">
-                        Ver etiquetas comunes &rarr;
-                      </a>
+                      <a href="etiquetas-html.html" class="xp-classic-btn">Ver etiquetas comunes &rarr;</a>
                     </div>
                   </div>
                 </div>
@@ -312,15 +206,10 @@
 
     <footer class="xp_taskbar fixed-bottom">
       <!-- Lado izquierdo: Botón y Menú de Inicio -->
-      <div
-        class="xp_start_menu_wrapper position-relative h-100 d-flex align-items-center"
-      >
+      <div class="xp_start_menu_wrapper position-relative h-100 d-flex align-items-center">
         <input type="checkbox" id="toggle_start_menu" class="d-none" />
 
-        <label
-          for="toggle_start_menu"
-          class="xp_start_btn text-decoration-none m-0 d-flex align-items-center justify-content-center"
-          style="cursor: pointer; height: 30px">
+        <label for="toggle_start_menu" class="xp_start_btn text-decoration-none m-0 d-flex align-items-center justify-content-center" style="cursor: pointer; height: 30px">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="me-2" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
           </svg>
@@ -329,85 +218,40 @@
 
         <div class="xp_classic_start_menu shadow-lg">
           <div class="xp_menu_header d-flex align-items-center">
-            <img
-              src="img/resorces/drooling_cat_lain.jpg"
-              alt="Usuario"
-              class="xp_user_pic"
-            />
+            <img src="img/resorces/drooling_cat_lain.jpg" alt="Usuario" class="xp_user_pic" />
             <span class="text-white fw-bold ms-2 xp_user_name">Usuario</span>
           </div>
 
           <div class="xp_menu_list">
             <a href="html-semantico.html">
-              <img
-                src="img/resorces/Icons/Internet Properties.ico"
-                width="24"
-                height="24"
-                class="me-2"
-              />
+              <img src="img/resorces/Icons/Internet Properties.ico" width="24" height="24" class="me-2" />
               HTML
             </a>
             <a href="css.html">
-              <img
-                src="img/resorces/Icons/Display.ico"
-                width="24"
-                height="24"
-                class="me-2"
-              />
+              <img src="img/resorces/Icons/Display.ico" width="24" height="24" class="me-2" />
               CSS
             </a>
             <a href="bootstrap.html">
-              <img
-                src="img/resorces/Icons/Folder Open.ico"
-                width="24"
-                height="24"
-                class="me-2"
-              />
+              <img src="img/resorces/Icons/Folder Open.ico" width="24" height="24" class="me-2" />
               Bootstrap
             </a>
             <a href="docker.html">
-              <img
-                src="img/resorces/Icons/Manage your Server.ico"
-                width="24"
-                height="24"
-                class="me-2"
-              />
+              <img src="img/resorces/Icons/Manage your Server.ico" width="24" height="24" class="me-2" />
               Docker
             </a>
             <a href="nginx.html">
-              <img
-                src="img/resorces/Icons/Earth (fixed).ico"
-                width="24"
-                height="24"
-                class="me-2"
-              />
+              <img src="img/resorces/Icons/Earth (fixed).ico" width="24" height="24" class="me-2" />
               Nginx
             </a>
             <a href="etiquetas-html.html">
-              <img
-                src="img/resorces/Icons/List File.ico"
-                width="24"
-                height="24"
-                class="me-2"
-              />
+              <img src="img/resorces/Icons/List File.ico" width="24" height="24" class="me-2" />
               Etiquetas HTML
             </a>
           </div>
 
-          <div
-            class="xp_menu_footer d-flex justify-content-end align-items-center"
-          >
-            <label
-              for="toggle_start_menu"
-              class="xp_exit_btn text-white text-decoration-none d-flex align-items-center p-1 me-2 mb-0"
-              style="cursor: pointer"
-            >
-              <img
-                src="img/resorces/Icons/log_off.jpg"
-                width="20"
-                height="20"
-                class="me-2 rounded-1"
-              />
+          <div class="xp_menu_footer d-flex justify-content-end align-items-center">
+            <label for="toggle_start_menu" class="xp_exit_btn text-white text-decoration-none d-flex align-items-center p-1 me-2 mb-0" style="cursor: pointer">
+              <img src="img/resorces/Icons/log_off.jpg" width="20" height="20" class="me-2 rounded-1" />
               <span>Cerrar menú</span>
             </label>
           </div>
@@ -417,11 +261,7 @@
       <!-- Lado derecho: Área de notificaciones (System Tray) -->
       <div class="xp_system_tray">
         <img src="img/resorces/Icons/318.ico" alt="Red" class="xp_tray_icon" />
-        <img
-          src="img/resorces/Icons/657.ico"
-          alt="Sonido"
-          class="xp_tray_icon"
-        />
+        <img src="img/resorces/Icons/657.ico" alt="Sonido" class="xp_tray_icon" />
         <span class="xp_clock_text">10:35 AM</span>
       </div>
     </footer>
