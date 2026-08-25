@@ -11,13 +11,7 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
-  <body
-    style="
-      margin: 0 !important;
-      padding: 0 !important;
-      padding-bottom: 120px !important;
-    "
-  >
+  <body class="xp_image_desktop">
     <!-- Barra superior fija al borde -->
     <header class="fixed-top m-0 p-0 xp_header_nav">
       <nav class="navbar navbar-expand-lg xp_bar m-0 p-0">
@@ -25,17 +19,17 @@
           
           <!-- Logo (Anclado a la izquierda) -->
           <div class="xp_logo_box d-flex align-items-center">
-            <img src="img/resorces/Logos/Figura_13.png" alt="Logo Bliss XP" class="xp_logo_3d me-2" style="max-height: 50px; width: auto;" />
-            <span class="text-white fw-bold fs-4" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8)">Bliss XP</span>
+            <img src="img/resorces/Logos/Figura_13.png" alt="Logo Bliss XP" class="xp_logo_3d me-2" />
+            <span class="text-white fw-bold fs-4 xp_logo_text">Bliss XP</span>
           </div>
 
           <!-- Botón menú hamburguesa (Centrado matemáticamente a la derecha) -->
-          <button class="navbar-toggler position-absolute end-0 me-3" style="top: 50%; transform: translateY(-50%);" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+          <button class="navbar-toggler position-absolute end-0 me-3 xp_hamburger_btn" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon xp_invert_icon"></span>
           </button>
 
           <!-- Menú con las clases personalizadas aplicadas -->
-          <div class="collapse navbar-collapse xp_mobile_menu xp_desktop_center" id="menuPrincipal" style="z-index: 1000;">
+          <div class="collapse navbar-collapse xp_mobile_menu xp_desktop_center" id="menuPrincipal">
             <ul class="navbar-nav m-0 p-0 text-center d-flex flex-lg-row">
               <li class="nav-item">
                 <a class="xp_taskbar_item text-decoration-none d-block py-3 py-lg-0 px-3" href="index.html">INICIO</a>
@@ -61,7 +55,10 @@
         <div class="col-md-10 xp_window">
           <!-- Barra superior de la ventana estilo XP -->
           <div class="xp_window_header">
-            <span>Investigación y Guía: Docker Desktop & Comandos</span>
+            <div class="d-flex align-items-center">
+              <img src="img/resorces/Icons/Manage your Server.ico" width="16" height="16" class="me-2" alt="Icono de servidor" />
+              <span>Guía de Referencia: Etiquetas HTML de Uso Común</span>
+            </div>
             <div class="xp_controls">
               <button class="xp_btn">_</button>
               <button class="xp_btn">□</button>
@@ -84,7 +81,7 @@
 
             <hr />
 
-            <h5 class="mt-3 fw-bold">1. Proceso de Instalación en Windows</h5>
+            <h5 class="mt-3 fw-bold">Proceso de Instalación en Windows</h5>
             <ul>
               <li>
                 <strong>Requisitos:</strong> Windows 10/11 de 64 bits con
@@ -113,10 +110,7 @@
                   <p class="small text-muted mb-2">
                     Estado 'Engine running' en la aplicación gráfica.
                   </p>
-                  <div
-                    class="border bg-white p-2 d-flex align-items-center justify-content-center"
-                    style="min-height: 140px"
-                  >
+                  <div class="border bg-white p-2 d-flex align-items-center justify-content-center xp_evidencia_box">
                     <img
                       src="img/resorces/Evidencia1-Docker-Running.png"
                       alt="Captura Docker Desktop Funcionando"
@@ -133,10 +127,7 @@
                   <p class="small text-muted mb-2">
                     Ejecución del contenedor de prueba exitosa.
                   </p>
-                  <div
-                    class="border bg-white p-2 d-flex align-items-center justify-content-center"
-                    style="min-height: 140px"
-                  >
+                  <div class="border bg-white p-2 d-flex align-items-center justify-content-center xp_evidencia_box">
                     <img
                       src="img/resorces/Evidencia2-Hello-World-Docker.png"
                       alt="Captura Terminal hello-world"
@@ -150,7 +141,7 @@
             <hr />
 
             <h5 class="mt-4 fw-bold">
-              2. Comandos Principales de Docker (Requeridos por la Pauta)
+              Comandos Principales de Docker (Requeridos por la Pauta)
             </h5>
             <p class="small text-muted">
               A continuación se detallan los 13 comandos obligatorios del
@@ -158,10 +149,7 @@
             </p>
 
             <div class="table-responsive">
-              <table
-                class="table table-bordered table-sm align-middle bg-white"
-                style="font-size: 0.9rem"
-              >
+              <table class="table table-bordered table-sm align-middle bg-white xp_table_small">
                 <thead class="table-primary">
                   <tr>
                     <th>Comando</th>
@@ -175,152 +163,93 @@
                   <tr>
                     <td><code>docker --version</code></td>
                     <td><code>docker --version</code></td>
-                    <td>
-                      Consulta la versión instalada del cliente de Docker.
-                    </td>
+                    <td>Consulta la versión instalada del cliente de Docker.</td>
                     <td><code>docker --version</code></td>
-                    <td>
-                      Imprime la versión y compilación de Docker en la terminal.
-                    </td>
+                    <td>Imprime la versión y compilación de Docker en la terminal.</td>
                   </tr>
                   <tr>
                     <td><code>docker run hello-world</code></td>
                     <td><code>docker run [imagen]</code></td>
                     <td>Descarga y ejecuta la imagen oficial de prueba.</td>
                     <td><code>docker run hello-world</code></td>
-                    <td>
-                      Descarga la imagen y muestra el mensaje explicativo de
-                      éxito.
-                    </td>
+                    <td>Descarga la imagen y muestra el mensaje explicativo de éxito.</td>
                   </tr>
                   <tr>
                     <td><code>docker images</code></td>
                     <td><code>docker images [opciones]</code></td>
-                    <td>
-                      Lista todas las imágenes descargadas o construidas
-                      localmente.
-                    </td>
+                    <td>Lista todas las imágenes descargadas o construidas localmente.</td>
                     <td><code>docker images</code></td>
-                    <td>
-                      Tabla con REPOSITORY, TAG, IMAGE ID, CREATED y SIZE.
-                    </td>
+                    <td>Tabla con REPOSITORY, TAG, IMAGE ID, CREATED y SIZE.</td>
                   </tr>
                   <tr>
                     <td><code>docker ps</code></td>
                     <td><code>docker ps</code></td>
-                    <td>
-                      Muestra exclusivamente los contenedores que están en
-                      ejecución.
-                    </td>
+                    <td>Muestra exclusivamente los contenedores que están en ejecución.</td>
                     <td><code>docker ps</code></td>
-                    <td>
-                      Lista de contenedores activos con sus puertos e IDs.
-                    </td>
+                    <td>Lista de contenedores activos con sus puertos e IDs.</td>
                   </tr>
                   <tr>
                     <td><code>docker ps -a</code></td>
                     <td><code>docker ps -a</code></td>
-                    <td>
-                      Muestra todos los contenedores (activos y detenidos).
-                    </td>
+                    <td>Muestra todos los contenedores (activos y detenidos).</td>
                     <td><code>docker ps -a</code></td>
-                    <td>
-                      Historial completo de contenedores creados en el host.
-                    </td>
+                    <td>Historial completo de contenedores creados en el host.</td>
                   </tr>
                   <tr>
                     <td><code>docker build</code></td>
-                    <td>
-                      <code>docker build -t [nombre:tag] [contexto]</code>
-                    </td>
-                    <td>
-                      Construye una imagen personalizada a partir de un
-                      Dockerfile.
-                    </td>
+                    <td><code>docker build -t [nombre:tag] [contexto]</code></td>
+                    <td>Construye una imagen personalizada a partir de un Dockerfile.</td>
                     <td><code>docker build -t mi-web-html .</code></td>
                     <td>Genera una nueva imagen lista para ser ejecutada.</td>
                   </tr>
                   <tr>
                     <td><code>docker run</code></td>
                     <td><code>docker run [opciones] [imagen]</code></td>
-                    <td>
-                      Crea y arranca un contenedor nuevo basado en una imagen.
-                    </td>
-                    <td>
-                      <code
-                        >docker run -d -p 8080:80 --name web mi-web-html</code
-                      >
-                    </td>
-                    <td>
-                      Inicia el contenedor en segundo plano mapeando el puerto
-                      8080.
-                    </td>
+                    <td>Crea y arranca un contenedor nuevo basado en una imagen.</td>
+                    <td><code>docker run -d -p 8080:80 --name web mi-web-html</code></td>
+                    <td>Inicia el contenedor en segundo plano mapeando el puerto 8080.</td>
                   </tr>
                   <tr>
                     <td><code>docker stop</code></td>
                     <td><code>docker stop [ID/nombre]</code></td>
-                    <td>
-                      Detiene de forma segura uno o varios contenedores en
-                      ejecución.
-                    </td>
+                    <td>Detiene de forma segura uno o varios contenedores en ejecución.</td>
                     <td><code>docker stop mi-web-container</code></td>
-                    <td>
-                      Finaliza los procesos del contenedor sin borrar sus datos.
-                    </td>
+                    <td>Finaliza los procesos del contenedor sin borrar sus datos.</td>
                   </tr>
                   <tr>
                     <td><code>docker start</code></td>
                     <td><code>docker start [ID/nombre]</code></td>
                     <td>Inicia un contenedor previamente detenido.</td>
                     <td><code>docker start mi-web-container</code></td>
-                    <td>
-                      Vuelve a levantar el contenedor conservando su
-                      configuración.
-                    </td>
+                    <td>Vuelve a levantar el contenedor conservando su configuración.</td>
                   </tr>
                   <tr>
                     <td><code>docker rm</code></td>
                     <td><code>docker rm [ID/nombre]</code></td>
-                    <td>
-                      Elimina uno o más contenedores detenidos del sistema.
-                    </td>
+                    <td>Elimina uno o más contenedores detenidos del sistema.</td>
                     <td><code>docker rm mi-web-container</code></td>
-                    <td>
-                      Libera el nombre y espacio del contenedor en el host.
-                    </td>
+                    <td>Libera el nombre y espacio del contenedor en el host.</td>
                   </tr>
                   <tr>
                     <td><code>docker rmi</code></td>
                     <td><code>docker rmi [ID/nombre-imagen]</code></td>
                     <td>Elimina una o más imágenes almacenadas localmente.</td>
                     <td><code>docker rmi hello-world</code></td>
-                    <td>
-                      Borra los layers de la imagen liberando espacio en disco.
-                    </td>
+                    <td>Borra los layers de la imagen liberando espacio en disco.</td>
                   </tr>
                   <tr>
                     <td><code>docker logs</code></td>
                     <td><code>docker logs [ID/nombre]</code></td>
-                    <td>
-                      Muestra los registros (logs) de salida generados por un
-                      contenedor.
-                    </td>
+                    <td>Muestra los registros (logs) de salida generados por un contenedor.</td>
                     <td><code>docker logs mi-web-container</code></td>
                     <td>Imprime las peticiones HTTP y eventos del servidor.</td>
                   </tr>
                   <tr>
                     <td><code>docker exec</code></td>
-                    <td>
-                      <code>docker exec [opciones] [ID/nombre] [comando]</code>
-                    </td>
-                    <td>
-                      Ejecuta un comando dentro de un contenedor en ejecución.
-                    </td>
+                    <td><code>docker exec [opciones] [ID/nombre] [comando]</code></td>
+                    <td>Ejecuta un comando dentro de un contenedor en ejecución.</td>
                     <td><code>docker exec -it mi-web-container sh</code></td>
-                    <td>
-                      Abre una terminal interactiva dentro del contenedor
-                      activo.
-                    </td>
+                    <td>Abre una terminal interactiva dentro del contenedor activo.</td>
                   </tr>
                 </tbody>
               </table>
@@ -332,15 +261,10 @@
 
     <footer class="xp_taskbar fixed-bottom">
       <!-- Lado izquierdo: Botón y Menú de Inicio -->
-      <div
-        class="xp_start_menu_wrapper position-relative h-100 d-flex align-items-center"
-      >
+      <div class="xp_start_menu_wrapper position-relative h-100 d-flex align-items-center">
         <input type="checkbox" id="toggle_start_menu" class="d-none" />
 
-        <label
-          for="toggle_start_menu"
-          class="xp_start_btn text-decoration-none m-0 d-flex align-items-center justify-content-center"
-          style="cursor: pointer; height: 30px">
+        <label for="toggle_start_menu" class="xp_start_btn text-decoration-none m-0 d-flex align-items-center justify-content-center">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="me-2" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
           </svg>
@@ -349,85 +273,34 @@
 
         <div class="xp_classic_start_menu shadow-lg">
           <div class="xp_menu_header d-flex align-items-center">
-            <img
-              src="img/resorces/drooling_cat_lain.jpg"
-              alt="Usuario"
-              class="xp_user_pic"
-            />
+            <img src="img/resorces/drooling_cat_lain.jpg" alt="Usuario" class="xp_user_pic" />
             <span class="text-white fw-bold ms-2 xp_user_name">Usuario</span>
           </div>
 
           <div class="xp_menu_list">
             <a href="html-semantico.html">
-              <img
-                src="img/resorces/Icons/Internet Properties.ico"
-                width="24"
-                height="24"
-                class="me-2"
-              />
-              HTML
+              <img src="img/resorces/Icons/Internet Properties.ico" width="24" height="24" class="me-2" /> HTML
             </a>
             <a href="css.html">
-              <img
-                src="img/resorces/Icons/Display.ico"
-                width="24"
-                height="24"
-                class="me-2"
-              />
-              CSS
+              <img src="img/resorces/Icons/Display.ico" width="24" height="24" class="me-2" /> CSS
             </a>
             <a href="bootstrap.html">
-              <img
-                src="img/resorces/Icons/Folder Open.ico"
-                width="24"
-                height="24"
-                class="me-2"
-              />
-              Bootstrap
+              <img src="img/resorces/Icons/Folder Open.ico" width="24" height="24" class="me-2" /> Bootstrap
             </a>
             <a href="docker.html">
-              <img
-                src="img/resorces/Icons/Manage your Server.ico"
-                width="24"
-                height="24"
-                class="me-2"
-              />
-              Docker
+              <img src="img/resorces/Icons/Manage your Server.ico" width="24" height="24" class="me-2" /> Docker
             </a>
             <a href="nginx.html">
-              <img
-                src="img/resorces/Icons/Earth (fixed).ico"
-                width="24"
-                height="24"
-                class="me-2"
-              />
-              Nginx
+              <img src="img/resorces/Icons/Earth (fixed).ico" width="24" height="24" class="me-2" /> Nginx
             </a>
             <a href="etiquetas-html.html">
-              <img
-                src="img/resorces/Icons/List File.ico"
-                width="24"
-                height="24"
-                class="me-2"
-              />
-              Etiquetas HTML
+              <img src="img/resorces/Icons/List File.ico" width="24" height="24" class="me-2" /> Etiquetas HTML
             </a>
           </div>
 
-          <div
-            class="xp_menu_footer d-flex justify-content-end align-items-center"
-          >
-            <label
-              for="toggle_start_menu"
-              class="xp_exit_btn text-white text-decoration-none d-flex align-items-center p-1 me-2 mb-0"
-              style="cursor: pointer"
-            >
-              <img
-                src="img/resorces/Icons/log_off.jpg"
-                width="20"
-                height="20"
-                class="me-2 rounded-1"
-              />
+          <div class="xp_menu_footer d-flex justify-content-end align-items-center">
+            <label for="toggle_start_menu" class="xp_exit_btn text-white text-decoration-none d-flex align-items-center p-1 me-2 mb-0">
+              <img src="img/resorces/Icons/log_off.jpg" width="20" height="20" class="me-2 rounded-1" />
               <span>Cerrar menú</span>
             </label>
           </div>
@@ -437,11 +310,7 @@
       <!-- Lado derecho: Área de notificaciones (System Tray) -->
       <div class="xp_system_tray">
         <img src="img/resorces/Icons/318.ico" alt="Red" class="xp_tray_icon" />
-        <img
-          src="img/resorces/Icons/657.ico"
-          alt="Sonido"
-          class="xp_tray_icon"
-        />
+        <img src="img/resorces/Icons/657.ico" alt="Sonido" class="xp_tray_icon" />
         <span class="xp_clock_text">10:35 AM</span>
       </div>
     </footer>
