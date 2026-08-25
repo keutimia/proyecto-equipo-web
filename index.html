@@ -3,7 +3,7 @@
   <head>
     <!-- Bootstrap: Trae las reglas de diseño para hacer la web adaptable a celulares -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-
+    <link rel="icon" type="image/png" href="img/resorces/Logos/Figura_13.png" />
     <!-- Soporte para caracteres especiales como los acentos y ñ -->
     <meta charset="UTF-8" />
 
@@ -17,34 +17,39 @@
   </head>
 
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark xp_bar">
-        <div class="container-fluid d-flex justify-content-between">
-          <a class="navbar-brand xp_logo_box d-flex align-items-center" href="index.html">
-            <img src="img/resorces/Logos/Figura_13.png" alt="Logo Bliss XP" class="xp_logo_3d me-2" />
+    <header class="fixed-top m-0 p-0 xp_header_nav">
+      <nav class="navbar navbar-expand-lg xp_bar m-0 p-0">
+        <div class="container-fluid h-100 position-relative p-0 m-0">
+          
+          <!-- Logo (Anclado a la izquierda) -->
+          <div class="xp_logo_box d-flex align-items-center">
+            <img src="img/resorces/Logos/Figura_13.png" alt="Logo Bliss XP" class="xp_logo_3d me-2" style="max-height: 50px; width: auto;" />
             <span class="text-white fw-bold fs-4" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8)">Bliss XP</span>
-          </a>
+          </div>
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="&num;menuPrincipal">
-            <span class="navbar-toggler-icon"></span>
+          <!-- Botón menú hamburguesa (Centrado matemáticamente a la derecha) -->
+          <button class="navbar-toggler position-absolute end-0 me-3" style="top: 50%; transform: translateY(-50%);" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
           </button>
 
-          <div class="collapse navbar-collapse justify-content-center" id="menuPrincipal">
-            <ul class="navbar-nav">
+          <!-- Menú con las clases personalizadas aplicadas -->
+          <div class="collapse navbar-collapse xp_mobile_menu xp_desktop_center" id="menuPrincipal" style="z-index: 1000;">
+            <ul class="navbar-nav m-0 p-0 text-center d-flex flex-lg-row">
               <li class="nav-item">
-                <a class="xp_taskbar_item text-decoration-none active fw-bold" href="index.html">INICIO</a>
+                <a class="xp_taskbar_item text-decoration-none d-block py-3 py-lg-0 px-3 active fw-bold" href="index.html">INICIO</a>
               </li>
               <li class="nav-item">
-                <a class="xp_taskbar_item text-decoration-none" href="integrantes.html">EQUIPO</a>
+                <a class="xp_taskbar_item text-decoration-none d-block py-3 py-lg-0 px-3" href="integrantes.html">EQUIPO</a>
               </li>
               <li class="nav-item">
-                <a class="xp_taskbar_item text-decoration-none" href="contenidos.html">INVESTIGACIONES</a>
+                <a class="xp_taskbar_item text-decoration-none d-block py-3 py-lg-0 px-3" href="contenidos.html">INVESTIGACIONES</a>
               </li>
               <li class="nav-item">
-                <a class="xp_taskbar_item text-decoration-none" href="reflexion.html">REFLEXIÓN</a>
+                <a class="xp_taskbar_item text-decoration-none d-block py-3 py-lg-0 px-3" href="reflexion.html">REFLEXIÓN</a>
               </li>
             </ul>
           </div>
+
         </div>
       </nav>
     </header>
@@ -125,7 +130,7 @@
             <!-- Sección de Enlaces -->
             <div class="row mt-5">
               <div class="col-12 text-center">
-                <p class="mb-2 fw-semibold">¿Quieres conocer más sobre los creadores de este sitio? ¡Haz clic aquí!</p>
+                <p class="mb-2 fw-semibold">¿Quieres conocer más sobre nosotros? ¡Haz clic aquí!</p>
                 <a href="integrantes.html" class="xp-classic-btn mb-4 text-decoration-none d-inline-block">Conocer al Equipo</a>
 
                 <p class="mb-2 fw-semibold">Explora nuestra documentación técnica sobre contenedores, servidores y desarrollo web:</p>
