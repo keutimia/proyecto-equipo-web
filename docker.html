@@ -19,70 +19,48 @@
     "
   >
     <!-- Barra superior fija al borde -->
-    <header class="fixed-top m-0 p-0" style="z-index: 1050">
-      <nav class="navbar navbar-expand-lg xp_bar m-0 p-0">
-        <div class="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#menuPrincipal"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+    <header class="fixed-top m-0 p-0 xp_header_nav">
+  <nav class="navbar navbar-expand-lg xp_bar m-0 p-0">
+    <!-- 'justify-content-between' mantiene el equilibrio correcto de los bloques en PC -->
+    <div class="container-fluid d-flex align-items-center justify-content-center justify-content-lg-between position-relative py-2">
+      
+      <!-- 1. El Logo: Centrado en móviles, fijo a la izquierda en PC -->
+      <div class="xp_logo_box d-flex align-items-center">
+        <img src="img/resorces/Logos/Figura_13.png" alt="Logo Bliss XP" class="xp_logo_3d me-2" style="max-height: 50px; width: auto;" />
+        <span class="text-white fw-bold fs-4" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8)">Bliss XP</span>
+      </div>
 
-          <div
-            class="collapse navbar-collapse justify-content-center"
-            id="menuPrincipal"
-          >
-            <!-- Caja oscura con el logo y nombre del equipo -->
-            <div class="xp_logo_box d-flex align-items-center me-3">
-              <img
-                src="img/resorces/Logos/Figura_13.png"
-                alt="Logo Bliss XP"
-                class="xp_logo_3d me-2"
-              />
-              <span
-                class="text-white fw-bold fs-4"
-                style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8)"
-                >Bliss XP</span
-              >
-            </div>
+      <!-- 2. Botón menú: Solo opera y se posiciona en móviles -->
+      <button class="navbar-toggler position-absolute end-0 me-3" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            <ul class="navbar-nav ms-3">
-              <li class="nav-item">
-                <a
-                  class="xp_taskbar_item text-decoration-none"
-                  href="index.html"
-                  >INICIO</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="xp_taskbar_item text-decoration-none"
-                  href="integrantes.html"
-                  >EQUIPO</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="xp_taskbar_item text-decoration-none"
-                  href="contenidos.html"
-                  >INVESTIGACIONES</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="xp_taskbar_item text-decoration-none"
-                  href="reflexion.html"
-                  >REFLEXIÓN</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+      <!-- 3. Menú colapsable con los enlaces -->
+      <!-- REPARADO: Se usa 'justify-content-lg-center' para forzar el centrado de los links en pantallas grandes -->
+      <div class="collapse navbar-collapse justify-content-lg-center position-absolute top-100 start-0 w-100 position-lg-relative top-lg-auto start-lg-auto w-lg-auto" id="menuPrincipal" style="z-index: 1000;">
+        <ul class="navbar-nav mx-lg-auto text-center text-lg-start xp_menu_lista m-0 p-0">
+          <li class="nav-item">
+            <a class="xp_taskbar_item text-decoration-none d-block py-3 py-lg-0 px-3 active fw-bold" href="index.html">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="xp_taskbar_item text-decoration-none d-block py-3 py-lg-0 px-3" href="integrantes.html">EQUIPO</a>
+          </li>
+          <li class="nav-item">
+            <a class="xp_taskbar_item text-decoration-none d-block py-3 py-lg-0 px-3" href="contenidos.html">INVESTIGACIONES</a>
+          </li>
+          <li class="nav-item">
+            <a class="xp_taskbar_item text-decoration-none d-block py-3 py-lg-0 px-3" href="reflexion.html">REFLEXIÓN</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 4. Bloque invisible de equilibrio (Solo para PC) -->
+      <!-- Evita que el logo empuje los botones hacia la derecha, garantizando un centrado matemático perfecto -->
+      <div class="d-none d-lg-block" style="width: 180px;"></div>
+
+    </div>
+  </nav>
+</header>
 
     <!-- Se añade pt-5 para compensar la barra superior fija -->
     <main class="container my-4 pt-5">
