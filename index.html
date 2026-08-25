@@ -2,10 +2,7 @@
 <html lang="es">
   <head>
     <!-- Bootstrap: Trae las reglas de diseño para hacer la web adaptable a celulares -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Soporte para caracteres especiales como los acentos y ñ -->
     <meta charset="UTF-8" />
@@ -21,64 +18,30 @@
 
   <body>
     <header>
-      <!-- navbar-expand-lg: Mantiene el menu en horizontal en pantallas grandes, pero lo oculta en un boton en celulares -->
-      <nav class="navbar navbar-expand-lg xp_bar">
-        <div class="container-fluid">
-          <!-- Boton Hamburguesa: Solo aparece en celulares (data-bs-toggle activa el despliegue del menu) -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#menuPrincipal"
-          >
+      <nav class="navbar navbar-expand-lg navbar-dark xp_bar">
+        <div class="container-fluid d-flex justify-content-between">
+          <a class="navbar-brand xp_logo_box d-flex align-items-center" href="index.html">
+            <img src="img/resorces/Logos/Figura_13.png" alt="Logo Bliss XP" class="xp_logo_3d me-2" />
+            <span class="text-white fw-bold fs-4" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8)">Bliss XP</span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="&num;menuPrincipal">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div
-            class="collapse navbar-collapse justify-content-center"
-            id="menuPrincipal"
-          >
-            <!-- Caja oscura con el logo y nombre del equipo -->
-            <div class="xp_logo_box d-flex align-items-center me-3">
-              <img
-                src="img/resorces/Logos/Figura_13.png"
-                alt="Logo Bliss XP"
-                class="xp_logo_3d me-2"
-              />
-              <span
-                class="text-white fw-bold fs-4"
-                style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8)"
-                >Bliss XP</span
-              >
-            </div>
 
+          <div class="collapse navbar-collapse justify-content-center" id="menuPrincipal">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a
-                  class="xp_taskbar_item text-decoration-none active fw-bold"
-                  href="index.html"
-                  >INICIO</a
-                >
+                <a class="xp_taskbar_item text-decoration-none active fw-bold" href="index.html">INICIO</a>
               </li>
               <li class="nav-item">
-                <a
-                  class="xp_taskbar_item text-decoration-none"
-                  href="integrantes.html"
-                  >EQUIPO</a
-                >
+                <a class="xp_taskbar_item text-decoration-none" href="integrantes.html">EQUIPO</a>
               </li>
               <li class="nav-item">
-                <a
-                  class="xp_taskbar_item text-decoration-none"
-                  href="contenidos.html"
-                  >INVESTIGACIONES</a
-                >
+                <a class="xp_taskbar_item text-decoration-none" href="contenidos.html">INVESTIGACIONES</a>
               </li>
               <li class="nav-item">
-                <a
-                  class="xp_taskbar_item text-decoration-none"
-                  href="reflexion.html"
-                  >REFLEXIÓN</a
-                >
+                <a class="xp_taskbar_item text-decoration-none" href="reflexion.html">REFLEXIÓN</a>
               </li>
             </ul>
           </div>
@@ -86,15 +49,9 @@
       </nav>
     </header>
 
-    <main>
-      <!-- Para que no se desordene en celulares -->
-      <div
-        class="row justify-content-center mb-4"
-        style="position: relative; left: -15px"
-      >
-        <!-- col-md-8: Le dice a la caja que ocupe 8 de las 12 columnas disponibles en la pantalla -->
+    <main class="container">
+      <div class="row justify-content-center mb-4">
         <div class="col-md-8 xp_window">
-          <!-- Barra azul superior de la ventana (Controles de XP) -->
           <div class="xp_window_header">
             <span class="d-flex align-items-center">
               <img src="img/resorces/Icons/Earth (fixed).ico" width="16" height="16" class="me-2" />
@@ -107,85 +64,72 @@
             </div>
           </div>
 
-          <!-- Contenido interno de la ventana -->
-          <!-- p-4: Aplica "padding" para que el texto no toque el borde azul -->
           <div class="p-4 text-dark">
-            <!-- align-items-center: Centra el texto y la foto verticalmente para que queden parejos -->
             <div class="row align-items-center">
               <!-- Columna Izquierda (Texto) -->
               <div class="col-md-6">
                 <!-- mt-2, mt-3, mt-4: Añaden margen superior (margin-top) para separar los parrafos -->
                 <h5 class="fw-bold mb-1 text-primary">Descripción</h5>
                 <p>
-                  Somos un equipo de estudiantes de Ingeniería Civil
-                  Informática. Nos formamos con el objetivo de colaborar,
-                  compartir conocimientos y aplicar de manera práctica lo
-                  aprendido sobre estructuración web, estilos y despliegue en
-                  servidores.
+                  Somos un equipo de estudiantes de Ingeniería Civil Informática. Nos formamos con el objetivo de colaborar, compartir conocimientos y aplicar de manera práctica lo aprendido sobre estructuración web, estilos y despliegue en servidores.
                 </p>
 
                 <h5 class="fw-bold mb-1 text-primary">Propósito</h5>
                 <p>
-                  Nuestro propósito es diseñar, construir y desplegar sitios web
-                  estáticos funcionales y atractivos, aplicando rigurosamente
-                  las mejores prácticas en HTML, CSS, Bootstrap y Docker,
-                  demostrando nuestra capacidad para resolver problemas
-                  trabajando en equipo.
+                  Nuestro propósito es diseñar, construir y desplegar sitios web estáticos funcionales y atractivos, aplicando rigurosamente las mejores prácticas en HTML, CSS, Bootstrap y Docker, demostrando nuestra capacidad para resolver problemas trabajando en equipo.
                 </p>
 
                 <h5 class="fw-bold mb-1 text-primary">Nuestras Fortalezas</h5>
                 <ul>
-                  <li>
-                    Trabajo colaborativo y buena comunicación para coordinar
-                    avances
-                  </li>
-                  <li>
-                    Creatividad en el diseño de interfaces usando CSS y
-                    Bootstrap.
-                  </li>
-                  <li>
-                    Resolución metódica de problemas e implementación de
-                    contenedores Docker.
-                  </li>
+                  <li>Trabajo colaborativo y buena comunicación para coordinar avances.</li>
+                  <li>Creatividad en el diseño de interfaces usando CSS y Bootstrap.</li>
+                  <li>Resolución metódica de problemas e implementación de contenedores Docker.</li>
                 </ul>
               </div>
 
               <!-- Columna Derecha (Foto) -->
               <div class="col-md-6 text-center">
-                <!-- img-fluid: Evita que la foto sea mas grande que su contenedor -->
                 <!-- border, rounded, shadow-sm: Clases de Bootstrap que le dan un marco y sombra a la foto -->
-                <img
-                  src="img/resorces/grupo.jpeg"
-                  alt="Foto oficial del equipo"
-                  class="img-fluid border border-dark rounded shadow-sm"
-                />
+                <img src="img/resorces/grupo.jpeg" alt="Foto oficial del equipo" class="img-fluid border border-dark rounded shadow-sm" />
               </div>
+            </div>
 
-              <div class="row mt-5">
-                <div class="col-12 text-center">
-                  <h3 class="fw-bold mb-4 text-primary">Herramientas utilizadas</h3>
-                  
-                  <div class="d-flex flex-column gap-4 align-items-center">
-                    <div class="d-flex gap-4 justify-content-center">
-                      <img src="img/resorces/logos/bootstrap_logo.png" alt="Bootstrap" width="120" height="120" style="object-fit: contain;" />
-                      <img src="img/resorces/logos/css.png" alt="CSS" width="120" height="120" style="object-fit: contain;" />
-                      <img src="img/resorces/logos/html_logo.png" alt="HTML" width="120" height="120" style="object-fit: contain;" />
-                    </div>
-                    <div class="d-flex gap-4 justify-content-center">
-                      <img src="img/resorces/logos/docker.png" alt="Docker" width="120" height="120" style="object-fit: contain;" />
-                      <img src="img/resorces/logos/nginx.png" alt="Nginx" width="120" height="120" style="object-fit: contain;" />
-                    </div>
-                <div class="row mt-5">
-                  <div class="col-12 text-center">
-                    <p class="mb-2 fw-semibold">¿Quieres conocer más sobre los creadores de este sitio? ¡Haz clic aquí!</p>
-                    <a href="integrantes.html" class="xp-classic-btn mb-4 text-decoration-none">Conocer al Equipo</a>
-
-                    <p class="mb-2 fw-semibold">Explora nuestra documentación técnica sobre contenedores, servidores y desarrollo web:</p>
-                    <a href="contenidos.html" class="xp-classic-btn text-decoration-none">Ver Investigaciones</a>
-                      </div>
-                    </div>
+            <!-- Sección de Tecnologías -->
+            <div class="row mt-5">
+              <div class="col-12 text-center">
+                <h3 class="fw-bold mb-4 text-primary">Tecnologías utilizadas</h3>
+                <div class="d-flex flex-column gap-4 align-items-center">
+                  <div class="d-flex gap-4 justify-content-center">
+                    <a href="bootstrap.html">
+                      <img src="img/resorces/logos/bootstrap_logo.png" alt="Bootstrap" width="120" height="120" class="xp_tech_icon" />
+                    </a>
+                    <a href="css.html">
+                      <img src="img/resorces/logos/css.png" alt="CSS" width="120" height="120" class="xp_tech_icon" />
+                    </a>
+                    <a href="html-semantico.html">
+                      <img src="img/resorces/logos/html_logo.png" alt="HTML" width="120" height="120" class="xp_tech_icon" />
+                    </a>
+                  </div>
+                  <div class="d-flex gap-4 justify-content-center">
+                    <a href="docker.html">
+                      <img src="img/resorces/logos/docker.png" alt="Docker" width="120" height="120" class="xp_tech_icon" />
+                    </a>
+                    <a href="nginx.html">
+                      <img src="img/resorces/logos/nginx.png" alt="Nginx" width="120" height="120" class="xp_tech_icon" />
+                    </a>
                   </div>
                 </div>
+              </div>
+            </div>
+
+            <!-- Sección de Enlaces -->
+            <div class="row mt-5">
+              <div class="col-12 text-center">
+                <p class="mb-2 fw-semibold">¿Quieres conocer más sobre los creadores de este sitio? ¡Haz clic aquí!</p>
+                <a href="integrantes.html" class="xp-classic-btn mb-4 text-decoration-none d-inline-block">Conocer al Equipo</a>
+
+                <p class="mb-2 fw-semibold">Explora nuestra documentación técnica sobre contenedores, servidores y desarrollo web:</p>
+                <a href="contenidos.html" class="xp-classic-btn text-decoration-none d-inline-block">Ver Investigaciones</a>
               </div>
             </div>
           </div>
@@ -195,9 +139,7 @@
 
     <footer class="xp_taskbar fixed-bottom">
       <!-- Lado izquierdo: Botón y Menú de Inicio -->
-      <div
-        class="xp_start_menu_wrapper position-relative h-100 d-flex align-items-center"
-      >
+      <div class="xp_start_menu_wrapper position-relative h-100 d-flex align-items-center">
         <input type="checkbox" id="toggle_start_menu" class="d-none" />
 
         <label
@@ -205,90 +147,48 @@
           class="xp_start_btn text-decoration-none m-0 d-flex align-items-center justify-content-center"
           style="cursor: pointer; height: 30px"
         >
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="me-2" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
           Menú
         </label>
 
         <div class="xp_classic_start_menu shadow-lg">
           <div class="xp_menu_header d-flex align-items-center">
-            <img
-              src="img/resorces/drooling_cat_lain.jpg"
-              alt="Usuario"
-              class="xp_user_pic"
-            />
+            <img src="img/resorces/drooling_cat_lain.jpg" alt="Usuario" class="xp_user_pic" />
             <span class="text-white fw-bold ms-2 xp_user_name">Usuario</span>
           </div>
 
           <div class="xp_menu_list">
             <a href="html-semantico.html">
-              <img
-                src="img/resorces/Icons/Internet Properties.ico"
-                width="24"
-                height="24"
-                class="me-2"
-              />
+              <img src="img/resorces/Icons/Internet Properties.ico" width="24" height="24" class="me-2" />
               HTML
             </a>
             <a href="css.html">
-              <img
-                src="img/resorces/Icons/Display.ico"
-                width="24"
-                height="24"
-                class="me-2"
-              />
+              <img src="img/resorces/Icons/Display.ico" width="24" height="24" class="me-2" />
               CSS
             </a>
             <a href="bootstrap.html">
-              <img
-                src="img/resorces/Icons/Folder Open.ico"
-                width="24"
-                height="24"
-                class="me-2"
-              />
+              <img src="img/resorces/Icons/Folder Open.ico" width="24" height="24" class="me-2" />
               Bootstrap
             </a>
             <a href="docker.html">
-              <img
-                src="img/resorces/Icons/Manage your Server.ico"
-                width="24"
-                height="24"
-                class="me-2"
-              />
+              <img src="img/resorces/Icons/Manage your Server.ico" width="24" height="24" class="me-2" />
               Docker
             </a>
             <a href="nginx.html">
-              <img
-                src="img/resorces/Icons/Earth (fixed).ico"
-                width="24"
-                height="24"
-                class="me-2"
-              />
+              <img src="img/resorces/Icons/Earth (fixed).ico" width="24" height="24" class="me-2" />
               Nginx
             </a>
             <a href="etiquetas-html.html">
-              <img
-                src="img/resorces/Icons/List File.ico"
-                width="24"
-                height="24"
-                class="me-2"
-              />
+              <img src="img/resorces/Icons/List File.ico" width="24" height="24" class="me-2" />
               Etiquetas HTML
             </a>
           </div>
 
-          <div
-            class="xp_menu_footer d-flex justify-content-end align-items-center"
-          >
-            <label
-              for="toggle_start_menu"
-              class="xp_exit_btn text-white text-decoration-none d-flex align-items-center p-1 me-2 mb-0"
-              style="cursor: pointer"
-            >
-              <img
-                src="img/resorces/Icons/log_off.jpg"
-                width="20"
-                height="20"
-                class="me-2 rounded-1"
-              />
+          <div class="xp_menu_footer d-flex justify-content-end align-items-center">
+            <label for="toggle_start_menu" class="xp_exit_btn text-white text-decoration-none d-flex align-items-center p-1 me-2 mb-0" style="cursor: pointer">
+              <img src="img/resorces/Icons/log_off.jpg" width="20" height="20" class="me-2 rounded-1" />
               <span>Cerrar menú</span>
             </label>
           </div>
@@ -298,13 +198,11 @@
       <!-- Lado derecho: Área de notificaciones (System Tray) -->
       <div class="xp_system_tray">
         <img src="img/resorces/Icons/318.ico" alt="Red" class="xp_tray_icon" />
-        <img
-          src="img/resorces/Icons/657.ico"
-          alt="Sonido"
-          class="xp_tray_icon"
-        />
+        <img src="img/resorces/Icons/657.ico" alt="Sonido" class="xp_tray_icon" />
         <span class="xp_clock_text">10:35 AM</span>
       </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
