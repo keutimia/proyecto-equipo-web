@@ -5,22 +5,40 @@ body {
   background-repeat: no-repeat; /* Evita el efecto mosaico */
   background-size: cover; /* Adapta la imagen a cualquier tamaño de pantalla */
   background-attachment: fixed; /* Mantiene el fondo estatico */
-  
   padding-bottom: 50px; 
+}
+
+/* Variante azul para páginas específicas */
+body.xp_blue_desktop {
+  background: linear-gradient(to top, rgb(0, 88, 230) 0%, rgb(58, 147, 255) 100%);
+  padding-bottom: 120px !important;
+  margin: 0 !important;
+}
+
+.xp_main_content {
+  margin-top: 120px !important;
 }
 
 /* --- Escritura y titulo --- */
 .title_xp_font {
   font-family: Tahoma, "Segoe UI", Geneva, Verdana, sans-serif;
-  font-size: 60px !important;
-  width: auto;
+  font-size: 80px !important;
+  width: 450px;
   position: absolute;
-  left: 20px; 
+  left: 10px; 
   top: 50%; 
   transform: translateY(-50%); 
   margin: 0 !important; 
   color: whitesmoke;
   text-shadow: -5px 5px 10px black;
+}
+
+.xp_page_title {
+  text-shadow: 1px 1px 2px black;
+}
+
+.xp_header_nav {
+  z-index: 1050;
 }
 
 /* --- Barra de arriba azul --- */
@@ -31,7 +49,7 @@ body {
   height: 90px;
   width: 100%;
   margin-bottom: 25px;
-  background: linear-gradient(to bottom, #0058e6 0%, #247fe1 12%, #0054e3 100%);
+  background: linear-gradient(to bottom, rgb(0, 88, 230) 0%, rgb(36, 127, 225) 12%, rgb(0, 84, 227) 100%);
   font-family: Tahoma, "Segoe UI", Geneva, Verdana, sans-serif;
   color: aliceblue;
   box-shadow: inset 0px -1px 2px rgba(0, 0, 0, 0.5);
@@ -39,20 +57,35 @@ body {
 
 /* Botones de la barra */
 .xp-button {
-  background-color: #ece9d8;
-  border: 1px solid #7f9db9;
+  background-color: rgb(236, 233, 216);
+  border: 1px solid rgb(127, 157, 185);
   padding: 6px 15px;
   font-family: Tahoma, "Segoe UI", sans-serif;
   font-size: 15px;
-  color: #000;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
   margin: 10px;
-  /* Efecto 3D botones XP */
   box-shadow:
     inset -1px -1px 2px rgba(0, 0, 0, 0.2),
     inset 1px 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.xp_button {
+  background-color: rgb(243, 243, 243);
+  border: 1px solid rgb(0, 51, 153);
+  border-radius: 3px;
+  padding: 4px 15px;
+  color: black;
+  text-decoration: none;
+  font-size: 13px;
+  box-shadow: inset -1px -1px 2px rgba(0,0,0,0.2), inset 1px 1px 2px rgba(255,255,255,0.8);
+}
+
+.xp_button:hover {
+  background-color: rgb(224, 224, 224);
+  color: black;
 }
 
 /* --- La ventana XP --- */
@@ -70,7 +103,7 @@ body {
   overflow: hidden;
 }
 
-/* Cabecera azul de la ventana (donde va el titulo) */
+/* Cabecera azul de la ventana */
 .xp_window_header {
   background: linear-gradient(to bottom, rgb(0, 88, 230) 0%, rgb(36, 127, 225) 12%, rgb(0, 84, 227) 100%);
   color: white;
@@ -80,7 +113,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
   box-shadow: inset 0px 2px 3px rgba(255, 255, 255, 0.6),
               inset 2px 0px 2px rgba(255, 255, 255, 0.4),
               inset -2px 0px 2px rgba(255, 255, 255, 0.4);
@@ -103,296 +135,16 @@ body {
     inset 1px 1px 3px rgba(255, 255, 255, 0.7);
 }
 
-/* Color azul para minimizar y maximizar */
 .xp_btn {
-  background: linear-gradient(to bottom, #3b7ced 0%, #265fcc 100%);
-}
-
-/* Color rojo para el botón de cerrar */
-.xp_close {
-  background: linear-gradient(to bottom, #e5796a 0%, #d44937 100%);
-}
-
-/* --- Barra de tareas --- */
-.xp_taskbar {
-  position: fixed; /* La mantiene siempre pegada abajo */
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 40px;
-  background: linear-gradient(
-    to bottom,
-    #245edb 0%,
-    #3f8cf3 9%,
-    #245edb 18%,
-    #245edb 92%,
-    #1941a5 100%
-  );
-  border-top: 1px solid #0f2d72;
-  display: flex;
-  align-items: center;
-  padding: 0;
-  z-index: 1000; /* Asegura que no sea tapada por otras cosas */
-}
-
-/* El boton verde de abajo xp */
-.xp_start_btn {
-  background: linear-gradient(to bottom, #429d38 0%, #3ca032 50%, #318228 100%);
-  color: white;
-  font-family: "Segoe UI", Tahoma, sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-  font-style: italic;
-  border: 1px solid #23651b;
-  border-radius: 0 10px 10px 0;
-  padding: 2px 15px;
-  margin-right: 15px;
-  box-shadow:
-    2px 2px 5px rgba(0, 0, 0, 0.3),
-    inset 1px 1px 2px rgba(255, 255, 255, 0.5);
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-  cursor: pointer;
-}
-
-/* Botones de los programas abiertos en la barra de tareas */
-.xp_taskbar_item {
-  background: linear-gradient(to bottom, #3a7eed 0%, #265fcc 100%);
-  color: white;
-  border: 1px solid #1c4b9e;
-  border-radius: 3px;
-  padding: 4px 10px;
-  margin-right: 5px;
-  font-family: Tahoma, sans-serif;
-  font-size: 13px;
-  display: flex;
-  align-items: center;
-  box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.4);
-  white-space: nowrap; /* Evita que el texto salte a otra línea */
-  flex-shrink: 0; /* Evita que los botones se aplasten si hay muchos */
-}
-
-/* Ajuste del tamaño de los iconos en la barra */
-.xp_taskbar_item img {
-  width: 16px;
-  height: 16px;
-  margin-right: 8px;
-}
-
-body {
-  background-image: url(../img/resorces/fondo.jpeg);
-  background-position: center;
-  background-repeat: no-repeat; /* Evita el efecto mosaico */
-  background-size: cover; /* Adapta la imagen a cualquier tamaño de pantalla */
-  background-attachment: fixed; /* Mantiene el fondo estático */
-}
-
-/* Variante azul para páginas específicas */
-body.xp_blue_desktop {
-  background: linear-gradient(to top, #0058e6 0%, #3a93ff 100%);
-  padding-bottom: 120px !important;
-  margin: 0 !important;
-}
-
-.xp_main_content {
-  margin-top: 120px !important;
-}
-
-.title_xp_font {
-  font-family: Tahoma, "Segoe UI", Geneva, Verdana, sans-serif;
-  font-size: 80px;
-  width: 450px;
-  position: absolute;
-  left: 10px;
-  color: whitesmoke;
-  text-shadow: -5px 5px 10px black;
-}
-
-.xp_page_title {
-  text-shadow: 1px 1px 2px black;
-}
-
-.xp_header_nav {
-  z-index: 1050;
-}
-
-.xp_bar {
-  position: fixed;
-  z-index: 9999;
-  text-align: center;
-  height: 90px;
-  width: 100%;
-  margin-bottom: 25px;
-  background: linear-gradient(to bottom, #0058e6 0%, #247fe1 12%, #0054e3 100%);
-  font-family: Tahoma, "Segoe UI", Geneva, Verdana, sans-serif;
-  color: aliceblue;
-  box-shadow: inset 0px -1px 2px rgba(0, 0, 0, 0.5);
-}
-
-.xp_taskbar {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 40px;
-  background: linear-gradient(
-    to bottom,
-    #245edb 0%,
-    #3f8cf3 9%,
-    #245edb 18%,
-    #245edb 92%,
-    #1941a5 100%
-  );
-  border-top: 1px solid #0f2d72;
-  display: flex;
-  align-items: center;
-  padding: 0;
-  z-index: 1000;
-}
-
-.xp_taskbar_item {
-  background: linear-gradient(to bottom, #3a7eed 0%, #265fcc 100%);
-  color: white;
-  border: 1px solid #1c4b9e;
-  border-radius: 3px;
-  padding: 4px 10px;
-  margin-right: 5px;
-  font-family: Tahoma, sans-serif;
-  font-size: 13px;
-  display: flex;
-  align-items: center;
-  box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.4);
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-
-.xp_taskbar_item img {
-  width: 16px;
-  height: 16px;
-  margin-right: 8px;
-}
-
-.xp_window {
-  position: relative;
-  margin-top: 120px;
-  background-color: #ece9d8;
-  border: 3px solid #0054e3;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-  padding: 0;
-  overflow: hidden;
-}
-
-.xp_window_header {
-  background: linear-gradient(to bottom, #0058e6 0%, #247fe1 12%, #0054e3 100%);
-  color: white;
-  font-weight: bold;
-  padding: 3px 8px;
-  font-family: Tahoma, sans-serif;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* Tarjetas individuales de los integrantes */
-.xp_card_window {
-  background-color: #ece9d8;
-  border: 1px solid #0055ea;
-  border-radius: 5px 5px 0 0;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
-}
-
-.xp_card_header {
-  background: linear-gradient(to right, #0058e6 0%, #3a93ff 100%);
-  color: white;
-  padding: 4px 8px;
-  font-weight: bold;
-  font-size: 13px;
-  border-radius: 3px 3px 0 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.xp-button {
-  background-color: #ece9d8;
-  border: 1px solid #7f9db9;
-  padding: 6px 15px;
-  font-family: Tahoma, "Segoe UI", sans-serif;
-  font-size: 15px;
-  color: #000;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  margin: 10px;
-  box-shadow:
-    inset -1px -1px 2px rgba(0, 0, 0, 0.2),
-    inset 1px 1px 2px rgba(255, 255, 255, 0.8);
-}
-
-.xp_button {
-  background-color: #f3f3f3;
-  border: 1px solid #003399;
-  border-radius: 3px;
-  padding: 4px 15px;
-  color: black;
-  text-decoration: none;
-  font-size: 13px;
-  box-shadow: inset -1px -1px 2px rgba(0,0,0,0.2), inset 1px 1px 2px rgba(255,255,255,0.8);
-}
-
-.xp_button:hover {
-  background-color: #e0e0e0;
-  color: black;
-}
-
-.xp_start_btn {
-  background: linear-gradient(to bottom, #429d38 0%, #3ca032 50%, #318228 100%);
-  color: white;
-  font-family: "Segoe UI", Tahoma, sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-  font-style: italic;
-  border: 1px solid #23651b;
-  border-radius: 0 10px 10px 0;
-  padding: 2px 15px;
-  margin-right: 15px;
-  box-shadow:
-    2px 2px 5px rgba(0, 0, 0, 0.3),
-    inset 1px 1px 2px rgba(255, 255, 255, 0.5);
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-  cursor: pointer;
-}
-
-/* Botones de control de ventana (X, Min, Max) */
-.xp_controls button {
-  width: 22px;
-  height: 22px;
-  margin-left: 2px;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  font-weight: bold;
-  border: 1px solid white;
-  border-radius: 3px;
-  cursor: pointer;
-  box-shadow:
-    inset -1px -1px 2px rgba(0, 0, 0, 0.3),
-    inset 1px 1px 3px rgba(255, 255, 255, 0.7);
-}
-
-.xp_btn {
-  background: linear-gradient(to bottom, #3b7ced 0%, #265fcc 100%);
+  background: linear-gradient(to bottom, rgb(59, 124, 237) 0%, rgb(38, 95, 204) 100%);
 }
 
 .xp_close {
-  background: linear-gradient(to bottom, #e5796a 0%, #d44937 100%);
+  background: linear-gradient(to bottom, rgb(229, 121, 106) 0%, rgb(212, 73, 55) 100%);
 }
 
 .xp_close_btn {
-  background-color: #e81123;
+  background-color: rgb(232, 17, 35);
   color: white;
   border: 1px solid white;
   border-radius: 3px;
@@ -403,11 +155,98 @@ body.xp_blue_desktop {
   display: inline-block;
 }
 
+/* Tarjetas individuales de los integrantes */
+.xp_card_window {
+  background-color: rgb(236, 233, 216);
+  border: 1px solid rgb(0, 85, 234);
+  border-radius: 5px 5px 0 0;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+}
+
+.xp_card_header {
+  background: linear-gradient(to right, rgb(0, 88, 230) 0%, rgb(58, 147, 255) 100%);
+  color: white;
+  padding: 4px 8px;
+  font-weight: bold;
+  font-size: 13px;
+  border-radius: 3px 3px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* --- Barra de tareas --- */
+.xp_taskbar {
+  position: fixed; 
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(
+    to bottom,
+    rgb(36, 94, 219) 0%,
+    rgb(63, 140, 243) 9%,
+    rgb(36, 94, 219) 18%,
+    rgb(36, 94, 219) 92%,
+    rgb(25, 65, 165) 100%
+  );
+  border-top: 1px solid rgb(15, 45, 114);
+  display: flex;
+  align-items: center;
+  padding: 0;
+  z-index: 1000; 
+}
+
+/* BOTÓN VERDE DE INICIO */
+.xp_start_btn {
+  background: radial-gradient(circle at 10% 20%, rgb(81, 184, 72) 0%, rgb(49, 140, 36) 100%);
+  color: white;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 16px;
+  border: 1px solid rgb(26, 81, 19); 
+  border-radius: 0 10px 10px 0; 
+  padding: 0 15px;
+  margin-right: 15px;
+  box-shadow: inset 1px 1px 3px rgba(255,255,255,0.6), 2px 2px 3px rgba(0,0,0,0.3);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.xp_start_btn:active {
+  background: radial-gradient(circle at 10% 20%, rgb(49, 140, 36) 0%, rgb(32, 104, 21) 100%);
+  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+/* Botones de los programas abiertos en la barra de tareas */
+.xp_taskbar_item {
+  background: linear-gradient(to bottom, rgb(58, 126, 237) 0%, rgb(38, 95, 204) 100%);
+  color: white;
+  border: 1px solid rgb(28, 75, 158);
+  border-radius: 3px;
+  padding: 4px 10px;
+  margin-right: 5px;
+  font-family: Tahoma, sans-serif;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.4);
+  white-space: nowrap; 
+  flex-shrink: 0; 
+}
+
+.xp_taskbar_item img {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+/* Fotos e iconos */
 .xp_profile_img {
   max-height: 120px;
   width: auto;
   object-fit: cover;
-  border: 1px solid #7f9db9;
   margin: 0 auto 10px auto;
   display: block;
 }
@@ -415,13 +254,13 @@ body.xp_blue_desktop {
 .xp_empty_photo {
   width: 120px;
   height: 120px;
-  background-color: #ffffff;
-  border: 2px inset #999999;
+  background-color: rgb(255, 255, 255);
+  border: 2px inset rgb(153, 153, 153);
   margin: 0 auto 15px auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #666;
+  color: rgb(102, 102, 102);
   font-size: 12px;
   font-weight: bold;
 }
@@ -429,14 +268,14 @@ body.xp_blue_desktop {
 /* Botón clásico con relieve 3D estilo Windows XP */
 .xp-classic-btn {
   display: inline-block;
-  background: linear-gradient(180deg, #ffffff 0%, #ece9d8 10%, #dcd7c4 100%);
-  border-top: 2px solid #ffffff;
-  border-left: 2px solid #ffffff;
-  border-right: 2px solid #706f64;
-  border-bottom: 2px solid #706f64;
+  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(236, 233, 216) 10%, rgb(220, 215, 196) 100%);
+  border-top: 2px solid rgb(255, 255, 255);
+  border-left: 2px solid rgb(255, 255, 255);
+  border-right: 2px solid rgb(112, 111, 100);
+  border-bottom: 2px solid rgb(112, 111, 100);
   border-radius: 3px;
-  box-shadow: inset 1px 1px 0px #f5f4eb, 1px 1px 2px rgba(0, 0, 0, 0.2);
-  color: #000000 !important;
+  box-shadow: inset 1px 1px 0px rgb(245, 244, 235), 1px 1px 2px rgba(0, 0, 0, 0.2);
+  color: rgb(0, 0, 0) !important;
   font-family: 'Tahoma', 'Segoe UI', sans-serif;
   font-size: 12px;
   font-weight: 500;
@@ -448,22 +287,22 @@ body.xp_blue_desktop {
 }
 
 .xp-classic-btn:hover {
-  background: linear-gradient(180deg, #ffffff 0%, #f7f5ed 10%, #eae6d9 100%);
-  border-top-color: #316ac5;
-  border-left-color: #316ac5;
-  border-right-color: #316ac5;
-  border-bottom-color: #316ac5;
-  color: #000000;
+  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(247, 245, 237) 10%, rgb(234, 230, 217) 100%);
+  border-top-color: rgb(49, 106, 197);
+  border-left-color: rgb(49, 106, 197);
+  border-right-color: rgb(49, 106, 197);
+  border-bottom-color: rgb(49, 106, 197);
+  color: rgb(0, 0, 0);
 }
 
 .xp-classic-btn:active {
-  background: #ded9c8;
-  border-top: 2px solid #706f64;
-  border-left: 2px solid #706f64;
-  border-right: 2px solid #ffffff;
-  border-bottom: 2px solid #ffffff;
+  background: rgb(222, 217, 200);
+  border-top: 2px solid rgb(112, 111, 100);
+  border-left: 2px solid rgb(112, 111, 100);
+  border-right: 2px solid rgb(255, 255, 255);
+  border-bottom: 2px solid rgb(255, 255, 255);
   box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.3);
-  padding: 6px 13px 4px 15px; /* Efecto de hundimiento */
+  padding: 6px 13px 4px 15px; 
 }
 
 .xp_classic_start_menu {
@@ -483,38 +322,32 @@ body.xp_blue_desktop {
 }
 
 /* El checkbox invisible muestra el menú */
-#toggle_start_menu:checked ~ .xp_classic_start_menu {
+[id="toggle_start_menu"]:checked ~ .xp_classic_start_menu {
   display: block;
 }
 
 /* --- CABECERA AZUL Y LÍNEA NARANJA --- */
 .xp_menu_header {
-  /* Degradado azul */
   background: linear-gradient(to bottom, rgb(26, 82, 186) 0%, rgb(45, 110, 230) 40%, rgb(50, 125, 245) 100%);
   padding: 10px;
-  
-  /* Línea naranja con degradado que se difumina en los bordes */
   border-bottom: 2px solid transparent;
   border-image: linear-gradient(to right, rgba(255, 102, 0, 0) 0%, rgba(249, 138, 37, 0.902) 15%, rgb(255, 185, 138) 85%, rgb(255, 255, 255) 100%) 1;
-  
-  /* Todos los brillos y sombras */
   box-shadow: 
-    inset -3px 0px 4px rgba(0, 0, 0, 0.4),      /* Sombra oscura derecha */
-    inset 0px 2px 1px rgba(246, 248, 255, 0.896),       /* Brillo superior blanco intenso */
-    inset 2px 0px 2px rgba(255, 255, 255, 0.2); /* Reflejo sutil izquierdo */
+    inset -3px 0px 4px rgba(0, 0, 0, 0.4),      
+    inset 0px 2px 1px rgba(246, 248, 255, 0.896),       
+    inset 2px 0px 2px rgba(255, 255, 255, 0.2); 
 }
-/* Estilo de la foto de perfil */
+
 .xp_user_pic {
   width: 48px;
   height: 48px;
-  border: 2px solid #ffffff;
+  border: 2px solid rgb(255, 255, 255);
   border-radius: 3px;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-  background-color: #ffffff; 
+  background-color: rgb(255, 255, 255); 
   object-fit: cover;
 }
 
-/* Texto del usuario en la cabecera */
 .xp_user_name {
   font-size: 1.2rem;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
@@ -523,31 +356,29 @@ body.xp_blue_desktop {
 /* --- LISTA BLANCA DE PROGRAMAS --- */
 .xp_menu_list {
   padding: 4px 2px;
-  background-color: #ffffff;
+  background-color: rgb(255, 255, 255);
   min-height: 250px;
-
   box-shadow: 
-    inset 0px 2px 2px rgba(255, 255, 255, 0.5), /* Brillo superior */
-    inset -3px 0px 4px rgba(0, 0, 0, 0.4),      /* Sombra oscura derecha */
-    inset 2px 0px 2px rgba(255, 255, 255, 0.2);  /* Reflejo sutil izquierdo */
+    inset 0px 2px 2px rgba(255, 255, 255, 0.5), 
+    inset -3px 0px 4px rgba(0, 0, 0, 0.4),      
+    inset 2px 0px 2px rgba(255, 255, 255, 0.2);  
 }
 
 .xp_menu_list a {
   display: flex;
   align-items: center;
   padding: 6px 12px;
-  color: #000000;
+  color: rgb(0, 0, 0);
   text-decoration: none;
-  font-size: 12px; /* Letra pequeña típica de la época */
+  font-size: 12px; 
 }
 
-/* Al pasar el mouse por los enlaces */
 .xp_menu_list a:hover {
-  background-color: #2f71cd; /* Fondo azul brillante */
-  color: #ffffff; /* Letra blanca */
+  background-color: rgb(47, 113, 205); 
+  color: rgb(255, 255, 255); 
 }
 
-/* --- PIE DE PÁGINA AZUL (Donde va "Cerrar menú") --- */
+/* --- PIE DE PÁGINA AZUL --- */
 .xp_menu_footer {
   background: linear-gradient(to bottom, rgb(65, 134, 242) 0%, rgb(42, 97, 203) 15%, rgb(21, 70, 159) 100%);
   height: 42px;
@@ -555,7 +386,6 @@ body.xp_blue_desktop {
   box-shadow: inset 0px 2px 2px rgba(255, 255, 255, 0.5);
 }
 
-/* Botón de cerrar menú */
 .xp_exit_btn {
   font-family: 'Tahoma', 'Segoe UI', sans-serif;
   font-size: 12px;
@@ -565,42 +395,18 @@ body.xp_blue_desktop {
   transition: all 0.1s;
 }
 
-/* Efecto al pasar el mouse por el botón "Cerrar" */
 .xp_exit_btn:hover {
   background-color: rgba(255, 255, 255, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-/* --- BOTÓN VERDE DE INICIO --- */
-.xp_start_btn {
-  background: radial-gradient(circle at 10% 20%, #51b848 0%, #318c24 100%);
-  color: white;
-  font-family: "Segoe UI", Tahoma, sans-serif;
-  font-weight: bold;
-  font-style: italic;
-  font-size: 16px;
-  border: 1px solid #1a5113; /* Borde verde oscuro */
-  border-radius: 0 10px 10px 0; /* Forma curva a la derecha */
-  padding: 0 15px;
-  margin-right: 15px;
-  box-shadow: inset 1px 1px 3px rgba(255,255,255,0.6), 2px 2px 3px rgba(0,0,0,0.3);
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-}
-
-/* Cuando haces clic en el botón verde se hunde */
-.xp_start_btn:active {
-  background: radial-gradient(circle at 10% 20%, #318c24 0%, #206815 100%);
-  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5);
-}
-
 /* --- Área de notificaciones (System Tray) --- */
 .xp_system_tray {
-  margin-left: auto; /* Esto empuja el cuadro totalmente a la derecha */
+  margin-left: auto; 
   height: 100%;
   display: flex;
   align-items: center;
   padding: 0 15px;
-  /* El degradado celeste brillante de Windows XP */
   background: linear-gradient(to bottom, rgb(20, 165, 240) 0%, rgb(8, 145, 220) 10%, rgb(0, 120, 200) 90%, rgb(0, 95, 175) 100%);
   border-left: 1px solid rgb(25, 60, 130);
   box-shadow: inset 1px 0px 1px rgba(255, 255, 255, 0.4), inset -1px 0px 2px rgba(0, 0, 0, 0.2);
@@ -621,51 +427,32 @@ body.xp_blue_desktop {
   margin-left: 4px;
 }
 
-.xp_logo_3d {
-  filter: 
-    /* Relieve oscuro sutil para no perder la forma */
-    drop-shadow(1px 1px 0px rgba(0, 0, 0, 0.8)) 
-    /* Resplandor azul hielo muy sutil */
-    drop-shadow(0px 0px 0px rgba(0, 153, 255, 1))
-}
-
 /* --- Logo --- */
 .xp_logo_box {
   position: absolute;
   left: 0;
   top: 0;
   height: 100%;
-  
   background-color: transparent; 
-  
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 15px; 
-  
   border-right: none;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.6)); 
   z-index: 1050; 
 }
 
-/* --- Ajuste del tamaño y efecto del logo --- */
 .xp_logo_box img {
   max-height: 70px;
   width: auto;
   margin-left: 10px;
 }
 
-/* --- Simplificamos el efecto del logo --- */
 .xp_logo_3d {
-  filter: 
-    drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.6));
-}
-
-.xp_profile_img {
-  border: none !important;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.6));
 }
 
 .xp_tech_icon {
@@ -680,7 +467,7 @@ body.xp_blue_desktop {
     top: 90px;
     left: 0;
     width: 100%;
-    background: linear-gradient(to bottom, #0058e6 0%, #0054e3 100%);
+    background: linear-gradient(to bottom, rgb(0, 88, 230) 0%, rgb(0, 84, 227) 100%);
     padding-bottom: 10px;
     box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
   }
