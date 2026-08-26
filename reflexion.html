@@ -14,18 +14,15 @@
       <nav class="navbar navbar-expand-lg xp_bar m-0 p-0">
         <div class="container-fluid h-100 position-relative p-0 m-0">
           
-          <!-- Logo -->
           <div class="xp_logo_box d-flex align-items-center">
             <img src="img/resorces/Logos/Figura_13.png" alt="Logo Bliss XP" class="xp_logo_3d me-2" style="max-height: 50px; width: auto;" />
             <span class="text-white fw-bold fs-4" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8)">Bliss XP</span>
           </div>
 
-          <!-- Botón menú hamburguesa -->
           <button class="navbar-toggler position-absolute end-0 me-3" style="top: 50%; transform: translateY(-50%);" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
           </button>
 
-          <!-- Menú -->
           <div class="collapse navbar-collapse xp_mobile_menu xp_desktop_center" id="menuPrincipal" style="z-index: 1000;">
             <ul class="navbar-nav m-0 p-0 text-center d-flex flex-lg-row">
               <li class="nav-item">
@@ -49,11 +46,9 @@
 
     <main class="container xp_main_content mb-5 pb-5"> 
       
-      <!-- VENTANA PRINCIPAL  -->
       <div class="row justify-content-center mb-4">
         <div class="col-md-10">
           <div class="xp_window shadow-lg p-0 mt-0">
-            <!-- Barra superior de la ventana -->
             <div class="xp_window_header d-flex justify-content-between align-items-center px-2 py-1 text-white">
               <div class="d-flex align-items-center">
                 <img src="img/resorces/Icons/hearts.ico" alt="Corazones" style="width: 16px; height: 16px; margin-right: 6px;">
@@ -69,13 +64,6 @@
             <div class="p-4 text-dark">
               <h4 class="mt-0 text-primary fw-bold">Nuestra Experiencia</h4>
               <p>En esta sección, reflexionamos sobre nuestra experiencia al trabajar en equipo y cómo la colaboración nos permitió superar desafíos y lograr nuestros objetivos.</p>
-
-              <h5 class="mt-4 text-primary fw-bold">Herramientas Utilizadas</h5>
-              <ul>
-                <li>Visual Studio Code</li>
-                <li>Git</li>
-                <li>GitHub</li>
-              </ul>
 
               <h5 class="mt-4 text-primary fw-bold">Desarrollo del Proyecto</h5>
               <ul>
@@ -95,11 +83,33 @@
         </div>
       </div>
 
-      <!-- TARJETAS DE INTEGRANTES  -->
       <div class="row justify-content-center mb-4">
         <div class="col-md-10">
           <div class="xp_window shadow-lg p-0 mt-0">
-            <!-- Barra superior de la ventana -->
+            <div class="xp_window_header d-flex justify-content-between align-items-center px-2 py-1 text-white">
+              <div class="d-flex align-items-center">
+                <img src="img/resorces/Icons/Manage your Server.ico" alt="Herramientas" style="width: 16px; height: 16px; margin-right: 6px;">
+                <span class="fw-bold" style="font-size: 0.9rem">Herramientas Utilizadas</span>
+              </div>
+              <div class="xp_controls">
+                <button class="xp_btn">_</button>
+                <button class="xp_btn">□</button>
+                <button class="xp_close">X</button>
+              </div>
+            </div>
+
+            <div class="p-5 d-flex flex-wrap justify-content-center align-items-center gap-5">
+              <img src="img/resorces/Logos/visual_logo.png" alt="Visual Studio Code" class="xp_tech_icon" style="max-height: 150px; width: auto; object-fit: contain;">
+              <img src="img/resorces/Logos/git_logo.png" alt="Git" class="xp_tech_icon" style="max-height: 150px; width: auto; object-fit: contain;">
+              <img src="img/resorces/Logos/github_logo.png" alt="GitHub" class="xp_tech_icon" style="max-height: 150px; width: auto; object-fit: contain;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center mb-4">
+        <div class="col-md-10">
+          <div class="xp_window shadow-lg p-0 mt-0">
             <div class="xp_window_header d-flex justify-content-between align-items-center px-2 py-1 text-white">
               <div class="d-flex align-items-center">
                 <img src="img/resorces/Icons/318.ico" alt="Icono Equipo" style="width: 16px; height: 16px; margin-right: 6px;">
@@ -116,7 +126,6 @@
               <div id="carruselReflexiones" class="carousel carousel-dark slide" data-bs-ride="carousel">
                 <div class="carousel-inner px-5">
                   
-                  <!-- Vianca -->
                   <div class="carousel-item active">
                     <div class="d-flex flex-column align-items-center text-center">
                       <img src="img/resorces/Mii_Vianca.png" alt="Vianca" class="xp_profile_img mb-2" style="max-height: 100px;"/>
@@ -129,7 +138,6 @@
                     </div>
                   </div>
 
-                  <!-- Benjamin -->
                   <div class="carousel-item">
                     <div class="d-flex flex-column align-items-center text-center">
                       <img src="img/resorces/benjaminpfp.jpg" alt="Benjamín" class="xp_profile_img mb-2" style="max-height: 100px;"/>
@@ -142,20 +150,18 @@
                     </div>
                   </div>
 
-                  <!-- Andres -->
                   <div class="carousel-item">
                     <div class="d-flex flex-column align-items-center text-center">
                       <img src="img/resorces/Mii_Andres.png" alt="Andres" class="xp_profile_img mb-2" style="max-height: 100px;"/>
                       <h5 class="fw-bold mb-0">Andres Chavez</h5>
                       <h6 class="text-primary mb-3">DESARROLLADOR</h6>
                       <p class="small text-start px-md-5">
-                        <strong>Responsabilidad:</strong> [Escribe aquí]<br><br>
+                        <strong>Responsabilidad:</strong> Responsable de proponer la idea original del diseño basado en Windows XP. Las tareas incluyeron definir la temática principal del proyecto y enfocarse en la corrección de distintos errores de código (bugs) para asegurar que la página funcionara de manera estable y sin problemas.<br><br>
                         <strong>Reflexión:</strong> Considero que trabajar con html y css sobre todo me pareció algo bastante entretenido que fomenta la creatividad, sin embargo aun se tiene el inconveniente de que a la larga puede quedar bastante desordenado o muy complejo a medida que se añade codigo.
                       </p>
                     </div>
                   </div>
 
-                  <!-- Rubén -->
                   <div class="carousel-item">
                     <div class="d-flex flex-column align-items-center text-center">
                       <img src="img/resorces/Ruben.png" alt="Rubén" class="xp_profile_img mb-2" style="max-height: 100px;"/>
@@ -168,14 +174,13 @@
                     </div>
                   </div>
 
-                  <!-- Javier -->
                   <div class="carousel-item">
                     <div class="d-flex flex-column align-items-center text-center">
                       <img src="img/resorces/javier.jpeg" alt="Javier" class="xp_profile_img mb-2" style="max-height: 100px;"/>
                       <h5 class="fw-bold mb-0">Javier Martínez</h5>
                       <h6 class="text-primary mb-3">DESARROLLADOR</h6>
                       <p class="small text-start px-md-5">
-                        <strong>Responsabilidad:</strong> [Escribe aquí]<br><br>
+                        <strong>Responsabilidad:</strong> Responsable de la configuración del entorno mediante Docker y Nginx. Las tareas incluyeron la creación del archivo Dockerfile para asegurar que el sitio funcionara correctamente de forma local y el apoyo en la recopilación de información para armar las páginas de investigación.<br><br>
                         <strong>Reflexión:</strong> El realizar este proyecto me permitió el comprender de mejor forma el funcionamiento de la web y el desarrollo de aplicaciones web, así como también el trabajo en equipo y la colaboración entre los integrantes del grupo.
                       </p>
                     </div>
@@ -198,7 +203,6 @@
     </main>
 
     <footer class="xp_taskbar fixed-bottom">
-      <!-- Lado izquierdo: Botón y Menú de Inicio -->
       <div class="xp_start_menu_wrapper position-relative h-100 d-flex align-items-center">
         <input type="checkbox" id="toggle_start_menu" class="d-none" />
 
@@ -251,7 +255,6 @@
         </div>
       </div>
 
-      <!-- Lado derecho: Área de notificaciones (System Tray) -->
       <div class="xp_system_tray">
         <img src="img/resorces/Icons/318.ico" alt="Red" class="xp_tray_icon" />
         <img src="img/resorces/Icons/657.ico" alt="Sonido" class="xp_tray_icon" />
